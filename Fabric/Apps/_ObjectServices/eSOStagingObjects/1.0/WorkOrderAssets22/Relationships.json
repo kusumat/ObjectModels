@@ -1,0 +1,97 @@
+[ {
+  "sourceObject" : "WorkOrderAssets22",
+  "targetObject" : "EquipLeakEvent",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WorkOrderAssetI",
+    "etag" : "b0bfeee4-64bf-441c-adcc-7a0c1ed65b5b"
+  } ],
+  "name" : "WorkOrderAssets22_EquipLeakEvent",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrderAssets22",
+  "targetObject" : "POReqLines",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WorkOrderAssetI",
+    "etag" : "c47e1c9a-e427-4cc7-b1f9-a18c0600bf28"
+  } ],
+  "name" : "WorkOrderAssets22_POReqLines",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrderAssets22",
+  "targetObject" : "RefrigerantSourceResults",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WorkOrderAssetI",
+    "etag" : "1ae4a61b-2b23-4f45-a3b7-aaea1f8f43a4"
+  } ],
+  "name" : "WorkOrderAssets22_RefrigerantSourceResults",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrderAssets22",
+  "targetObject" : "WorkOrderParts",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WorkOrderAssetI",
+    "etag" : "29e39df9-9694-4e14-891f-589bda41b467"
+  } ],
+  "name" : "WorkOrderAssets22_WorkOrderParts",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrderAssets22",
+  "targetObject" : "WorkOrderPhoto",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WorkOrderAssetI",
+    "etag" : "4a0e1c47-df4b-4ebf-a092-87419746f5fe"
+  } ],
+  "name" : "WorkOrderAssets22_WorkOrderPhoto",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrderAssets22",
+  "targetObject" : "WorkOrderRefrigerant",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WorkOrderAssetI",
+    "etag" : "ae21efe4-d5cd-4c4f-9a4f-3d13da5e6f7d"
+  } ],
+  "name" : "WorkOrderAssets22_WorkOrderRefrigerant",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrderAssets22",
+  "targetObject" : "WorkOrderResolutions",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WorkOrderAssetI",
+    "etag" : "e56ef629-55e4-4f9f-a90d-1b873ee02c8b"
+  } ],
+  "name" : "WorkOrderAssets22_WorkOrderResolutions",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrderAssets22",
+  "targetObject" : "WorkOrderSystemLabor",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WorkOrderAssetI",
+    "etag" : "437884b1-86dd-4325-a5f0-69cb7b9ffb50"
+  } ],
+  "name" : "WorkOrderAssets22_WorkOrderSystemLabor",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

@@ -1,0 +1,95 @@
+{
+  "operationConfig" : {
+    "name" : "dbo_HHCycleCountUploadVi_get8208",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"HHCycleCountUploadVi\" outputpath=\"HHCycleCountUploadView\">\n            <set-param inputpath=\"CURROHQTY\" outputpath=\"CURROHQTY\"/>\n            <set-param inputpath=\"isDeleted\" outputpath=\"isDeleted\"/>\n            <set-param inputpath=\"ITEMDESC\" outputpath=\"ITEMDESC\"/>\n            <set-param inputpath=\"ITEMNMBR\" outputpath=\"ITEMNMBR\"/>\n            <set-param inputpath=\"LOCNCODE\" outputpath=\"LOCNCODE\"/>\n            <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>\n            <set-param inputpath=\"OHDATE\" outputpath=\"OHDATE\"/>\n            <set-param inputpath=\"SessionID\" outputpath=\"SessionID\"/>\n            <set-param inputpath=\"TechID\" outputpath=\"TechID\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"HHCycleCountUploadView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOBackendService (1.0).HHCycleCountUploadVi_get\",\"xy\":\"265 102\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HHCycleCountUploadVi:CURROHQTY:\",\"to\":\"target:HHCycleCountUploadView:CURROHQTY:\",\"fromPort\":\"source:HHCycleCountUploadVi:CURROHQTY:\",\"toPort\":\"target:HHCycleCountUploadView:CURROHQTY:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HHCycleCountUploadVi:isDeleted:\",\"to\":\"target:HHCycleCountUploadView:isDeleted:\",\"fromPort\":\"source:HHCycleCountUploadVi:isDeleted:\",\"toPort\":\"target:HHCycleCountUploadView:isDeleted:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HHCycleCountUploadVi:ITEMDESC:\",\"to\":\"target:HHCycleCountUploadView:ITEMDESC:\",\"fromPort\":\"source:HHCycleCountUploadVi:ITEMDESC:\",\"toPort\":\"target:HHCycleCountUploadView:ITEMDESC:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HHCycleCountUploadVi:ITEMNMBR:\",\"to\":\"target:HHCycleCountUploadView:ITEMNMBR:\",\"fromPort\":\"source:HHCycleCountUploadVi:ITEMNMBR:\",\"toPort\":\"target:HHCycleCountUploadView:ITEMNMBR:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HHCycleCountUploadVi:LOCNCODE:\",\"to\":\"target:HHCycleCountUploadView:LOCNCODE:\",\"fromPort\":\"source:HHCycleCountUploadVi:LOCNCODE:\",\"toPort\":\"target:HHCycleCountUploadView:LOCNCODE:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HHCycleCountUploadVi:ModifiedDate:\",\"to\":\"target:HHCycleCountUploadView:ModifiedDate:\",\"fromPort\":\"source:HHCycleCountUploadVi:ModifiedDate:\",\"toPort\":\"target:HHCycleCountUploadView:ModifiedDate:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HHCycleCountUploadVi:OHDATE:\",\"to\":\"target:HHCycleCountUploadView:OHDATE:\",\"fromPort\":\"source:HHCycleCountUploadVi:OHDATE:\",\"toPort\":\"target:HHCycleCountUploadView:OHDATE:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HHCycleCountUploadVi:SessionID:\",\"to\":\"target:HHCycleCountUploadView:SessionID:\",\"fromPort\":\"source:HHCycleCountUploadVi:SessionID:\",\"toPort\":\"target:HHCycleCountUploadView:SessionID:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HHCycleCountUploadVi:TechID:\",\"to\":\"target:HHCycleCountUploadView:TechID:\",\"fromPort\":\"source:HHCycleCountUploadVi:TechID:\",\"toPort\":\"target:HHCycleCountUploadView:TechID:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "eSOBackendService",
+      "serviceVersion" : "1.0",
+      "operationName" : "HHCycleCountUploadVi_get"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "HHCycleCountUploadView",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">  <map inputpath=\"response_in\" outputpath=\"response_out\">    <map inputpath=\"HHCycleCountUploadVi\" outputpath=\"HHCycleCountUploadView\">      <set-param inputpath=\"CURROHQTY\" outputpath=\"CURROHQTY\"/>      <set-param inputpath=\"isDeleted\" outputpath=\"isDeleted\"/>      <set-param inputpath=\"ITEMDESC\" outputpath=\"ITEMDESC\"/>      <set-param inputpath=\"ITEMNMBR\" outputpath=\"ITEMNMBR\"/>      <set-param inputpath=\"LOCNCODE\" outputpath=\"LOCNCODE\"/>      <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>      <set-param inputpath=\"OHDATE\" outputpath=\"OHDATE\"/>      <set-param inputpath=\"SessionID\" outputpath=\"SessionID\"/>      <set-param inputpath=\"TechID\" outputpath=\"TechID\"/>    </map>  </map></mapper>",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"HHCycleCountUploadView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOBackendService (1.0).HHCycleCountUploadVi_get\",\"xy\":\"265 102\"}],\"linkDataArray\":[{\"from\":\"target\",\"to\":\"target:HHCycleCountUploadView\",\"fromPort\":\"target\",\"toPort\":\"target:HHCycleCountUploadView\",\"visible\":true,\"common\":false},{\"from\":\"target:HHCycleCountUploadView\",\"to\":\"target:HHCycleCountUploadView:t_p_fields\",\"fromPort\":\"target:HHCycleCountUploadView\",\"toPort\":\"target:HHCycleCountUploadView:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:HHCycleCountUploadView:t_p_fields\",\"to\":\"target:HHCycleCountUploadView:CURROHQTY:\",\"fromPort\":\"target:HHCycleCountUploadView:t_p_fields\",\"toPort\":\"target:HHCycleCountUploadView:CURROHQTY:\",\"visible\":true,\"common\":false},{\"from\":\"target:HHCycleCountUploadView:t_p_fields\",\"to\":\"target:HHCycleCountUploadView:isDeleted:\",\"fromPort\":\"target:HHCycleCountUploadView:t_p_fields\",\"toPort\":\"target:HHCycleCountUploadView:isDeleted:\",\"visible\":true,\"common\":false},{\"from\":\"target:HHCycleCountUploadView:t_p_fields\",\"to\":\"target:HHCycleCountUploadView:ITEMDESC:\",\"fromPort\":\"target:HHCycleCountUploadView:t_p_fields\",\"toPort\":\"target:HHCycleCountUploadView:ITEMDESC:\",\"visible\":true,\"common\":false},{\"from\":\"target:HHCycleCountUploadView:t_p_fields\",\"to\":\"target:HHCycleCountUploadView:ITEMNMBR:\",\"fromPort\":\"target:HHCycleCountUploadView:t_p_fields\",\"toPort\":\"target:HHCycleCountUploadView:ITEMNMBR:\",\"visible\":true,\"common\":false},{\"from\":\"target:HHCycleCountUploadView:t_p_fields\",\"to\":\"target:HHCycleCountUploadView:LOCNCODE:\",\"fromPort\":\"target:HHCycleCountUploadView:t_p_fields\",\"toPort\":\"target:HHCycleCountUploadView:LOCNCODE:\",\"visible\":true,\"common\":false},{\"from\":\"target:HHCycleCountUploadView:t_p_fields\",\"to\":\"target:HHCycleCountUploadView:ModifiedDate:\",\"fromPort\":\"target:HHCycleCountUploadView:t_p_fields\",\"toPort\":\"target:HHCycleCountUploadView:ModifiedDate:\",\"visible\":true,\"common\":false},{\"from\":\"target:HHCycleCountUploadView:t_p_fields\",\"to\":\"target:HHCycleCountUploadView:OHDATE:\",\"fromPort\":\"target:HHCycleCountUploadView:t_p_fields\",\"toPort\":\"target:HHCycleCountUploadView:OHDATE:\",\"visible\":true,\"common\":false},{\"from\":\"target:HHCycleCountUploadView:t_p_fields\",\"to\":\"target:HHCycleCountUploadView:SessionID:\",\"fromPort\":\"target:HHCycleCountUploadView:t_p_fields\",\"toPort\":\"target:HHCycleCountUploadView:SessionID:\",\"visible\":true,\"common\":false},{\"from\":\"target:HHCycleCountUploadView:t_p_fields\",\"to\":\"target:HHCycleCountUploadView:TechID:\",\"fromPort\":\"target:HHCycleCountUploadView:t_p_fields\",\"toPort\":\"target:HHCycleCountUploadView:TechID:\",\"visible\":true,\"common\":false},{\"from\":\"source\",\"to\":\"source:HHCycleCountUploadVi\",\"fromPort\":\"source\",\"toPort\":\"source:HHCycleCountUploadVi\",\"visible\":true,\"common\":false},{\"from\":\"source:HHCycleCountUploadVi\",\"to\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"fromPort\":\"source:HHCycleCountUploadVi\",\"toPort\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"visible\":true,\"common\":false},{\"from\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"to\":\"source:HHCycleCountUploadVi:CURROHQTY:\",\"fromPort\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"toPort\":\"source:HHCycleCountUploadVi:CURROHQTY:\",\"visible\":true,\"common\":false},{\"from\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"to\":\"source:HHCycleCountUploadVi:isDeleted:\",\"fromPort\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"toPort\":\"source:HHCycleCountUploadVi:isDeleted:\",\"visible\":true,\"common\":false},{\"from\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"to\":\"source:HHCycleCountUploadVi:ITEMDESC:\",\"fromPort\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"toPort\":\"source:HHCycleCountUploadVi:ITEMDESC:\",\"visible\":true,\"common\":false},{\"from\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"to\":\"source:HHCycleCountUploadVi:ITEMNMBR:\",\"fromPort\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"toPort\":\"source:HHCycleCountUploadVi:ITEMNMBR:\",\"visible\":true,\"common\":false},{\"from\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"to\":\"source:HHCycleCountUploadVi:LOCNCODE:\",\"fromPort\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"toPort\":\"source:HHCycleCountUploadVi:LOCNCODE:\",\"visible\":true,\"common\":false},{\"from\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"to\":\"source:HHCycleCountUploadVi:ModifiedDate:\",\"fromPort\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"toPort\":\"source:HHCycleCountUploadVi:ModifiedDate:\",\"visible\":true,\"common\":false},{\"from\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"to\":\"source:HHCycleCountUploadVi:OHDATE:\",\"fromPort\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"toPort\":\"source:HHCycleCountUploadVi:OHDATE:\",\"visible\":true,\"common\":false},{\"from\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"to\":\"source:HHCycleCountUploadVi:SessionID:\",\"fromPort\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"toPort\":\"source:HHCycleCountUploadVi:SessionID:\",\"visible\":true,\"common\":false},{\"from\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"to\":\"source:HHCycleCountUploadVi:TechID:\",\"fromPort\":\"source:HHCycleCountUploadVi:t_p_parameters\",\"toPort\":\"source:HHCycleCountUploadVi:TechID:\",\"visible\":true,\"common\":false},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HHCycleCountUploadVi:CURROHQTY:\",\"to\":\"target:HHCycleCountUploadView:CURROHQTY:\",\"fromPort\":\"source:HHCycleCountUploadVi:CURROHQTY:\",\"toPort\":\"target:HHCycleCountUploadView:CURROHQTY:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HHCycleCountUploadVi:isDeleted:\",\"to\":\"target:HHCycleCountUploadView:isDeleted:\",\"fromPort\":\"source:HHCycleCountUploadVi:isDeleted:\",\"toPort\":\"target:HHCycleCountUploadView:isDeleted:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HHCycleCountUploadVi:ITEMDESC:\",\"to\":\"target:HHCycleCountUploadView:ITEMDESC:\",\"fromPort\":\"source:HHCycleCountUploadVi:ITEMDESC:\",\"toPort\":\"target:HHCycleCountUploadView:ITEMDESC:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HHCycleCountUploadVi:ITEMNMBR:\",\"to\":\"target:HHCycleCountUploadView:ITEMNMBR:\",\"fromPort\":\"source:HHCycleCountUploadVi:ITEMNMBR:\",\"toPort\":\"target:HHCycleCountUploadView:ITEMNMBR:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HHCycleCountUploadVi:LOCNCODE:\",\"to\":\"target:HHCycleCountUploadView:LOCNCODE:\",\"fromPort\":\"source:HHCycleCountUploadVi:LOCNCODE:\",\"toPort\":\"target:HHCycleCountUploadView:LOCNCODE:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HHCycleCountUploadVi:ModifiedDate:\",\"to\":\"target:HHCycleCountUploadView:ModifiedDate:\",\"fromPort\":\"source:HHCycleCountUploadVi:ModifiedDate:\",\"toPort\":\"target:HHCycleCountUploadView:ModifiedDate:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HHCycleCountUploadVi:OHDATE:\",\"to\":\"target:HHCycleCountUploadView:OHDATE:\",\"fromPort\":\"source:HHCycleCountUploadVi:OHDATE:\",\"toPort\":\"target:HHCycleCountUploadView:OHDATE:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HHCycleCountUploadVi:SessionID:\",\"to\":\"target:HHCycleCountUploadView:SessionID:\",\"fromPort\":\"source:HHCycleCountUploadVi:SessionID:\",\"toPort\":\"target:HHCycleCountUploadView:SessionID:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HHCycleCountUploadVi:TechID:\",\"to\":\"target:HHCycleCountUploadView:TechID:\",\"fromPort\":\"source:HHCycleCountUploadVi:TechID:\",\"toPort\":\"target:HHCycleCountUploadView:TechID:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

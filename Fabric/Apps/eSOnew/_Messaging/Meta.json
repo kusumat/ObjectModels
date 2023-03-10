@@ -1,0 +1,12 @@
+{
+  "appleprodmode" : "true",
+  "iphonecertprod" : {
+    "name" : "dEso.p12",
+    "passwd" : "password"
+  },
+  "ipadDevCertNameModified" : false,
+  "ipadProdCertNameModified" : false,
+  "iphoneDevCertNameModified" : false,
+  "iphoneProdCertNameModified" : true,
+  "empty" : true
+}

@@ -1,0 +1,93 @@
+{
+  "operationConfig" : {
+    "name" : "dbo_WorkOrderBackendView_get6579",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"response_in\" outputpath=\"response_out\"><map inputpath=\"WorkOrderBackendView\" outputpath=\"WorkOrderBackendView\"><set-param inputpath=\"CallerPhone\" outputpath=\"CallerPhone\"/><set-param inputpath=\"Customer\" outputpath=\"Customer\"/><set-param inputpath=\"TechID\" outputpath=\"TechID\"/><set-param inputpath=\"CallType\" outputpath=\"CallType\"/><set-param inputpath=\"WODate\" outputpath=\"WODate\"/><set-param inputpath=\"WOContactPhone\" outputpath=\"WOContactPhone\"/><set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/><set-param inputpath=\"WorkOrderHistor\" outputpath=\"WorkOrderHistor\"/><set-param inputpath=\"WorkOrderNo\" outputpath=\"WorkOrderNo\"/><set-param inputpath=\"isDeleted\" outputpath=\"isDeleted\"/><set-param inputpath=\"ProblemDesc\" outputpath=\"ProblemDesc\"/><set-param inputpath=\"ExtProblemDesc\" outputpath=\"ExtProblemDesc\"/><set-param inputpath=\"CallerName\" outputpath=\"CallerName\"/><set-param inputpath=\"SiteBarCode\" outputpath=\"SiteBarCode\"/><set-param inputpath=\"Status\" outputpath=\"Status\"/><set-param inputpath=\"ADRSCODE\" outputpath=\"ADRSCODE\"/><set-param inputpath=\"CUSTNMBR\" outputpath=\"CUSTNMBR\"/><set-param inputpath=\"Priority\" outputpath=\"Priority\"/><set-param inputpath=\"Duration\" outputpath=\"Duration\"/><set-param inputpath=\"CustReferenceNo\" outputpath=\"CustReferenceNo\"/><set-param inputpath=\"CustomerPO\" outputpath=\"CustomerPO\"/><set-param inputpath=\"AssetType\" outputpath=\"AssetType\"/><set-param inputpath=\"ETA\" outputpath=\"ETA\"/><set-param inputpath=\"Followup\" outputpath=\"Followup\"/><set-param inputpath=\"WOContactName\" outputpath=\"WOContactName\"/></map></map></mapper>",
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "backendMeta" : {
+      "serviceName" : "eSOBackendService",
+      "serviceVersion" : "1.0",
+      "operationName" : "WorkOrderBackendView_get"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "WorkOrderBackendView",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"response_in\" outputpath=\"response_out\"><map inputpath=\"WorkOrderBackendView\" outputpath=\"WorkOrderBackendView\"><set-param inputpath=\"CallerPhone\" outputpath=\"CallerPhone\"/><set-param inputpath=\"Customer\" outputpath=\"Customer\"/><set-param inputpath=\"TechID\" outputpath=\"TechID\"/><set-param inputpath=\"CallType\" outputpath=\"CallType\"/><set-param inputpath=\"WODate\" outputpath=\"WODate\"/><set-param inputpath=\"WOContactPhone\" outputpath=\"WOContactPhone\"/><set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/><set-param inputpath=\"WorkOrderHistor\" outputpath=\"WorkOrderHistor\"/><set-param inputpath=\"WorkOrderNo\" outputpath=\"WorkOrderNo\"/><set-param inputpath=\"isDeleted\" outputpath=\"isDeleted\"/><set-param inputpath=\"ProblemDesc\" outputpath=\"ProblemDesc\"/><set-param inputpath=\"ExtProblemDesc\" outputpath=\"ExtProblemDesc\"/><set-param inputpath=\"CallerName\" outputpath=\"CallerName\"/><set-param inputpath=\"SiteBarCode\" outputpath=\"SiteBarCode\"/><set-param inputpath=\"Status\" outputpath=\"Status\"/><set-param inputpath=\"ADRSCODE\" outputpath=\"ADRSCODE\"/><set-param inputpath=\"CUSTNMBR\" outputpath=\"CUSTNMBR\"/><set-param inputpath=\"Priority\" outputpath=\"Priority\"/><set-param inputpath=\"Duration\" outputpath=\"Duration\"/><set-param inputpath=\"CustReferenceNo\" outputpath=\"CustReferenceNo\"/><set-param inputpath=\"CustomerPO\" outputpath=\"CustomerPO\"/><set-param inputpath=\"AssetType\" outputpath=\"AssetType\"/><set-param inputpath=\"ETA\" outputpath=\"ETA\"/><set-param inputpath=\"Followup\" outputpath=\"Followup\"/><set-param inputpath=\"WOContactName\" outputpath=\"WOContactName\"/></map></map></mapper>",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : true
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

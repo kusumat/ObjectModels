@@ -1,0 +1,95 @@
+{
+  "operationConfig" : {
+    "name" : "eso_LeakCheckListView_get7626",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"LeakCheckListView\" outputpath=\"LeakCheckListView\">\n            <set-param inputpath=\"ActivityStatus\" outputpath=\"ActivityStatus\"/>\n            <set-param inputpath=\"DisplayOrder\" outputpath=\"DisplayOrder\"/>\n            <set-param inputpath=\"Inactive\" outputpath=\"Inactive\"/>\n            <set-param inputpath=\"LeakChk_ID\" outputpath=\"LeakChkID\"/>\n            <set-param inputpath=\"LeakChkDesc\" outputpath=\"LeakChkDesc\"/>\n            <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"LeakCheckListView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOReferentialService (1.0).LeakCheckListView_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:LeakCheckListView:ActivityStatus:\",\"to\":\"target:LeakCheckListView:ActivityStatus:\",\"fromPort\":\"source:LeakCheckListView:ActivityStatus:\",\"toPort\":\"target:LeakCheckListView:ActivityStatus:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:LeakCheckListView:DisplayOrder:\",\"to\":\"target:LeakCheckListView:DisplayOrder:\",\"fromPort\":\"source:LeakCheckListView:DisplayOrder:\",\"toPort\":\"target:LeakCheckListView:DisplayOrder:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:LeakCheckListView:Inactive:\",\"to\":\"target:LeakCheckListView:Inactive:\",\"fromPort\":\"source:LeakCheckListView:Inactive:\",\"toPort\":\"target:LeakCheckListView:Inactive:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:LeakCheckListView:LeakChkDesc:\",\"to\":\"target:LeakCheckListView:LeakChkDesc:\",\"fromPort\":\"source:LeakCheckListView:LeakChkDesc:\",\"toPort\":\"target:LeakCheckListView:LeakChkDesc:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:LeakCheckListView:ModifiedDate:\",\"to\":\"target:LeakCheckListView:ModifiedDate:\",\"fromPort\":\"source:LeakCheckListView:ModifiedDate:\",\"toPort\":\"target:LeakCheckListView:ModifiedDate:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:LeakCheckListView:LeakChk_ID:\",\"to\":\"target:LeakCheckListView:LeakChkID:\",\"fromPort\":\"source:LeakCheckListView:LeakChk_ID:\",\"toPort\":\"target:LeakCheckListView:LeakChkID:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "eSOReferentialService",
+      "serviceVersion" : "1.0",
+      "operationName" : "LeakCheckListView_get"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "LeakCheckListView",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"LeakCheckListView\" outputpath=\"LeakCheckListView\">\n            <set-param inputpath=\"ActivityStatus\" outputpath=\"ActivityStatus\"/>\n            <set-param inputpath=\"DisplayOrder\" outputpath=\"DisplayOrder\"/>\n            <set-param inputpath=\"Inactive\" outputpath=\"Inactive\"/>\n            <set-param inputpath=\"LeakChk_ID\" outputpath=\"LeakChkID\"/>\n            <set-param inputpath=\"LeakChkDesc\" outputpath=\"LeakChkDesc\"/>\n            <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>\n        </map>\n    </map>\n</mapper>\n",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"LeakCheckListView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOReferentialService (1.0).LeakCheckListView_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:LeakCheckListView:ActivityStatus:\",\"to\":\"target:LeakCheckListView:ActivityStatus:\",\"fromPort\":\"source:LeakCheckListView:ActivityStatus:\",\"toPort\":\"target:LeakCheckListView:ActivityStatus:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:LeakCheckListView:DisplayOrder:\",\"to\":\"target:LeakCheckListView:DisplayOrder:\",\"fromPort\":\"source:LeakCheckListView:DisplayOrder:\",\"toPort\":\"target:LeakCheckListView:DisplayOrder:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:LeakCheckListView:Inactive:\",\"to\":\"target:LeakCheckListView:Inactive:\",\"fromPort\":\"source:LeakCheckListView:Inactive:\",\"toPort\":\"target:LeakCheckListView:Inactive:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:LeakCheckListView:LeakChkDesc:\",\"to\":\"target:LeakCheckListView:LeakChkDesc:\",\"fromPort\":\"source:LeakCheckListView:LeakChkDesc:\",\"toPort\":\"target:LeakCheckListView:LeakChkDesc:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:LeakCheckListView:ModifiedDate:\",\"to\":\"target:LeakCheckListView:ModifiedDate:\",\"fromPort\":\"source:LeakCheckListView:ModifiedDate:\",\"toPort\":\"target:LeakCheckListView:ModifiedDate:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:LeakCheckListView:LeakChk_ID:\",\"to\":\"target:LeakCheckListView:LeakChkID:\",\"fromPort\":\"source:LeakCheckListView:LeakChk_ID:\",\"toPort\":\"target:LeakCheckListView:LeakChkID:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

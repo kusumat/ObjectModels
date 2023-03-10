@@ -1,0 +1,95 @@
+{
+  "operationConfig" : {
+    "name" : "dbo_SyncErrors_get4537",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">    <map inputpath=\"response_in\" outputpath=\"response_out\">        <map inputpath=\"SyncErrors\" outputpath=\"SyncErrors\">            <set-param inputpath=\"DeviceCreateDate\" outputpath=\"DeviceCreateDate\"/>            <set-param inputpath=\"ErrorCode\" outputpath=\"ErrorCode\"/>            <set-param inputpath=\"ErrorMessage\" outputpath=\"ErrorMessage\"/>            <set-param inputpath=\"ID\" outputpath=\"ID\"/>            <set-param inputpath=\"KonyDeleteFlag\" outputpath=\"KonyDeleteFlag\"/>            <set-param inputpath=\"LastModified\" outputpath=\"LastModified\"/>            <set-param inputpath=\"SyncScope\" outputpath=\"SyncScope\"/>            <set-param inputpath=\"SyncType\" outputpath=\"SyncType\"/>            <set-param inputpath=\"TechID\" outputpath=\"TechID\"/>        </map>    </map></mapper>",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"SyncErrors\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOStagingService (1.0).SyncErrors_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:SyncErrors:DeviceCreateDate:\",\"to\":\"target:SyncErrors:DeviceCreateDate:\",\"fromPort\":\"source:SyncErrors:DeviceCreateDate:\",\"toPort\":\"target:SyncErrors:DeviceCreateDate:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:SyncErrors:ErrorCode:\",\"to\":\"target:SyncErrors:ErrorCode:\",\"fromPort\":\"source:SyncErrors:ErrorCode:\",\"toPort\":\"target:SyncErrors:ErrorCode:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:SyncErrors:ErrorMessage:\",\"to\":\"target:SyncErrors:ErrorMessage:\",\"fromPort\":\"source:SyncErrors:ErrorMessage:\",\"toPort\":\"target:SyncErrors:ErrorMessage:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:SyncErrors:ID:\",\"to\":\"target:SyncErrors:ID:\",\"fromPort\":\"source:SyncErrors:ID:\",\"toPort\":\"target:SyncErrors:ID:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:SyncErrors:KonyDeleteFlag:\",\"to\":\"target:SyncErrors:KonyDeleteFlag:\",\"fromPort\":\"source:SyncErrors:KonyDeleteFlag:\",\"toPort\":\"target:SyncErrors:KonyDeleteFlag:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:SyncErrors:LastModified:\",\"to\":\"target:SyncErrors:LastModified:\",\"fromPort\":\"source:SyncErrors:LastModified:\",\"toPort\":\"target:SyncErrors:LastModified:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:SyncErrors:SyncScope:\",\"to\":\"target:SyncErrors:SyncScope:\",\"fromPort\":\"source:SyncErrors:SyncScope:\",\"toPort\":\"target:SyncErrors:SyncScope:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:SyncErrors:SyncType:\",\"to\":\"target:SyncErrors:SyncType:\",\"fromPort\":\"source:SyncErrors:SyncType:\",\"toPort\":\"target:SyncErrors:SyncType:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:SyncErrors:TechID:\",\"to\":\"target:SyncErrors:TechID:\",\"fromPort\":\"source:SyncErrors:TechID:\",\"toPort\":\"target:SyncErrors:TechID:\",\"visible\":true,\"common\":true},{\"from\":\"target\",\"to\":\"target:SyncErrors\",\"fromPort\":\"target\",\"toPort\":\"target:SyncErrors\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors\",\"to\":\"target:SyncErrors:t_p_fields\",\"fromPort\":\"target:SyncErrors\",\"toPort\":\"target:SyncErrors:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors:t_p_fields\",\"to\":\"target:SyncErrors:DeviceCreateDate:\",\"fromPort\":\"target:SyncErrors:t_p_fields\",\"toPort\":\"target:SyncErrors:DeviceCreateDate:\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors:t_p_fields\",\"to\":\"target:SyncErrors:ErrorCode:\",\"fromPort\":\"target:SyncErrors:t_p_fields\",\"toPort\":\"target:SyncErrors:ErrorCode:\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors:t_p_fields\",\"to\":\"target:SyncErrors:ErrorMessage:\",\"fromPort\":\"target:SyncErrors:t_p_fields\",\"toPort\":\"target:SyncErrors:ErrorMessage:\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors:t_p_fields\",\"to\":\"target:SyncErrors:ID:\",\"fromPort\":\"target:SyncErrors:t_p_fields\",\"toPort\":\"target:SyncErrors:ID:\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors:t_p_fields\",\"to\":\"target:SyncErrors:KonyDeleteFlag:\",\"fromPort\":\"target:SyncErrors:t_p_fields\",\"toPort\":\"target:SyncErrors:KonyDeleteFlag:\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors:t_p_fields\",\"to\":\"target:SyncErrors:LastModified:\",\"fromPort\":\"target:SyncErrors:t_p_fields\",\"toPort\":\"target:SyncErrors:LastModified:\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors:t_p_fields\",\"to\":\"target:SyncErrors:SyncScope:\",\"fromPort\":\"target:SyncErrors:t_p_fields\",\"toPort\":\"target:SyncErrors:SyncScope:\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors:t_p_fields\",\"to\":\"target:SyncErrors:SyncType:\",\"fromPort\":\"target:SyncErrors:t_p_fields\",\"toPort\":\"target:SyncErrors:SyncType:\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors:t_p_fields\",\"to\":\"target:SyncErrors:TechID:\",\"fromPort\":\"target:SyncErrors:t_p_fields\",\"toPort\":\"target:SyncErrors:TechID:\",\"visible\":true,\"common\":false},{\"from\":\"source\",\"to\":\"source:SyncErrors\",\"fromPort\":\"source\",\"toPort\":\"source:SyncErrors\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors\",\"to\":\"source:SyncErrors:t_p_parameters\",\"fromPort\":\"source:SyncErrors\",\"toPort\":\"source:SyncErrors:t_p_parameters\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors:t_p_parameters\",\"to\":\"source:SyncErrors:DeviceCreateDate:\",\"fromPort\":\"source:SyncErrors:t_p_parameters\",\"toPort\":\"source:SyncErrors:DeviceCreateDate:\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors:t_p_parameters\",\"to\":\"source:SyncErrors:ErrorCode:\",\"fromPort\":\"source:SyncErrors:t_p_parameters\",\"toPort\":\"source:SyncErrors:ErrorCode:\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors:t_p_parameters\",\"to\":\"source:SyncErrors:ErrorMessage:\",\"fromPort\":\"source:SyncErrors:t_p_parameters\",\"toPort\":\"source:SyncErrors:ErrorMessage:\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors:t_p_parameters\",\"to\":\"source:SyncErrors:ID:\",\"fromPort\":\"source:SyncErrors:t_p_parameters\",\"toPort\":\"source:SyncErrors:ID:\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors:t_p_parameters\",\"to\":\"source:SyncErrors:KonyDeleteFlag:\",\"fromPort\":\"source:SyncErrors:t_p_parameters\",\"toPort\":\"source:SyncErrors:KonyDeleteFlag:\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors:t_p_parameters\",\"to\":\"source:SyncErrors:LastModified:\",\"fromPort\":\"source:SyncErrors:t_p_parameters\",\"toPort\":\"source:SyncErrors:LastModified:\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors:t_p_parameters\",\"to\":\"source:SyncErrors:SyncScope:\",\"fromPort\":\"source:SyncErrors:t_p_parameters\",\"toPort\":\"source:SyncErrors:SyncScope:\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors:t_p_parameters\",\"to\":\"source:SyncErrors:SyncType:\",\"fromPort\":\"source:SyncErrors:t_p_parameters\",\"toPort\":\"source:SyncErrors:SyncType:\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors:t_p_parameters\",\"to\":\"source:SyncErrors:TechID:\",\"fromPort\":\"source:SyncErrors:t_p_parameters\",\"toPort\":\"source:SyncErrors:TechID:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "eSOStagingService",
+      "serviceVersion" : "1.0",
+      "operationName" : "SyncErrors_get"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "SyncErrors",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : true,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">    <map inputpath=\"response_in\" outputpath=\"response_out\">        <map inputpath=\"SyncErrors\" outputpath=\"SyncErrors\">            <set-param inputpath=\"DeviceCreateDate\" outputpath=\"DeviceCreateDate\"/>            <set-param inputpath=\"ErrorCode\" outputpath=\"ErrorCode\"/>            <set-param inputpath=\"ErrorMessage\" outputpath=\"ErrorMessage\"/>            <set-param inputpath=\"ID\" outputpath=\"ID\"/>            <set-param inputpath=\"KonyDeleteFlag\" outputpath=\"KonyDeleteFlag\"/>            <set-param inputpath=\"LastModified\" outputpath=\"LastModified\"/>            <set-param inputpath=\"SyncScope\" outputpath=\"SyncScope\"/>            <set-param inputpath=\"SyncType\" outputpath=\"SyncType\"/>            <set-param inputpath=\"TechID\" outputpath=\"TechID\"/>        </map>    </map></mapper>",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"SyncErrors\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOStagingService (1.0).SyncErrors_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:SyncErrors:DeviceCreateDate:\",\"to\":\"target:SyncErrors:DeviceCreateDate:\",\"fromPort\":\"source:SyncErrors:DeviceCreateDate:\",\"toPort\":\"target:SyncErrors:DeviceCreateDate:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:SyncErrors:ErrorCode:\",\"to\":\"target:SyncErrors:ErrorCode:\",\"fromPort\":\"source:SyncErrors:ErrorCode:\",\"toPort\":\"target:SyncErrors:ErrorCode:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:SyncErrors:ErrorMessage:\",\"to\":\"target:SyncErrors:ErrorMessage:\",\"fromPort\":\"source:SyncErrors:ErrorMessage:\",\"toPort\":\"target:SyncErrors:ErrorMessage:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:SyncErrors:ID:\",\"to\":\"target:SyncErrors:ID:\",\"fromPort\":\"source:SyncErrors:ID:\",\"toPort\":\"target:SyncErrors:ID:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:SyncErrors:KonyDeleteFlag:\",\"to\":\"target:SyncErrors:KonyDeleteFlag:\",\"fromPort\":\"source:SyncErrors:KonyDeleteFlag:\",\"toPort\":\"target:SyncErrors:KonyDeleteFlag:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:SyncErrors:LastModified:\",\"to\":\"target:SyncErrors:LastModified:\",\"fromPort\":\"source:SyncErrors:LastModified:\",\"toPort\":\"target:SyncErrors:LastModified:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:SyncErrors:SyncScope:\",\"to\":\"target:SyncErrors:SyncScope:\",\"fromPort\":\"source:SyncErrors:SyncScope:\",\"toPort\":\"target:SyncErrors:SyncScope:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:SyncErrors:SyncType:\",\"to\":\"target:SyncErrors:SyncType:\",\"fromPort\":\"source:SyncErrors:SyncType:\",\"toPort\":\"target:SyncErrors:SyncType:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:SyncErrors:TechID:\",\"to\":\"target:SyncErrors:TechID:\",\"fromPort\":\"source:SyncErrors:TechID:\",\"toPort\":\"target:SyncErrors:TechID:\",\"visible\":true,\"common\":true},{\"from\":\"target\",\"to\":\"target:SyncErrors\",\"fromPort\":\"target\",\"toPort\":\"target:SyncErrors\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors\",\"to\":\"target:SyncErrors:t_p_fields\",\"fromPort\":\"target:SyncErrors\",\"toPort\":\"target:SyncErrors:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors:t_p_fields\",\"to\":\"target:SyncErrors:DeviceCreateDate:\",\"fromPort\":\"target:SyncErrors:t_p_fields\",\"toPort\":\"target:SyncErrors:DeviceCreateDate:\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors:t_p_fields\",\"to\":\"target:SyncErrors:ErrorCode:\",\"fromPort\":\"target:SyncErrors:t_p_fields\",\"toPort\":\"target:SyncErrors:ErrorCode:\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors:t_p_fields\",\"to\":\"target:SyncErrors:ErrorMessage:\",\"fromPort\":\"target:SyncErrors:t_p_fields\",\"toPort\":\"target:SyncErrors:ErrorMessage:\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors:t_p_fields\",\"to\":\"target:SyncErrors:ID:\",\"fromPort\":\"target:SyncErrors:t_p_fields\",\"toPort\":\"target:SyncErrors:ID:\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors:t_p_fields\",\"to\":\"target:SyncErrors:KonyDeleteFlag:\",\"fromPort\":\"target:SyncErrors:t_p_fields\",\"toPort\":\"target:SyncErrors:KonyDeleteFlag:\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors:t_p_fields\",\"to\":\"target:SyncErrors:LastModified:\",\"fromPort\":\"target:SyncErrors:t_p_fields\",\"toPort\":\"target:SyncErrors:LastModified:\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors:t_p_fields\",\"to\":\"target:SyncErrors:SyncScope:\",\"fromPort\":\"target:SyncErrors:t_p_fields\",\"toPort\":\"target:SyncErrors:SyncScope:\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors:t_p_fields\",\"to\":\"target:SyncErrors:SyncType:\",\"fromPort\":\"target:SyncErrors:t_p_fields\",\"toPort\":\"target:SyncErrors:SyncType:\",\"visible\":true,\"common\":false},{\"from\":\"target:SyncErrors:t_p_fields\",\"to\":\"target:SyncErrors:TechID:\",\"fromPort\":\"target:SyncErrors:t_p_fields\",\"toPort\":\"target:SyncErrors:TechID:\",\"visible\":true,\"common\":false},{\"from\":\"source\",\"to\":\"source:SyncErrors\",\"fromPort\":\"source\",\"toPort\":\"source:SyncErrors\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors\",\"to\":\"source:SyncErrors:t_p_parameters\",\"fromPort\":\"source:SyncErrors\",\"toPort\":\"source:SyncErrors:t_p_parameters\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors:t_p_parameters\",\"to\":\"source:SyncErrors:DeviceCreateDate:\",\"fromPort\":\"source:SyncErrors:t_p_parameters\",\"toPort\":\"source:SyncErrors:DeviceCreateDate:\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors:t_p_parameters\",\"to\":\"source:SyncErrors:ErrorCode:\",\"fromPort\":\"source:SyncErrors:t_p_parameters\",\"toPort\":\"source:SyncErrors:ErrorCode:\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors:t_p_parameters\",\"to\":\"source:SyncErrors:ErrorMessage:\",\"fromPort\":\"source:SyncErrors:t_p_parameters\",\"toPort\":\"source:SyncErrors:ErrorMessage:\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors:t_p_parameters\",\"to\":\"source:SyncErrors:ID:\",\"fromPort\":\"source:SyncErrors:t_p_parameters\",\"toPort\":\"source:SyncErrors:ID:\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors:t_p_parameters\",\"to\":\"source:SyncErrors:KonyDeleteFlag:\",\"fromPort\":\"source:SyncErrors:t_p_parameters\",\"toPort\":\"source:SyncErrors:KonyDeleteFlag:\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors:t_p_parameters\",\"to\":\"source:SyncErrors:LastModified:\",\"fromPort\":\"source:SyncErrors:t_p_parameters\",\"toPort\":\"source:SyncErrors:LastModified:\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors:t_p_parameters\",\"to\":\"source:SyncErrors:SyncScope:\",\"fromPort\":\"source:SyncErrors:t_p_parameters\",\"toPort\":\"source:SyncErrors:SyncScope:\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors:t_p_parameters\",\"to\":\"source:SyncErrors:SyncType:\",\"fromPort\":\"source:SyncErrors:t_p_parameters\",\"toPort\":\"source:SyncErrors:SyncType:\",\"visible\":true,\"common\":false},{\"from\":\"source:SyncErrors:t_p_parameters\",\"to\":\"source:SyncErrors:TechID:\",\"fromPort\":\"source:SyncErrors:t_p_parameters\",\"toPort\":\"source:SyncErrors:TechID:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : true,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

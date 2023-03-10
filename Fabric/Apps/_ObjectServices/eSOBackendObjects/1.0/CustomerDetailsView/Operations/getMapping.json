@@ -1,0 +1,93 @@
+{
+  "operationConfig" : {
+    "name" : "dbo_CustomerDetailsView_get6096",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"response_in\" outputpath=\"response_out\"><map inputpath=\"CustomerDetailsView\" outputpath=\"CustomerDetailsView\"><set-param inputpath=\"Zip\" outputpath=\"Zip\"/><set-param inputpath=\"HrsofOpStop\" outputpath=\"HrsofOpStop\"/><set-param inputpath=\"EmailType\" outputpath=\"EmailType\"/><set-param inputpath=\"TechID\" outputpath=\"TechID\"/><set-param inputpath=\"STRate\" outputpath=\"STRate\"/><set-param inputpath=\"CustomerContact\" outputpath=\"CustomerContact\"/><set-param inputpath=\"Latitude\" outputpath=\"Latitude\"/><set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/><set-param inputpath=\"ChkInOutPhone\" outputpath=\"ChkInOutPhone\"/><set-param inputpath=\"Name\" outputpath=\"Name\"/><set-param inputpath=\"BaseCharge\" outputpath=\"BaseCharge\"/><set-param inputpath=\"CustomerPhone\" outputpath=\"CustomerPhone\"/><set-param inputpath=\"NTEPhone\" outputpath=\"NTEPhone\"/><set-param inputpath=\"NTEContact\" outputpath=\"NTEContact\"/><set-param inputpath=\"isDeleted\" outputpath=\"isDeleted\"/><set-param inputpath=\"HighMatlMarkup\" outputpath=\"HighMatlMarkup\"/><set-param inputpath=\"LocResCodeGrpID\" outputpath=\"LocResCodeGrpID\"/><set-param inputpath=\"COD\" outputpath=\"COD\"/><set-param inputpath=\"Email1\" outputpath=\"Email1\"/><set-param inputpath=\"LaborGroupName\" outputpath=\"LaborGroupName\"/><set-param inputpath=\"ADRSCODE\" outputpath=\"ADRSCODE\"/><set-param inputpath=\"HrsofOpStart\" outputpath=\"HrsofOpStart\"/><set-param inputpath=\"CUSTNMBR\" outputpath=\"CUSTNMBR\"/><set-param inputpath=\"LocationPhone1\" outputpath=\"LocationPhone1\"/><set-param inputpath=\"LocationPhone2\" outputpath=\"LocationPhone2\"/><set-param inputpath=\"PORequiredFlag\" outputpath=\"PORequiredFlag\"/><set-param inputpath=\"Address1\" outputpath=\"Address1\"/><set-param inputpath=\"City\" outputpath=\"City\"/><set-param inputpath=\"LocationContact\" outputpath=\"LocationContact\"/><set-param inputpath=\"MileageCharge\" outputpath=\"MileageCharge\"/><set-param inputpath=\"Longitude\" outputpath=\"Longitude\"/><set-param inputpath=\"CustReferenceNo\" outputpath=\"CustReferenceNo\"/><set-param inputpath=\"OTRate\" outputpath=\"OTRate\"/><set-param inputpath=\"LowMatlMarkup\" outputpath=\"LowMatlMarkup\"/><set-param inputpath=\"State\" outputpath=\"State\"/><set-param inputpath=\"ChkInOutContact\" outputpath=\"ChkInOutContact\"/></map></map></mapper>",
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "backendMeta" : {
+      "serviceName" : "eSOBackendService",
+      "serviceVersion" : "1.0",
+      "operationName" : "CustomerDetailsView_get"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "CustomerDetailsView",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"response_in\" outputpath=\"response_out\"><map inputpath=\"CustomerDetailsView\" outputpath=\"CustomerDetailsView\"><set-param inputpath=\"Zip\" outputpath=\"Zip\"/><set-param inputpath=\"HrsofOpStop\" outputpath=\"HrsofOpStop\"/><set-param inputpath=\"EmailType\" outputpath=\"EmailType\"/><set-param inputpath=\"TechID\" outputpath=\"TechID\"/><set-param inputpath=\"STRate\" outputpath=\"STRate\"/><set-param inputpath=\"CustomerContact\" outputpath=\"CustomerContact\"/><set-param inputpath=\"Latitude\" outputpath=\"Latitude\"/><set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/><set-param inputpath=\"ChkInOutPhone\" outputpath=\"ChkInOutPhone\"/><set-param inputpath=\"Name\" outputpath=\"Name\"/><set-param inputpath=\"BaseCharge\" outputpath=\"BaseCharge\"/><set-param inputpath=\"CustomerPhone\" outputpath=\"CustomerPhone\"/><set-param inputpath=\"NTEPhone\" outputpath=\"NTEPhone\"/><set-param inputpath=\"NTEContact\" outputpath=\"NTEContact\"/><set-param inputpath=\"isDeleted\" outputpath=\"isDeleted\"/><set-param inputpath=\"HighMatlMarkup\" outputpath=\"HighMatlMarkup\"/><set-param inputpath=\"LocResCodeGrpID\" outputpath=\"LocResCodeGrpID\"/><set-param inputpath=\"COD\" outputpath=\"COD\"/><set-param inputpath=\"Email1\" outputpath=\"Email1\"/><set-param inputpath=\"LaborGroupName\" outputpath=\"LaborGroupName\"/><set-param inputpath=\"ADRSCODE\" outputpath=\"ADRSCODE\"/><set-param inputpath=\"HrsofOpStart\" outputpath=\"HrsofOpStart\"/><set-param inputpath=\"CUSTNMBR\" outputpath=\"CUSTNMBR\"/><set-param inputpath=\"LocationPhone1\" outputpath=\"LocationPhone1\"/><set-param inputpath=\"LocationPhone2\" outputpath=\"LocationPhone2\"/><set-param inputpath=\"PORequiredFlag\" outputpath=\"PORequiredFlag\"/><set-param inputpath=\"Address1\" outputpath=\"Address1\"/><set-param inputpath=\"City\" outputpath=\"City\"/><set-param inputpath=\"LocationContact\" outputpath=\"LocationContact\"/><set-param inputpath=\"MileageCharge\" outputpath=\"MileageCharge\"/><set-param inputpath=\"Longitude\" outputpath=\"Longitude\"/><set-param inputpath=\"CustReferenceNo\" outputpath=\"CustReferenceNo\"/><set-param inputpath=\"OTRate\" outputpath=\"OTRate\"/><set-param inputpath=\"LowMatlMarkup\" outputpath=\"LowMatlMarkup\"/><set-param inputpath=\"State\" outputpath=\"State\"/><set-param inputpath=\"ChkInOutContact\" outputpath=\"ChkInOutContact\"/></map></map></mapper>",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : true
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

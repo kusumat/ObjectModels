@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "POHeader",
+  "targetObject" : "POLines",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "POHeaderID",
+    "etag" : "2826ee61-084b-4213-933f-dc0e4ec054c4"
+  } ],
+  "name" : "POHeader_POLines",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

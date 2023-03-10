@@ -1,0 +1,604 @@
+{
+    "eSOAssetHistoryObjects_AssetHistoryDetailView": {
+        "servicename": "eSOAssetHistoryObjects",
+        "serviceid": "5985bb29-db2e-4c9a-ac1b-da2ed2116ade",
+        "type": "objectsvcs",
+        "objectname": "AssetHistoryDetailView",
+        "objectid": "189630"
+    },
+    "eSOAssetHistoryObjects_AssetHistoryHeaderView": {
+        "servicename": "eSOAssetHistoryObjects",
+        "serviceid": "5985bb29-db2e-4c9a-ac1b-da2ed2116ade",
+        "type": "objectsvcs",
+        "objectname": "AssetHistoryHeaderView",
+        "objectid": "189631"
+    },
+    "eSOAssetHistoryObjects_AssetHistoryPartsView": {
+        "servicename": "eSOAssetHistoryObjects",
+        "serviceid": "5985bb29-db2e-4c9a-ac1b-da2ed2116ade",
+        "type": "objectsvcs",
+        "objectname": "AssetHistoryPartsView",
+        "objectid": "189632"
+    },
+    "eSOBackendObjects_BackendPoView": {
+        "servicename": "eSOBackendObjects",
+        "serviceid": "5690da43-58e4-4b03-972f-4848b333f04e",
+        "type": "objectsvcs",
+        "objectname": "BackendPoView",
+        "objectid": "189598"
+    },
+    "eSOBackendObjects_CustomerDetailsView": {
+        "servicename": "eSOBackendObjects",
+        "serviceid": "5690da43-58e4-4b03-972f-4848b333f04e",
+        "type": "objectsvcs",
+        "objectname": "CustomerDetailsView",
+        "objectid": "189599"
+    },
+    "eSOBackendObjects_HHCycleCountUploadView": {
+        "servicename": "eSOBackendObjects",
+        "serviceid": "5690da43-58e4-4b03-972f-4848b333f04e",
+        "type": "objectsvcs",
+        "objectname": "HHCycleCountUploadView",
+        "objectid": "189600"
+    },
+    "eSOBackendObjects_InvXferView": {
+        "servicename": "eSOBackendObjects",
+        "serviceid": "5690da43-58e4-4b03-972f-4848b333f04e",
+        "type": "objectsvcs",
+        "objectname": "InvXferView",
+        "objectid": "189601"
+    },
+    "eSOBackendObjects_NTEBackendView": {
+        "servicename": "eSOBackendObjects",
+        "serviceid": "5690da43-58e4-4b03-972f-4848b333f04e",
+        "type": "objectsvcs",
+        "objectname": "NTEBackendView",
+        "objectid": "189602"
+    },
+    "eSOBackendObjects_WorkOrderAssetBackendView": {
+        "servicename": "eSOBackendObjects",
+        "serviceid": "5690da43-58e4-4b03-972f-4848b333f04e",
+        "type": "objectsvcs",
+        "objectname": "WorkOrderAssetBackendView",
+        "objectid": "189603"
+    },
+    "eSOBackendObjects_WorkOrderBackendView": {
+        "servicename": "eSOBackendObjects",
+        "serviceid": "5690da43-58e4-4b03-972f-4848b333f04e",
+        "type": "objectsvcs",
+        "objectname": "WorkOrderBackendView",
+        "objectid": "189604"
+    },
+    "eSOBackendObjects_WorkOrderNotesView": {
+        "servicename": "eSOBackendObjects",
+        "serviceid": "5690da43-58e4-4b03-972f-4848b333f04e",
+        "type": "objectsvcs",
+        "objectname": "WorkOrderNotesView",
+        "objectid": "189605"
+    },
+    "eSOBackendObjects_WorkOrderRulesView": {
+        "servicename": "eSOBackendObjects",
+        "serviceid": "5690da43-58e4-4b03-972f-4848b333f04e",
+        "type": "objectsvcs",
+        "objectname": "WorkOrderRulesView",
+        "objectid": "189606"
+    },
+    "eSOBackendObjects_WorkOrderServiceCodeView": {
+        "servicename": "eSOBackendObjects",
+        "serviceid": "5690da43-58e4-4b03-972f-4848b333f04e",
+        "type": "objectsvcs",
+        "objectname": "WorkOrderServiceCodeView",
+        "objectid": "189607"
+    },
+    "eSOPartsObjects_OtherExpensesListView": {
+        "servicename": "eSOPartsObjects",
+        "serviceid": "ed32eded-3471-4f35-988d-c9b9e3277012",
+        "type": "objectsvcs",
+        "objectname": "OtherExpensesListView",
+        "objectid": "189587"
+    },
+    "eSOPartsObjects_PartsListView": {
+        "servicename": "eSOPartsObjects",
+        "serviceid": "ed32eded-3471-4f35-988d-c9b9e3277012",
+        "type": "objectsvcs",
+        "objectname": "PartsListView",
+        "objectid": "189588"
+    },
+    "eSOPartsObjects_VendorListView": {
+        "servicename": "eSOPartsObjects",
+        "serviceid": "ed32eded-3471-4f35-988d-c9b9e3277012",
+        "type": "objectsvcs",
+        "objectname": "VendorListView",
+        "objectid": "189589"
+    },
+    "eSOReferentialObjects_ActionCodeView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "ActionCodeView",
+        "objectid": "189474"
+    },
+    "eSOReferentialObjects_AssetCategoryView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "AssetCategoryView",
+        "objectid": "189475"
+    },
+    "eSOReferentialObjects_AssetConditionView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "AssetConditionView",
+        "objectid": "189476"
+    },
+    "eSOReferentialObjects_AssetManufacturerView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "AssetManufacturerView",
+        "objectid": "189477"
+    },
+    "eSOReferentialObjects_AssetSubtypeView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "AssetSubtypeView",
+        "objectid": "189478"
+    },
+    "eSOReferentialObjects_AssetTempTypeView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "AssetTempTypeView",
+        "objectid": "189479"
+    },
+    "eSOReferentialObjects_AssetTypeCategoryView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "AssetTypeCategoryView",
+        "objectid": "189480"
+    },
+    "eSOReferentialObjects_AssetTypeView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "AssetTypeView",
+        "objectid": "189481"
+    },
+    "eSOReferentialObjects_BusinesCnstView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "BusinesCnstView",
+        "objectid": "189482"
+    },
+    "eSOReferentialObjects_DispositionListView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "DispositionListView",
+        "objectid": "189483"
+    },
+    "eSOReferentialObjects_FaultCodesView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "FaultCodesView",
+        "objectid": "189484"
+    },
+    "eSOReferentialObjects_FollowupListView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "FollowupListView",
+        "objectid": "189485"
+    },
+    "eSOReferentialObjects_HHInventoryLocations": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "HHInventoryLocations",
+        "objectid": "189486"
+    },
+    "eSOReferentialObjects_HHPODetailTypeView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "HHPODetailTypeView",
+        "objectid": "189487"
+    },
+    "eSOReferentialObjects_LeakCheckListView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "LeakCheckListView",
+        "objectid": "189488"
+    },
+    "eSOReferentialObjects_LeakEventCodeTypeView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "LeakEventCodeTypeView",
+        "objectid": "189489"
+    },
+    "eSOReferentialObjects_LeakLocDetailView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "LeakLocDetailView",
+        "objectid": "189490"
+    },
+    "eSOReferentialObjects_LeakLocationView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "LeakLocationView",
+        "objectid": "189491"
+    },
+    "eSOReferentialObjects_LeakStatusView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "LeakStatusView",
+        "objectid": "189492"
+    },
+    "eSOReferentialObjects_LocationResGroupView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "LocationResGroupView",
+        "objectid": "189493"
+    },
+    "eSOReferentialObjects_LocationTypeView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "LocationTypeView",
+        "objectid": "189494"
+    },
+    "eSOReferentialObjects_MiscExpensesView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "MiscExpensesView",
+        "objectid": "189495"
+    },
+    "eSOReferentialObjects_NTEApprovalStatusView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "NTEApprovalStatusView",
+        "objectid": "189496"
+    },
+    "eSOReferentialObjects_OtherBillView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "OtherBillView",
+        "objectid": "189497"
+    },
+    "eSOReferentialObjects_PartsCategoryView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "PartsCategoryView",
+        "objectid": "189498"
+    },
+    "eSOReferentialObjects_PhotoTypeView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "PhotoTypeView",
+        "objectid": "189499"
+    },
+    "eSOReferentialObjects_RefrigerantDispositionView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "RefrigerantDispositionView",
+        "objectid": "189500"
+    },
+    "eSOReferentialObjects_RefrigerantListView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "RefrigerantListView",
+        "objectid": "189501"
+    },
+    "eSOReferentialObjects_RefrigerantSourceView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "RefrigerantSourceView",
+        "objectid": "189502"
+    },
+    "eSOReferentialObjects_ResolutionCategoryView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "ResolutionCategoryView",
+        "objectid": "189503"
+    },
+    "eSOReferentialObjects_ResolutionItemsView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "ResolutionItemsView",
+        "objectid": "189504"
+    },
+    "eSOReferentialObjects_ResolutionQuestionView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "ResolutionQuestionView",
+        "objectid": "189505"
+    },
+    "eSOReferentialObjects_ResolutionSubCategoryView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "ResolutionSubCategoryView",
+        "objectid": "189506"
+    },
+    "eSOReferentialObjects_ReturnTypeView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "ReturnTypeView",
+        "objectid": "189507"
+    },
+    "eSOReferentialObjects_ServiceCodeDDListView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "ServiceCodeDDListView",
+        "objectid": "189508"
+    },
+    "eSOReferentialObjects_TimeTypeListView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "TimeTypeListView",
+        "objectid": "189509"
+    },
+    "eSOReferentialObjects_UnitOfMeasureListView": {
+        "servicename": "eSOReferentialObjects",
+        "serviceid": "4e44bb0f-4cde-4392-bba3-678b70977139",
+        "type": "objectsvcs",
+        "objectname": "UnitOfMeasureListView",
+        "objectid": "189510"
+    },
+    "eSOStagingObjects_EquipLeakEvent": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "EquipLeakEvent",
+        "objectid": "189241"
+    },
+    "eSOStagingObjects_EquipLeakEventCode": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "EquipLeakEventCode",
+        "objectid": "189242"
+    },
+    "eSOStagingObjects_HHCycleCountEntered": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "HHCycleCountEntered",
+        "objectid": "189243"
+    },
+    "eSOStagingObjects_InvTransfer": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "InvTransfer",
+        "objectid": "189244"
+    },
+    "eSOStagingObjects_POHeader": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "POHeader",
+        "objectid": "189245"
+    },
+    "eSOStagingObjects_POLines": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "POLines",
+        "objectid": "189246"
+    },
+    "eSOStagingObjects_POReqHeader": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "POReqHeader",
+        "objectid": "189247"
+    },
+    "eSOStagingObjects_POReqLines": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "POReqLines",
+        "objectid": "189248"
+    },
+    "eSOStagingObjects_PORtnDetail": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "PORtnDetail",
+        "objectid": "189249"
+    },
+    "eSOStagingObjects_PORtnDisp": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "PORtnDisp",
+        "objectid": "189250"
+    },
+    "eSOStagingObjects_PORtnHeader": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "PORtnHeader",
+        "objectid": "189251"
+    },
+    "eSOStagingObjects_PORtnQueue": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "PORtnQueue",
+        "objectid": "189252"
+    },
+    "eSOStagingObjects_PartsQueue": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "PartsQueue",
+        "objectid": "189253"
+    },
+    "eSOStagingObjects_RefrigerantShutdown": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "RefrigerantShutdown",
+        "objectid": "189254"
+    },
+    "eSOStagingObjects_RefrigerantSourceResults": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "RefrigerantSourceResults",
+        "objectid": "189255"
+    },
+    "eSOStagingObjects_RefrigerantStartup": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "RefrigerantStartup",
+        "objectid": "189256"
+    },
+    "eSOStagingObjects_SyncErrors": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "SyncErrors",
+        "objectid": "189257"
+    },
+    "eSOStagingObjects_TechDaily": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "TechDaily",
+        "objectid": "189258"
+    },
+    "eSOStagingObjects_TimekeepingHeader": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "TimekeepingHeader",
+        "objectid": "189259"
+    },
+    "eSOStagingObjects_TimekeepingLines": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "TimekeepingLines",
+        "objectid": "189260"
+    },
+    "eSOStagingObjects_WOOtherBillable": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "WOOtherBillable",
+        "objectid": "189261"
+    },
+    "eSOStagingObjects_WorkOrder": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "WorkOrder",
+        "objectid": "189262"
+    },
+    "eSOStagingObjects_WorkOrderAssets22": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "WorkOrderAssets22",
+        "objectid": "189263"
+    },
+    "eSOStagingObjects_WorkOrderCheckedRule": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "WorkOrderCheckedRule",
+        "objectid": "189264"
+    },
+    "eSOStagingObjects_WorkOrderHistory": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "WorkOrderHistory",
+        "objectid": "189265"
+    },
+    "eSOStagingObjects_WorkOrderNTE": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "WorkOrderNTE",
+        "objectid": "189266"
+    },
+    "eSOStagingObjects_WorkOrderParts": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "WorkOrderParts",
+        "objectid": "189267"
+    },
+    "eSOStagingObjects_WorkOrderPhoto": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "WorkOrderPhoto",
+        "objectid": "189268"
+    },
+    "eSOStagingObjects_WorkOrderRefrigerant": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "WorkOrderRefrigerant",
+        "objectid": "189269"
+    },
+    "eSOStagingObjects_WorkOrderResolutionNotes": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "WorkOrderResolutionNotes",
+        "objectid": "189270"
+    },
+    "eSOStagingObjects_WorkOrderResolutions": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "WorkOrderResolutions",
+        "objectid": "189271"
+    },
+    "eSOStagingObjects_WorkOrderStatusHistory": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "WorkOrderStatusHistory",
+        "objectid": "189272"
+    },
+    "eSOStagingObjects_WorkOrderSystemLabor": {
+        "servicename": "eSOStagingObjects",
+        "serviceid": "c935afac-ef10-42ff-926c-c7fdc2505d81",
+        "type": "objectsvcs",
+        "objectname": "WorkOrderSystemLabor",
+        "objectid": "189273"
+    }
+}

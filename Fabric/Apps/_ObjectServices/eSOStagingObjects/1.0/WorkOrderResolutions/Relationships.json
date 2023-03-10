@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "WorkOrderResolutions",
+  "targetObject" : "WorkOrderResolutionNotes",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "ResolutionID",
+    "etag" : "289237c5-0274-42ef-8e67-6a29f78feb45"
+  } ],
+  "name" : "WorkOrderResolutions_WorkOrderResolutionNotes",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

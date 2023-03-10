@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "PORtnHeader",
+  "targetObject" : "PORtnDetail",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "PORtnHeaderID",
+    "etag" : "3a607872-8027-480d-bf10-b04fd796359e"
+  } ],
+  "name" : "PORtnHeader_PORtnDetail",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

@@ -1,0 +1,95 @@
+{
+  "operationConfig" : {
+    "name" : "eso_PhotoTypeView_get4186",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"PhotoTypeView\" outputpath=\"PhotoTypeView\">\n            <set-param inputpath=\"Inactive\" outputpath=\"Inactive\"/>\n            <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>\n            <set-param inputpath=\"PhotoTypeDesc\" outputpath=\"PhotoTypeDesc\"/>\n            <set-param inputpath=\"PhotoTypeID\" outputpath=\"PhotoTypeID\"/>\n            <set-param inputpath=\"Requires_System\" outputpath=\"RequiresSystem\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"PhotoTypeView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOReferentialService (1.0).PhotoTypeView_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:PhotoTypeView:Inactive:\",\"to\":\"target:PhotoTypeView:Inactive:\",\"fromPort\":\"source:PhotoTypeView:Inactive:\",\"toPort\":\"target:PhotoTypeView:Inactive:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:PhotoTypeView:ModifiedDate:\",\"to\":\"target:PhotoTypeView:ModifiedDate:\",\"fromPort\":\"source:PhotoTypeView:ModifiedDate:\",\"toPort\":\"target:PhotoTypeView:ModifiedDate:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:PhotoTypeView:PhotoTypeDesc:\",\"to\":\"target:PhotoTypeView:PhotoTypeDesc:\",\"fromPort\":\"source:PhotoTypeView:PhotoTypeDesc:\",\"toPort\":\"target:PhotoTypeView:PhotoTypeDesc:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:PhotoTypeView:PhotoTypeID:\",\"to\":\"target:PhotoTypeView:PhotoTypeID:\",\"fromPort\":\"source:PhotoTypeView:PhotoTypeID:\",\"toPort\":\"target:PhotoTypeView:PhotoTypeID:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:PhotoTypeView:Requires_System:\",\"to\":\"target:PhotoTypeView:RequiresSystem:\",\"fromPort\":\"source:PhotoTypeView:Requires_System:\",\"toPort\":\"target:PhotoTypeView:RequiresSystem:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "eSOReferentialService",
+      "serviceVersion" : "1.0",
+      "operationName" : "PhotoTypeView_get"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "PhotoTypeView",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"PhotoTypeView\" outputpath=\"PhotoTypeView\">\n            <set-param inputpath=\"Inactive\" outputpath=\"Inactive\"/>\n            <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>\n            <set-param inputpath=\"PhotoTypeDesc\" outputpath=\"PhotoTypeDesc\"/>\n            <set-param inputpath=\"PhotoTypeID\" outputpath=\"PhotoTypeID\"/>\n            <set-param inputpath=\"Requires_System\" outputpath=\"RequiresSystem\"/>\n        </map>\n    </map>\n</mapper>\n",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"PhotoTypeView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOReferentialService (1.0).PhotoTypeView_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:PhotoTypeView:Inactive:\",\"to\":\"target:PhotoTypeView:Inactive:\",\"fromPort\":\"source:PhotoTypeView:Inactive:\",\"toPort\":\"target:PhotoTypeView:Inactive:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:PhotoTypeView:ModifiedDate:\",\"to\":\"target:PhotoTypeView:ModifiedDate:\",\"fromPort\":\"source:PhotoTypeView:ModifiedDate:\",\"toPort\":\"target:PhotoTypeView:ModifiedDate:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:PhotoTypeView:PhotoTypeDesc:\",\"to\":\"target:PhotoTypeView:PhotoTypeDesc:\",\"fromPort\":\"source:PhotoTypeView:PhotoTypeDesc:\",\"toPort\":\"target:PhotoTypeView:PhotoTypeDesc:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:PhotoTypeView:PhotoTypeID:\",\"to\":\"target:PhotoTypeView:PhotoTypeID:\",\"fromPort\":\"source:PhotoTypeView:PhotoTypeID:\",\"toPort\":\"target:PhotoTypeView:PhotoTypeID:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:PhotoTypeView:Requires_System:\",\"to\":\"target:PhotoTypeView:RequiresSystem:\",\"fromPort\":\"source:PhotoTypeView:Requires_System:\",\"toPort\":\"target:PhotoTypeView:RequiresSystem:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

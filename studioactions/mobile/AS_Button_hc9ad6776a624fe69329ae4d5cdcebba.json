@@ -1,0 +1,37 @@
+{
+    "AS_Button_hc9ad6776a624fe69329ae4d5cdcebba": {
+        "id": "AS_Button_hc9ad6776a624fe69329ae4d5cdcebba",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Form1",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a4626051c14246f18f46a8c9e899b8e8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_SERVICE_ea9ad7ebcc17443e80f1c782a42a26c0",
+            "type": "INVOKE_OBJECT_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": null,
+            "isoffline": null,
+            "isobject": true,
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "servicename": "eSOAssetHistoryObjects",
+                "type": "objectsvcs",
+                "objectname": "AssetHistoryPartsView",
+                "serviceid": "5985bb29-db2e-4c9a-ac1b-da2ed2116ade",
+                "methodname": "get"
+            },
+            "enableMappingEditor": true
+        }]
+    }
+}

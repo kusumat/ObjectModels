@@ -1,0 +1,95 @@
+{
+  "operationConfig" : {
+    "name" : "dbo_WorkOrderServiceCode_get2988",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"WorkOrderServiceCode\" outputpath=\"WorkOrderServiceCodeView\">\n            <set-param inputpath=\"AssetID\" outputpath=\"AssetID\"/>\n            <set-param inputpath=\"ID\" outputpath=\"ID\"/>\n            <set-param inputpath=\"isDeleted\" outputpath=\"isDeleted\"/>\n            <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>\n            <set-param inputpath=\"ReqServiceCode\" outputpath=\"ReqServiceCode\"/>\n            <set-param inputpath=\"ServiceCode\" outputpath=\"ServiceCode\"/>\n            <set-param inputpath=\"ServiceCodePrio\" outputpath=\"ServiceCodePrio\"/>\n            <set-param inputpath=\"TechID\" outputpath=\"TechID\"/>\n            <set-param inputpath=\"WorkOrderNo\" outputpath=\"WorkOrderNo\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"WorkOrderServiceCodeView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOBackendService (1.0).WorkOrderServiceCode_get\",\"xy\":\"452 101\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderServiceCode:AssetID:\",\"to\":\"target:WorkOrderServiceCodeView:AssetID:\",\"fromPort\":\"source:WorkOrderServiceCode:AssetID:\",\"toPort\":\"target:WorkOrderServiceCodeView:AssetID:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderServiceCode:ID:\",\"to\":\"target:WorkOrderServiceCodeView:ID:\",\"fromPort\":\"source:WorkOrderServiceCode:ID:\",\"toPort\":\"target:WorkOrderServiceCodeView:ID:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderServiceCode:isDeleted:\",\"to\":\"target:WorkOrderServiceCodeView:isDeleted:\",\"fromPort\":\"source:WorkOrderServiceCode:isDeleted:\",\"toPort\":\"target:WorkOrderServiceCodeView:isDeleted:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderServiceCode:ModifiedDate:\",\"to\":\"target:WorkOrderServiceCodeView:ModifiedDate:\",\"fromPort\":\"source:WorkOrderServiceCode:ModifiedDate:\",\"toPort\":\"target:WorkOrderServiceCodeView:ModifiedDate:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderServiceCode:ReqServiceCode:\",\"to\":\"target:WorkOrderServiceCodeView:ReqServiceCode:\",\"fromPort\":\"source:WorkOrderServiceCode:ReqServiceCode:\",\"toPort\":\"target:WorkOrderServiceCodeView:ReqServiceCode:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderServiceCode:ServiceCode:\",\"to\":\"target:WorkOrderServiceCodeView:ServiceCode:\",\"fromPort\":\"source:WorkOrderServiceCode:ServiceCode:\",\"toPort\":\"target:WorkOrderServiceCodeView:ServiceCode:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderServiceCode:ServiceCodePrio:\",\"to\":\"target:WorkOrderServiceCodeView:ServiceCodePrio:\",\"fromPort\":\"source:WorkOrderServiceCode:ServiceCodePrio:\",\"toPort\":\"target:WorkOrderServiceCodeView:ServiceCodePrio:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderServiceCode:TechID:\",\"to\":\"target:WorkOrderServiceCodeView:TechID:\",\"fromPort\":\"source:WorkOrderServiceCode:TechID:\",\"toPort\":\"target:WorkOrderServiceCodeView:TechID:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderServiceCode:WorkOrderNo:\",\"to\":\"target:WorkOrderServiceCodeView:WorkOrderNo:\",\"fromPort\":\"source:WorkOrderServiceCode:WorkOrderNo:\",\"toPort\":\"target:WorkOrderServiceCodeView:WorkOrderNo:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "eSOBackendService",
+      "serviceVersion" : "1.0",
+      "operationName" : "WorkOrderServiceCode_get"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "WorkOrderServiceCodeView",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">  <map inputpath=\"response_in\" outputpath=\"response_out\">    <map inputpath=\"WorkOrderServiceCode\" outputpath=\"WorkOrderServiceCodeView\">      <set-param inputpath=\"AssetID\" outputpath=\"AssetID\"/>      <set-param inputpath=\"ID\" outputpath=\"ID\"/>      <set-param inputpath=\"isDeleted\" outputpath=\"isDeleted\"/>      <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>      <set-param inputpath=\"ReqServiceCode\" outputpath=\"ReqServiceCode\"/>      <set-param inputpath=\"ServiceCode\" outputpath=\"ServiceCode\"/>      <set-param inputpath=\"ServiceCodePrio\" outputpath=\"ServiceCodePrio\"/>      <set-param inputpath=\"TechID\" outputpath=\"TechID\"/>      <set-param inputpath=\"WorkOrderNo\" outputpath=\"WorkOrderNo\"/>    </map>  </map></mapper>",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"WorkOrderServiceCodeView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOBackendService (1.0).WorkOrderServiceCode_get\",\"xy\":\"452 101\"}],\"linkDataArray\":[{\"from\":\"target\",\"to\":\"target:WorkOrderServiceCodeView\",\"fromPort\":\"target\",\"toPort\":\"target:WorkOrderServiceCodeView\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderServiceCodeView\",\"to\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"fromPort\":\"target:WorkOrderServiceCodeView\",\"toPort\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"to\":\"target:WorkOrderServiceCodeView:AssetID:\",\"fromPort\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"toPort\":\"target:WorkOrderServiceCodeView:AssetID:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"to\":\"target:WorkOrderServiceCodeView:ID:\",\"fromPort\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"toPort\":\"target:WorkOrderServiceCodeView:ID:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"to\":\"target:WorkOrderServiceCodeView:isDeleted:\",\"fromPort\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"toPort\":\"target:WorkOrderServiceCodeView:isDeleted:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"to\":\"target:WorkOrderServiceCodeView:ModifiedDate:\",\"fromPort\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"toPort\":\"target:WorkOrderServiceCodeView:ModifiedDate:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"to\":\"target:WorkOrderServiceCodeView:ReqServiceCode:\",\"fromPort\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"toPort\":\"target:WorkOrderServiceCodeView:ReqServiceCode:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"to\":\"target:WorkOrderServiceCodeView:ServiceCode:\",\"fromPort\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"toPort\":\"target:WorkOrderServiceCodeView:ServiceCode:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"to\":\"target:WorkOrderServiceCodeView:ServiceCodePrio:\",\"fromPort\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"toPort\":\"target:WorkOrderServiceCodeView:ServiceCodePrio:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"to\":\"target:WorkOrderServiceCodeView:TechID:\",\"fromPort\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"toPort\":\"target:WorkOrderServiceCodeView:TechID:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"to\":\"target:WorkOrderServiceCodeView:WorkOrderNo:\",\"fromPort\":\"target:WorkOrderServiceCodeView:t_p_fields\",\"toPort\":\"target:WorkOrderServiceCodeView:WorkOrderNo:\",\"visible\":true,\"common\":false},{\"from\":\"source\",\"to\":\"source:WorkOrderServiceCode\",\"fromPort\":\"source\",\"toPort\":\"source:WorkOrderServiceCode\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderServiceCode\",\"to\":\"source:WorkOrderServiceCode:t_p_parameters\",\"fromPort\":\"source:WorkOrderServiceCode\",\"toPort\":\"source:WorkOrderServiceCode:t_p_parameters\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderServiceCode:t_p_parameters\",\"to\":\"source:WorkOrderServiceCode:AssetID:\",\"fromPort\":\"source:WorkOrderServiceCode:t_p_parameters\",\"toPort\":\"source:WorkOrderServiceCode:AssetID:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderServiceCode:t_p_parameters\",\"to\":\"source:WorkOrderServiceCode:ID:\",\"fromPort\":\"source:WorkOrderServiceCode:t_p_parameters\",\"toPort\":\"source:WorkOrderServiceCode:ID:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderServiceCode:t_p_parameters\",\"to\":\"source:WorkOrderServiceCode:isDeleted:\",\"fromPort\":\"source:WorkOrderServiceCode:t_p_parameters\",\"toPort\":\"source:WorkOrderServiceCode:isDeleted:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderServiceCode:t_p_parameters\",\"to\":\"source:WorkOrderServiceCode:ModifiedDate:\",\"fromPort\":\"source:WorkOrderServiceCode:t_p_parameters\",\"toPort\":\"source:WorkOrderServiceCode:ModifiedDate:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderServiceCode:t_p_parameters\",\"to\":\"source:WorkOrderServiceCode:ReqServiceCode:\",\"fromPort\":\"source:WorkOrderServiceCode:t_p_parameters\",\"toPort\":\"source:WorkOrderServiceCode:ReqServiceCode:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderServiceCode:t_p_parameters\",\"to\":\"source:WorkOrderServiceCode:ServiceCode:\",\"fromPort\":\"source:WorkOrderServiceCode:t_p_parameters\",\"toPort\":\"source:WorkOrderServiceCode:ServiceCode:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderServiceCode:t_p_parameters\",\"to\":\"source:WorkOrderServiceCode:ServiceCodePrio:\",\"fromPort\":\"source:WorkOrderServiceCode:t_p_parameters\",\"toPort\":\"source:WorkOrderServiceCode:ServiceCodePrio:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderServiceCode:t_p_parameters\",\"to\":\"source:WorkOrderServiceCode:TechID:\",\"fromPort\":\"source:WorkOrderServiceCode:t_p_parameters\",\"toPort\":\"source:WorkOrderServiceCode:TechID:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderServiceCode:t_p_parameters\",\"to\":\"source:WorkOrderServiceCode:WorkOrderNo:\",\"fromPort\":\"source:WorkOrderServiceCode:t_p_parameters\",\"toPort\":\"source:WorkOrderServiceCode:WorkOrderNo:\",\"visible\":true,\"common\":false},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderServiceCode:AssetID:\",\"to\":\"target:WorkOrderServiceCodeView:AssetID:\",\"fromPort\":\"source:WorkOrderServiceCode:AssetID:\",\"toPort\":\"target:WorkOrderServiceCodeView:AssetID:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderServiceCode:ID:\",\"to\":\"target:WorkOrderServiceCodeView:ID:\",\"fromPort\":\"source:WorkOrderServiceCode:ID:\",\"toPort\":\"target:WorkOrderServiceCodeView:ID:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderServiceCode:isDeleted:\",\"to\":\"target:WorkOrderServiceCodeView:isDeleted:\",\"fromPort\":\"source:WorkOrderServiceCode:isDeleted:\",\"toPort\":\"target:WorkOrderServiceCodeView:isDeleted:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderServiceCode:ModifiedDate:\",\"to\":\"target:WorkOrderServiceCodeView:ModifiedDate:\",\"fromPort\":\"source:WorkOrderServiceCode:ModifiedDate:\",\"toPort\":\"target:WorkOrderServiceCodeView:ModifiedDate:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderServiceCode:ReqServiceCode:\",\"to\":\"target:WorkOrderServiceCodeView:ReqServiceCode:\",\"fromPort\":\"source:WorkOrderServiceCode:ReqServiceCode:\",\"toPort\":\"target:WorkOrderServiceCodeView:ReqServiceCode:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderServiceCode:ServiceCode:\",\"to\":\"target:WorkOrderServiceCodeView:ServiceCode:\",\"fromPort\":\"source:WorkOrderServiceCode:ServiceCode:\",\"toPort\":\"target:WorkOrderServiceCodeView:ServiceCode:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderServiceCode:ServiceCodePrio:\",\"to\":\"target:WorkOrderServiceCodeView:ServiceCodePrio:\",\"fromPort\":\"source:WorkOrderServiceCode:ServiceCodePrio:\",\"toPort\":\"target:WorkOrderServiceCodeView:ServiceCodePrio:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderServiceCode:TechID:\",\"to\":\"target:WorkOrderServiceCodeView:TechID:\",\"fromPort\":\"source:WorkOrderServiceCode:TechID:\",\"toPort\":\"target:WorkOrderServiceCodeView:TechID:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderServiceCode:WorkOrderNo:\",\"to\":\"target:WorkOrderServiceCodeView:WorkOrderNo:\",\"fromPort\":\"source:WorkOrderServiceCode:WorkOrderNo:\",\"toPort\":\"target:WorkOrderServiceCodeView:WorkOrderNo:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

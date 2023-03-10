@@ -1,0 +1,95 @@
+{
+  "operationConfig" : {
+    "name" : "eso_LocationTypeView_get1678",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"LocationTypeView\" outputpath=\"LocationTypeView\">\n            <set-param inputpath=\"AssetLoc_ID\" outputpath=\"AssetLocID\"/>\n            <set-param inputpath=\"Inactive\" outputpath=\"Inactive\"/>\n            <set-param inputpath=\"Location\" outputpath=\"Location\"/>\n            <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"LocationTypeView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOReferentialService (1.0).LocationTypeView_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:LocationTypeView:Inactive:\",\"to\":\"target:LocationTypeView:Inactive:\",\"fromPort\":\"source:LocationTypeView:Inactive:\",\"toPort\":\"target:LocationTypeView:Inactive:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:LocationTypeView:Location:\",\"to\":\"target:LocationTypeView:Location:\",\"fromPort\":\"source:LocationTypeView:Location:\",\"toPort\":\"target:LocationTypeView:Location:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:LocationTypeView:ModifiedDate:\",\"to\":\"target:LocationTypeView:ModifiedDate:\",\"fromPort\":\"source:LocationTypeView:ModifiedDate:\",\"toPort\":\"target:LocationTypeView:ModifiedDate:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:LocationTypeView:AssetLoc_ID:\",\"to\":\"target:LocationTypeView:AssetLocID:\",\"fromPort\":\"source:LocationTypeView:AssetLoc_ID:\",\"toPort\":\"target:LocationTypeView:AssetLocID:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "eSOReferentialService",
+      "serviceVersion" : "1.0",
+      "operationName" : "LocationTypeView_get"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "LocationTypeView",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"LocationTypeView\" outputpath=\"LocationTypeView\">\n            <set-param inputpath=\"AssetLoc_ID\" outputpath=\"AssetLocID\"/>\n            <set-param inputpath=\"Inactive\" outputpath=\"Inactive\"/>\n            <set-param inputpath=\"Location\" outputpath=\"Location\"/>\n            <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>\n        </map>\n    </map>\n</mapper>\n",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"LocationTypeView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOReferentialService (1.0).LocationTypeView_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:LocationTypeView:Inactive:\",\"to\":\"target:LocationTypeView:Inactive:\",\"fromPort\":\"source:LocationTypeView:Inactive:\",\"toPort\":\"target:LocationTypeView:Inactive:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:LocationTypeView:Location:\",\"to\":\"target:LocationTypeView:Location:\",\"fromPort\":\"source:LocationTypeView:Location:\",\"toPort\":\"target:LocationTypeView:Location:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:LocationTypeView:ModifiedDate:\",\"to\":\"target:LocationTypeView:ModifiedDate:\",\"fromPort\":\"source:LocationTypeView:ModifiedDate:\",\"toPort\":\"target:LocationTypeView:ModifiedDate:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:LocationTypeView:AssetLoc_ID:\",\"to\":\"target:LocationTypeView:AssetLocID:\",\"fromPort\":\"source:LocationTypeView:AssetLoc_ID:\",\"toPort\":\"target:LocationTypeView:AssetLocID:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

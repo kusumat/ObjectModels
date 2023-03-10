@@ -1,0 +1,99 @@
+{
+  "operationConfig" : {
+    "name" : "WorkOrderSystemLabor_get3127",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"KonyDeleteFlag\" outputpath=\"KonyDeleteFlag\"/>\n    </map>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">    <map inputpath=\"response_in\" outputpath=\"response_out\">        <map inputpath=\"records\" outputpath=\"WorkOrderSystemLabor\">            <set-param inputpath=\"DeviceCreateDate\" outputpath=\"DeviceCreateDat\"/>            <set-param inputpath=\"ID\" outputpath=\"ID\"/>            <set-param inputpath=\"KonyDeleteFlag\" outputpath=\"KonyDeleteFlag\"/>            <set-param inputpath=\"LastModified\" outputpath=\"LastModified\"/>            <set-param inputpath=\"Status\" outputpath=\"Status\"/>            <set-param inputpath=\"Value\" outputpath=\"Value\"/>            <set-param inputpath=\"WO_ID\" outputpath=\"WOID\"/>            <set-param inputpath=\"WorkOrderAsset_ID\" outputpath=\"WorkOrderAssetI\"/>        </map>    </map></mapper>",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"WorkOrderSystemLabor\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"eSOStagingService (1.0).WorkOrderSystemLabor_get\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderSystemLabor:KonyDeleteFlag:\",\"to\":\"target:KonyDeleteFlag:\",\"fromPort\":\"source:WorkOrderSystemLabor:KonyDeleteFlag:\",\"toPort\":\"target:KonyDeleteFlag:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"WorkOrderSystemLabor\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOStagingService (1.0).WorkOrderSystemLabor_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:WorkOrderSystemLabor:ID:\",\"to\":\"target:WorkOrderSystemLabor:ID:\",\"fromPort\":\"source:WorkOrderSystemLabor:ID:\",\"toPort\":\"target:WorkOrderSystemLabor:ID:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrderSystemLabor:KonyDeleteFlag:\",\"to\":\"target:WorkOrderSystemLabor:KonyDeleteFlag:\",\"fromPort\":\"source:WorkOrderSystemLabor:KonyDeleteFlag:\",\"toPort\":\"target:WorkOrderSystemLabor:KonyDeleteFlag:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrderSystemLabor:LastModified:\",\"to\":\"target:WorkOrderSystemLabor:LastModified:\",\"fromPort\":\"source:WorkOrderSystemLabor:LastModified:\",\"toPort\":\"target:WorkOrderSystemLabor:LastModified:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrderSystemLabor:Status:\",\"to\":\"target:WorkOrderSystemLabor:Status:\",\"fromPort\":\"source:WorkOrderSystemLabor:Status:\",\"toPort\":\"target:WorkOrderSystemLabor:Status:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrderSystemLabor:Value:\",\"to\":\"target:WorkOrderSystemLabor:Value:\",\"fromPort\":\"source:WorkOrderSystemLabor:Value:\",\"toPort\":\"target:WorkOrderSystemLabor:Value:\",\"visible\":true,\"common\":true},{\"from\":\"target\",\"to\":\"target:WorkOrderSystemLabor\",\"fromPort\":\"target\",\"toPort\":\"target:WorkOrderSystemLabor\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderSystemLabor\",\"to\":\"target:WorkOrderSystemLabor:t_p_fields\",\"fromPort\":\"target:WorkOrderSystemLabor\",\"toPort\":\"target:WorkOrderSystemLabor:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderSystemLabor:t_p_fields\",\"to\":\"target:WorkOrderSystemLabor:DeviceCreateDat:\",\"fromPort\":\"target:WorkOrderSystemLabor:t_p_fields\",\"toPort\":\"target:WorkOrderSystemLabor:DeviceCreateDat:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderSystemLabor:t_p_fields\",\"to\":\"target:WorkOrderSystemLabor:ID:\",\"fromPort\":\"target:WorkOrderSystemLabor:t_p_fields\",\"toPort\":\"target:WorkOrderSystemLabor:ID:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderSystemLabor:t_p_fields\",\"to\":\"target:WorkOrderSystemLabor:KonyDeleteFlag:\",\"fromPort\":\"target:WorkOrderSystemLabor:t_p_fields\",\"toPort\":\"target:WorkOrderSystemLabor:KonyDeleteFlag:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderSystemLabor:t_p_fields\",\"to\":\"target:WorkOrderSystemLabor:LastModified:\",\"fromPort\":\"target:WorkOrderSystemLabor:t_p_fields\",\"toPort\":\"target:WorkOrderSystemLabor:LastModified:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderSystemLabor:t_p_fields\",\"to\":\"target:WorkOrderSystemLabor:Status:\",\"fromPort\":\"target:WorkOrderSystemLabor:t_p_fields\",\"toPort\":\"target:WorkOrderSystemLabor:Status:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderSystemLabor:t_p_fields\",\"to\":\"target:WorkOrderSystemLabor:Value:\",\"fromPort\":\"target:WorkOrderSystemLabor:t_p_fields\",\"toPort\":\"target:WorkOrderSystemLabor:Value:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderSystemLabor:t_p_fields\",\"to\":\"target:WorkOrderSystemLabor:WOID:\",\"fromPort\":\"target:WorkOrderSystemLabor:t_p_fields\",\"toPort\":\"target:WorkOrderSystemLabor:WOID:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderSystemLabor:t_p_fields\",\"to\":\"target:WorkOrderSystemLabor:WorkOrderAssetI:\",\"fromPort\":\"target:WorkOrderSystemLabor:t_p_fields\",\"toPort\":\"target:WorkOrderSystemLabor:WorkOrderAssetI:\",\"visible\":true,\"common\":false},{\"from\":\"source\",\"to\":\"source:WorkOrderSystemLabor\",\"fromPort\":\"source\",\"toPort\":\"source:WorkOrderSystemLabor\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderSystemLabor\",\"to\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"fromPort\":\"source:WorkOrderSystemLabor\",\"toPort\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"to\":\"source:WorkOrderSystemLabor:DeviceCreateDate:\",\"fromPort\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"toPort\":\"source:WorkOrderSystemLabor:DeviceCreateDate:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"to\":\"source:WorkOrderSystemLabor:ID:\",\"fromPort\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"toPort\":\"source:WorkOrderSystemLabor:ID:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"to\":\"source:WorkOrderSystemLabor:KonyDeleteFlag:\",\"fromPort\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"toPort\":\"source:WorkOrderSystemLabor:KonyDeleteFlag:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"to\":\"source:WorkOrderSystemLabor:LastModified:\",\"fromPort\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"toPort\":\"source:WorkOrderSystemLabor:LastModified:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"to\":\"source:WorkOrderSystemLabor:Status:\",\"fromPort\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"toPort\":\"source:WorkOrderSystemLabor:Status:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"to\":\"source:WorkOrderSystemLabor:Value:\",\"fromPort\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"toPort\":\"source:WorkOrderSystemLabor:Value:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"to\":\"source:WorkOrderSystemLabor:WO_ID:\",\"fromPort\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"toPort\":\"source:WorkOrderSystemLabor:WO_ID:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"to\":\"source:WorkOrderSystemLabor:WorkOrderAsset_ID:\",\"fromPort\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"toPort\":\"source:WorkOrderSystemLabor:WorkOrderAsset_ID:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "eSOStagingService",
+      "serviceVersion" : "1.0",
+      "operationName" : "WorkOrderSystemLabor_get"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "WorkOrderSystemLabor",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : true,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"KonyDeleteFlag\" outputpath=\"KonyDeleteFlag\"/>\n    </map>\n</mapper>\n",
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">    <map inputpath=\"response_in\" outputpath=\"response_out\">        <map inputpath=\"records\" outputpath=\"WorkOrderSystemLabor\">            <set-param inputpath=\"DeviceCreateDate\" outputpath=\"DeviceCreateDat\"/>            <set-param inputpath=\"ID\" outputpath=\"ID\"/>            <set-param inputpath=\"KonyDeleteFlag\" outputpath=\"KonyDeleteFlag\"/>            <set-param inputpath=\"LastModified\" outputpath=\"LastModified\"/>            <set-param inputpath=\"Status\" outputpath=\"Status\"/>            <set-param inputpath=\"Value\" outputpath=\"Value\"/>            <set-param inputpath=\"WO_ID\" outputpath=\"WOID\"/>            <set-param inputpath=\"WorkOrderAsset_ID\" outputpath=\"WorkOrderAssetI\"/>        </map>    </map></mapper>",
+      "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"WorkOrderSystemLabor\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"eSOStagingService (1.0).WorkOrderSystemLabor_get\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrderSystemLabor:KonyDeleteFlag:\",\"to\":\"target:KonyDeleteFlag:\",\"fromPort\":\"source:WorkOrderSystemLabor:KonyDeleteFlag:\",\"toPort\":\"target:KonyDeleteFlag:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"WorkOrderSystemLabor\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOStagingService (1.0).WorkOrderSystemLabor_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:WorkOrderSystemLabor:ID:\",\"to\":\"target:WorkOrderSystemLabor:ID:\",\"fromPort\":\"source:WorkOrderSystemLabor:ID:\",\"toPort\":\"target:WorkOrderSystemLabor:ID:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrderSystemLabor:KonyDeleteFlag:\",\"to\":\"target:WorkOrderSystemLabor:KonyDeleteFlag:\",\"fromPort\":\"source:WorkOrderSystemLabor:KonyDeleteFlag:\",\"toPort\":\"target:WorkOrderSystemLabor:KonyDeleteFlag:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrderSystemLabor:LastModified:\",\"to\":\"target:WorkOrderSystemLabor:LastModified:\",\"fromPort\":\"source:WorkOrderSystemLabor:LastModified:\",\"toPort\":\"target:WorkOrderSystemLabor:LastModified:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrderSystemLabor:Status:\",\"to\":\"target:WorkOrderSystemLabor:Status:\",\"fromPort\":\"source:WorkOrderSystemLabor:Status:\",\"toPort\":\"target:WorkOrderSystemLabor:Status:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrderSystemLabor:Value:\",\"to\":\"target:WorkOrderSystemLabor:Value:\",\"fromPort\":\"source:WorkOrderSystemLabor:Value:\",\"toPort\":\"target:WorkOrderSystemLabor:Value:\",\"visible\":true,\"common\":true},{\"from\":\"target\",\"to\":\"target:WorkOrderSystemLabor\",\"fromPort\":\"target\",\"toPort\":\"target:WorkOrderSystemLabor\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderSystemLabor\",\"to\":\"target:WorkOrderSystemLabor:t_p_fields\",\"fromPort\":\"target:WorkOrderSystemLabor\",\"toPort\":\"target:WorkOrderSystemLabor:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderSystemLabor:t_p_fields\",\"to\":\"target:WorkOrderSystemLabor:DeviceCreateDat:\",\"fromPort\":\"target:WorkOrderSystemLabor:t_p_fields\",\"toPort\":\"target:WorkOrderSystemLabor:DeviceCreateDat:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderSystemLabor:t_p_fields\",\"to\":\"target:WorkOrderSystemLabor:ID:\",\"fromPort\":\"target:WorkOrderSystemLabor:t_p_fields\",\"toPort\":\"target:WorkOrderSystemLabor:ID:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderSystemLabor:t_p_fields\",\"to\":\"target:WorkOrderSystemLabor:KonyDeleteFlag:\",\"fromPort\":\"target:WorkOrderSystemLabor:t_p_fields\",\"toPort\":\"target:WorkOrderSystemLabor:KonyDeleteFlag:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderSystemLabor:t_p_fields\",\"to\":\"target:WorkOrderSystemLabor:LastModified:\",\"fromPort\":\"target:WorkOrderSystemLabor:t_p_fields\",\"toPort\":\"target:WorkOrderSystemLabor:LastModified:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderSystemLabor:t_p_fields\",\"to\":\"target:WorkOrderSystemLabor:Status:\",\"fromPort\":\"target:WorkOrderSystemLabor:t_p_fields\",\"toPort\":\"target:WorkOrderSystemLabor:Status:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderSystemLabor:t_p_fields\",\"to\":\"target:WorkOrderSystemLabor:Value:\",\"fromPort\":\"target:WorkOrderSystemLabor:t_p_fields\",\"toPort\":\"target:WorkOrderSystemLabor:Value:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderSystemLabor:t_p_fields\",\"to\":\"target:WorkOrderSystemLabor:WOID:\",\"fromPort\":\"target:WorkOrderSystemLabor:t_p_fields\",\"toPort\":\"target:WorkOrderSystemLabor:WOID:\",\"visible\":true,\"common\":false},{\"from\":\"target:WorkOrderSystemLabor:t_p_fields\",\"to\":\"target:WorkOrderSystemLabor:WorkOrderAssetI:\",\"fromPort\":\"target:WorkOrderSystemLabor:t_p_fields\",\"toPort\":\"target:WorkOrderSystemLabor:WorkOrderAssetI:\",\"visible\":true,\"common\":false},{\"from\":\"source\",\"to\":\"source:WorkOrderSystemLabor\",\"fromPort\":\"source\",\"toPort\":\"source:WorkOrderSystemLabor\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderSystemLabor\",\"to\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"fromPort\":\"source:WorkOrderSystemLabor\",\"toPort\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"to\":\"source:WorkOrderSystemLabor:DeviceCreateDate:\",\"fromPort\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"toPort\":\"source:WorkOrderSystemLabor:DeviceCreateDate:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"to\":\"source:WorkOrderSystemLabor:ID:\",\"fromPort\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"toPort\":\"source:WorkOrderSystemLabor:ID:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"to\":\"source:WorkOrderSystemLabor:KonyDeleteFlag:\",\"fromPort\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"toPort\":\"source:WorkOrderSystemLabor:KonyDeleteFlag:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"to\":\"source:WorkOrderSystemLabor:LastModified:\",\"fromPort\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"toPort\":\"source:WorkOrderSystemLabor:LastModified:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"to\":\"source:WorkOrderSystemLabor:Status:\",\"fromPort\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"toPort\":\"source:WorkOrderSystemLabor:Status:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"to\":\"source:WorkOrderSystemLabor:Value:\",\"fromPort\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"toPort\":\"source:WorkOrderSystemLabor:Value:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"to\":\"source:WorkOrderSystemLabor:WO_ID:\",\"fromPort\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"toPort\":\"source:WorkOrderSystemLabor:WO_ID:\",\"visible\":true,\"common\":false},{\"from\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"to\":\"source:WorkOrderSystemLabor:WorkOrderAsset_ID:\",\"fromPort\":\"source:WorkOrderSystemLabor:t_p_parameters\",\"toPort\":\"source:WorkOrderSystemLabor:WorkOrderAsset_ID:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : true,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : false,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

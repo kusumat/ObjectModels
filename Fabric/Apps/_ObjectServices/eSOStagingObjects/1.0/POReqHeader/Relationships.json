@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "POReqHeader",
+  "targetObject" : "POReqLines",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "POReqHeaderID",
+    "etag" : "4f2424c8-2691-4dae-ae0c-a0ce0e2451d6"
+  } ],
+  "name" : "POReqHeader_POReqLines",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

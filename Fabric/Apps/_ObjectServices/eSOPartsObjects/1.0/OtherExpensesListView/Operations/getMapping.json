@@ -1,0 +1,95 @@
+{
+  "operationConfig" : {
+    "name" : "dbo_OtherExpensesListVie_get6528",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">      <map inputpath=\"response_in\" outputpath=\"response_out\">            <map inputpath=\"OtherExpensesListVie\" outputpath=\"OtherExpensesListView\">                  <set-param inputpath=\"isDeleted\" outputpath=\"isDeleted\"/>                  <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>                  <set-param inputpath=\"OCCode\" outputpath=\"OCCode\"/>                  <set-param inputpath=\"OCRate\" outputpath=\"OCRate\"/>                  <set-param inputpath=\"OtherChargeDesc\" outputpath=\"OtherChargeDesc\"/>            </map>      </map></mapper>",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"OtherExpensesListView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOPartsService (1.0).OtherExpensesListVie_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:OtherExpensesListVie:isDeleted:\",\"to\":\"target:OtherExpensesListView:isDeleted:\",\"fromPort\":\"source:OtherExpensesListVie:isDeleted:\",\"toPort\":\"target:OtherExpensesListView:isDeleted:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:OtherExpensesListVie:ModifiedDate:\",\"to\":\"target:OtherExpensesListView:ModifiedDate:\",\"fromPort\":\"source:OtherExpensesListVie:ModifiedDate:\",\"toPort\":\"target:OtherExpensesListView:ModifiedDate:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:OtherExpensesListVie:OCCode:\",\"to\":\"target:OtherExpensesListView:OCCode:\",\"fromPort\":\"source:OtherExpensesListVie:OCCode:\",\"toPort\":\"target:OtherExpensesListView:OCCode:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:OtherExpensesListVie:OCRate:\",\"to\":\"target:OtherExpensesListView:OCRate:\",\"fromPort\":\"source:OtherExpensesListVie:OCRate:\",\"toPort\":\"target:OtherExpensesListView:OCRate:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:OtherExpensesListVie:OtherChargeDesc:\",\"to\":\"target:OtherExpensesListView:OtherChargeDesc:\",\"fromPort\":\"source:OtherExpensesListVie:OtherChargeDesc:\",\"toPort\":\"target:OtherExpensesListView:OtherChargeDesc:\"},{\"from\":\"target\",\"to\":\"target:OtherExpensesListView\",\"fromPort\":\"target\",\"toPort\":\"target:OtherExpensesListView\",\"visible\":true,\"common\":false},{\"from\":\"target:OtherExpensesListView\",\"to\":\"target:OtherExpensesListView:t_p_fields\",\"fromPort\":\"target:OtherExpensesListView\",\"toPort\":\"target:OtherExpensesListView:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:OtherExpensesListView:t_p_fields\",\"to\":\"target:OtherExpensesListView:isDeleted:\",\"fromPort\":\"target:OtherExpensesListView:t_p_fields\",\"toPort\":\"target:OtherExpensesListView:isDeleted:\",\"visible\":true,\"common\":false},{\"from\":\"target:OtherExpensesListView:t_p_fields\",\"to\":\"target:OtherExpensesListView:ModifiedDate:\",\"fromPort\":\"target:OtherExpensesListView:t_p_fields\",\"toPort\":\"target:OtherExpensesListView:ModifiedDate:\",\"visible\":true,\"common\":false},{\"from\":\"target:OtherExpensesListView:t_p_fields\",\"to\":\"target:OtherExpensesListView:OCCode:\",\"fromPort\":\"target:OtherExpensesListView:t_p_fields\",\"toPort\":\"target:OtherExpensesListView:OCCode:\",\"visible\":true,\"common\":false},{\"from\":\"target:OtherExpensesListView:t_p_fields\",\"to\":\"target:OtherExpensesListView:OCRate:\",\"fromPort\":\"target:OtherExpensesListView:t_p_fields\",\"toPort\":\"target:OtherExpensesListView:OCRate:\",\"visible\":true,\"common\":false},{\"from\":\"target:OtherExpensesListView:t_p_fields\",\"to\":\"target:OtherExpensesListView:OtherChargeDesc:\",\"fromPort\":\"target:OtherExpensesListView:t_p_fields\",\"toPort\":\"target:OtherExpensesListView:OtherChargeDesc:\",\"visible\":true,\"common\":false},{\"from\":\"source\",\"to\":\"source:OtherExpensesListVie\",\"fromPort\":\"source\",\"toPort\":\"source:OtherExpensesListVie\",\"visible\":true,\"common\":false},{\"from\":\"source:OtherExpensesListVie\",\"to\":\"source:OtherExpensesListVie:t_p_parameters\",\"fromPort\":\"source:OtherExpensesListVie\",\"toPort\":\"source:OtherExpensesListVie:t_p_parameters\",\"visible\":true,\"common\":false},{\"from\":\"source:OtherExpensesListVie:t_p_parameters\",\"to\":\"source:OtherExpensesListVie:isDeleted:\",\"fromPort\":\"source:OtherExpensesListVie:t_p_parameters\",\"toPort\":\"source:OtherExpensesListVie:isDeleted:\",\"visible\":true,\"common\":false},{\"from\":\"source:OtherExpensesListVie:t_p_parameters\",\"to\":\"source:OtherExpensesListVie:ModifiedDate:\",\"fromPort\":\"source:OtherExpensesListVie:t_p_parameters\",\"toPort\":\"source:OtherExpensesListVie:ModifiedDate:\",\"visible\":true,\"common\":false},{\"from\":\"source:OtherExpensesListVie:t_p_parameters\",\"to\":\"source:OtherExpensesListVie:OCCode:\",\"fromPort\":\"source:OtherExpensesListVie:t_p_parameters\",\"toPort\":\"source:OtherExpensesListVie:OCCode:\",\"visible\":true,\"common\":false},{\"from\":\"source:OtherExpensesListVie:t_p_parameters\",\"to\":\"source:OtherExpensesListVie:OCRate:\",\"fromPort\":\"source:OtherExpensesListVie:t_p_parameters\",\"toPort\":\"source:OtherExpensesListVie:OCRate:\",\"visible\":true,\"common\":false},{\"from\":\"source:OtherExpensesListVie:t_p_parameters\",\"to\":\"source:OtherExpensesListVie:OtherChargeDesc:\",\"fromPort\":\"source:OtherExpensesListVie:t_p_parameters\",\"toPort\":\"source:OtherExpensesListVie:OtherChargeDesc:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "eSOPartsService",
+      "serviceVersion" : "1.0",
+      "operationName" : "OtherExpensesListVie_get"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "OtherExpensesListView",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : true,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">      <map inputpath=\"response_in\" outputpath=\"response_out\">            <map inputpath=\"OtherExpensesListVie\" outputpath=\"OtherExpensesListView\">                  <set-param inputpath=\"isDeleted\" outputpath=\"isDeleted\"/>                  <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>                  <set-param inputpath=\"OCCode\" outputpath=\"OCCode\"/>                  <set-param inputpath=\"OCRate\" outputpath=\"OCRate\"/>                  <set-param inputpath=\"OtherChargeDesc\" outputpath=\"OtherChargeDesc\"/>            </map>      </map></mapper>",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"OtherExpensesListView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOPartsService (1.0).OtherExpensesListVie_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:OtherExpensesListVie:isDeleted:\",\"to\":\"target:OtherExpensesListView:isDeleted:\",\"fromPort\":\"source:OtherExpensesListVie:isDeleted:\",\"toPort\":\"target:OtherExpensesListView:isDeleted:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:OtherExpensesListVie:ModifiedDate:\",\"to\":\"target:OtherExpensesListView:ModifiedDate:\",\"fromPort\":\"source:OtherExpensesListVie:ModifiedDate:\",\"toPort\":\"target:OtherExpensesListView:ModifiedDate:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:OtherExpensesListVie:OCCode:\",\"to\":\"target:OtherExpensesListView:OCCode:\",\"fromPort\":\"source:OtherExpensesListVie:OCCode:\",\"toPort\":\"target:OtherExpensesListView:OCCode:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:OtherExpensesListVie:OCRate:\",\"to\":\"target:OtherExpensesListView:OCRate:\",\"fromPort\":\"source:OtherExpensesListVie:OCRate:\",\"toPort\":\"target:OtherExpensesListView:OCRate:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:OtherExpensesListVie:OtherChargeDesc:\",\"to\":\"target:OtherExpensesListView:OtherChargeDesc:\",\"fromPort\":\"source:OtherExpensesListVie:OtherChargeDesc:\",\"toPort\":\"target:OtherExpensesListView:OtherChargeDesc:\"},{\"from\":\"target\",\"to\":\"target:OtherExpensesListView\",\"fromPort\":\"target\",\"toPort\":\"target:OtherExpensesListView\",\"visible\":true,\"common\":false},{\"from\":\"target:OtherExpensesListView\",\"to\":\"target:OtherExpensesListView:t_p_fields\",\"fromPort\":\"target:OtherExpensesListView\",\"toPort\":\"target:OtherExpensesListView:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:OtherExpensesListView:t_p_fields\",\"to\":\"target:OtherExpensesListView:isDeleted:\",\"fromPort\":\"target:OtherExpensesListView:t_p_fields\",\"toPort\":\"target:OtherExpensesListView:isDeleted:\",\"visible\":true,\"common\":false},{\"from\":\"target:OtherExpensesListView:t_p_fields\",\"to\":\"target:OtherExpensesListView:ModifiedDate:\",\"fromPort\":\"target:OtherExpensesListView:t_p_fields\",\"toPort\":\"target:OtherExpensesListView:ModifiedDate:\",\"visible\":true,\"common\":false},{\"from\":\"target:OtherExpensesListView:t_p_fields\",\"to\":\"target:OtherExpensesListView:OCCode:\",\"fromPort\":\"target:OtherExpensesListView:t_p_fields\",\"toPort\":\"target:OtherExpensesListView:OCCode:\",\"visible\":true,\"common\":false},{\"from\":\"target:OtherExpensesListView:t_p_fields\",\"to\":\"target:OtherExpensesListView:OCRate:\",\"fromPort\":\"target:OtherExpensesListView:t_p_fields\",\"toPort\":\"target:OtherExpensesListView:OCRate:\",\"visible\":true,\"common\":false},{\"from\":\"target:OtherExpensesListView:t_p_fields\",\"to\":\"target:OtherExpensesListView:OtherChargeDesc:\",\"fromPort\":\"target:OtherExpensesListView:t_p_fields\",\"toPort\":\"target:OtherExpensesListView:OtherChargeDesc:\",\"visible\":true,\"common\":false},{\"from\":\"source\",\"to\":\"source:OtherExpensesListVie\",\"fromPort\":\"source\",\"toPort\":\"source:OtherExpensesListVie\",\"visible\":true,\"common\":false},{\"from\":\"source:OtherExpensesListVie\",\"to\":\"source:OtherExpensesListVie:t_p_parameters\",\"fromPort\":\"source:OtherExpensesListVie\",\"toPort\":\"source:OtherExpensesListVie:t_p_parameters\",\"visible\":true,\"common\":false},{\"from\":\"source:OtherExpensesListVie:t_p_parameters\",\"to\":\"source:OtherExpensesListVie:isDeleted:\",\"fromPort\":\"source:OtherExpensesListVie:t_p_parameters\",\"toPort\":\"source:OtherExpensesListVie:isDeleted:\",\"visible\":true,\"common\":false},{\"from\":\"source:OtherExpensesListVie:t_p_parameters\",\"to\":\"source:OtherExpensesListVie:ModifiedDate:\",\"fromPort\":\"source:OtherExpensesListVie:t_p_parameters\",\"toPort\":\"source:OtherExpensesListVie:ModifiedDate:\",\"visible\":true,\"common\":false},{\"from\":\"source:OtherExpensesListVie:t_p_parameters\",\"to\":\"source:OtherExpensesListVie:OCCode:\",\"fromPort\":\"source:OtherExpensesListVie:t_p_parameters\",\"toPort\":\"source:OtherExpensesListVie:OCCode:\",\"visible\":true,\"common\":false},{\"from\":\"source:OtherExpensesListVie:t_p_parameters\",\"to\":\"source:OtherExpensesListVie:OCRate:\",\"fromPort\":\"source:OtherExpensesListVie:t_p_parameters\",\"toPort\":\"source:OtherExpensesListVie:OCRate:\",\"visible\":true,\"common\":false},{\"from\":\"source:OtherExpensesListVie:t_p_parameters\",\"to\":\"source:OtherExpensesListVie:OtherChargeDesc:\",\"fromPort\":\"source:OtherExpensesListVie:t_p_parameters\",\"toPort\":\"source:OtherExpensesListVie:OtherChargeDesc:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : true,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

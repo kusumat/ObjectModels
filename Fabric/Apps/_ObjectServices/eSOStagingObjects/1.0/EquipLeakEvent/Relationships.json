@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "EquipLeakEvent",
+  "targetObject" : "EquipLeakEventCode",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "LeakEventID",
+    "etag" : "1561cdf8-fbfb-4461-bed8-e1ab92a5fd4f"
+  } ],
+  "name" : "EquipLeakEvent_EquipLeakEventCode",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

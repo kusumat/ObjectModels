@@ -1,0 +1,448 @@
+{
+  "operationConfig" : {
+    "name" : "WorkOrder_create1120",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"AdrsCode\" outputpath=\"AdrsCode\"/>\n        <set-param inputpath=\"ApprovedBy\" outputpath=\"ApprovedBy\"/>\n        <set-param inputpath=\"ApprovedOn\" outputpath=\"ApprovedOn\"/>\n        <set-param inputpath=\"ApptNotes\" outputpath=\"ApptNotes\"/>\n        <set-param inputpath=\"ApptStatus\" outputpath=\"ApptStatus\"/>\n        <set-param inputpath=\"Comments\" outputpath=\"Comments\"/>\n        <set-param inputpath=\"CustNo\" outputpath=\"CustNo\"/>\n        <set-param inputpath=\"CustomerPO\" outputpath=\"CustomerPO\"/>\n        <set-param inputpath=\"CustomerSignatu\" outputpath=\"CustomerSignature\"/>\n        <set-param inputpath=\"DeviceCreateDat\" outputpath=\"DeviceCreateDate\"/>\n        <set-param inputpath=\"Duration\" outputpath=\"Duration\"/>\n        <set-param inputpath=\"EnrouteStart\" outputpath=\"EnrouteStart\"/>\n        <set-param inputpath=\"ETA\" outputpath=\"ETA\"/>\n        <set-param inputpath=\"FlowType\" outputpath=\"FlowType\"/>\n        <set-param inputpath=\"Followup\" outputpath=\"Followup\"/>\n        <set-param inputpath=\"KonyDeleteFlag\" outputpath=\"KonyDeleteFlag\"/>\n        <set-param inputpath=\"LastModified\" outputpath=\"LastModified\"/>\n        <set-param inputpath=\"LunchTaken\" outputpath=\"LunchTaken\"/>\n        <set-param inputpath=\"LunchTime\" outputpath=\"LunchTime\"/>\n        <set-param inputpath=\"MobileVersion\" outputpath=\"MobileVersion\"/>\n        <set-param inputpath=\"NTEIncreaseBy\" outputpath=\"NTEIncreaseBy\"/>\n        <set-param inputpath=\"NTEIncreaseTo\" outputpath=\"NTEIncreaseTo\"/>\n        <set-param inputpath=\"Onsite\" outputpath=\"Onsite\"/>\n        <set-param inputpath=\"OnSiteStart\" outputpath=\"OnSiteStart\"/>\n        <set-param inputpath=\"OnSiteStop\" outputpath=\"OnSiteStop\"/>\n        <set-param inputpath=\"OrderWorked\" outputpath=\"OrderWorked\"/>\n        <set-param inputpath=\"OrigEnrouteStart\" outputpath=\"OrigEnrouteStart\"/>\n        <set-param inputpath=\"OrigOnSiteStart\" outputpath=\"OrigOnSiteStart\"/>\n        <set-param inputpath=\"OtherBillable\" outputpath=\"OtherBillable\"/>\n        <set-param inputpath=\"OverTime\" outputpath=\"OverTime\"/>\n        <set-param inputpath=\"Priority\" outputpath=\"Priority\"/>\n        <set-param inputpath=\"SendVia\" outputpath=\"SendVia\"/>\n        <set-param inputpath=\"SendViaText\" outputpath=\"SendViaText\"/>\n        <set-param inputpath=\"SignedBy\" outputpath=\"SignedBy\"/>\n        <set-param inputpath=\"SiteBarcode\" outputpath=\"SiteBarcode\"/>\n        <set-param inputpath=\"Status\" outputpath=\"Status\"/>\n        <set-param inputpath=\"TechID\" outputpath=\"TechID\"/>\n        <set-param inputpath=\"TravelFrom\" outputpath=\"TravelFrom\"/>\n        <set-param inputpath=\"TravelTo\" outputpath=\"TravelTo\"/>\n        <set-param inputpath=\"WODate\" outputpath=\"WODate\"/>\n        <set-param inputpath=\"WorkOrderNo\" outputpath=\"WorkOrderNo\"/>\n    </map>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"WorkOrder\" outputpath=\"WorkOrder\">\n            <set-param inputpath=\"AdrsCode\" outputpath=\"AdrsCode\"/>\n            <set-param inputpath=\"ApprovedBy\" outputpath=\"ApprovedBy\"/>\n            <set-param inputpath=\"ApprovedOn\" outputpath=\"ApprovedOn\"/>\n            <set-param inputpath=\"ApptNotes\" outputpath=\"ApptNotes\"/>\n            <set-param inputpath=\"ApptStatus\" outputpath=\"ApptStatus\"/>\n            <set-param inputpath=\"Comments\" outputpath=\"Comments\"/>\n            <set-param inputpath=\"CustNo\" outputpath=\"CustNo\"/>\n            <set-param inputpath=\"CustomerPO\" outputpath=\"CustomerPO\"/>\n            <set-param inputpath=\"CustomerSignature\" outputpath=\"CustomerSignatu\"/>\n            <set-param inputpath=\"DeviceCreateDate\" outputpath=\"DeviceCreateDat\"/>\n            <set-param inputpath=\"Duration\" outputpath=\"Duration\"/>\n            <set-param inputpath=\"EnrouteStart\" outputpath=\"EnrouteStart\"/>\n            <set-param inputpath=\"ETA\" outputpath=\"ETA\"/>\n            <set-param inputpath=\"FlowType\" outputpath=\"FlowType\"/>\n            <set-param inputpath=\"Followup\" outputpath=\"Followup\"/>\n            <set-param inputpath=\"ID\" outputpath=\"ID\"/>\n            <set-param inputpath=\"KonyDeleteFlag\" outputpath=\"KonyDeleteFlag\"/>\n            <set-param inputpath=\"LastModified\" outputpath=\"LastModified\"/>\n            <set-param inputpath=\"LunchTaken\" outputpath=\"LunchTaken\"/>\n            <set-param inputpath=\"LunchTime\" outputpath=\"LunchTime\"/>\n            <set-param inputpath=\"MobileVersion\" outputpath=\"MobileVersion\"/>\n            <set-param inputpath=\"NTEIncreaseBy\" outputpath=\"NTEIncreaseBy\"/>\n            <set-param inputpath=\"NTEIncreaseTo\" outputpath=\"NTEIncreaseTo\"/>\n            <set-param inputpath=\"Onsite\" outputpath=\"Onsite\"/>\n            <set-param inputpath=\"OnSiteStart\" outputpath=\"OnSiteStart\"/>\n            <set-param inputpath=\"OnSiteStop\" outputpath=\"OnSiteStop\"/>\n            <set-param inputpath=\"OrderWorked\" outputpath=\"OrderWorked\"/>\n            <set-param inputpath=\"OrigEnrouteStart\" outputpath=\"OrigEnrouteStart\"/>\n            <set-param inputpath=\"OrigOnSiteStart\" outputpath=\"OrigOnSiteStart\"/>\n            <set-param inputpath=\"OtherBillable\" outputpath=\"OtherBillable\"/>\n            <set-param inputpath=\"OverTime\" outputpath=\"OverTime\"/>\n            <set-param inputpath=\"Priority\" outputpath=\"Priority\"/>\n            <set-param inputpath=\"SendVia\" outputpath=\"SendVia\"/>\n            <set-param inputpath=\"SendViaText\" outputpath=\"SendViaText\"/>\n            <set-param inputpath=\"SignedBy\" outputpath=\"SignedBy\"/>\n            <set-param inputpath=\"SiteBarcode\" outputpath=\"SiteBarcode\"/>\n            <set-param inputpath=\"Status\" outputpath=\"Status\"/>\n            <set-param inputpath=\"TechID\" outputpath=\"TechID\"/>\n            <set-param inputpath=\"TravelFrom\" outputpath=\"TravelFrom\"/>\n            <set-param inputpath=\"TravelTo\" outputpath=\"TravelTo\"/>\n            <set-param inputpath=\"WODate\" outputpath=\"WODate\"/>\n            <set-param inputpath=\"WorkOrderNo\" outputpath=\"WorkOrderNo\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"WorkOrder\",\"xy\":\"507 97\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"eSOStagingService (1.0).WorkOrder_create\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:AdrsCode:\",\"to\":\"target:AdrsCode:\",\"fromPort\":\"source:WorkOrder:AdrsCode:\",\"toPort\":\"target:AdrsCode:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:ApprovedBy:\",\"to\":\"target:ApprovedBy:\",\"fromPort\":\"source:WorkOrder:ApprovedBy:\",\"toPort\":\"target:ApprovedBy:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:ApprovedOn:\",\"to\":\"target:ApprovedOn:\",\"fromPort\":\"source:WorkOrder:ApprovedOn:\",\"toPort\":\"target:ApprovedOn:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:ApptNotes:\",\"to\":\"target:ApptNotes:\",\"fromPort\":\"source:WorkOrder:ApptNotes:\",\"toPort\":\"target:ApptNotes:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:ApptStatus:\",\"to\":\"target:ApptStatus:\",\"fromPort\":\"source:WorkOrder:ApptStatus:\",\"toPort\":\"target:ApptStatus:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:Comments:\",\"to\":\"target:Comments:\",\"fromPort\":\"source:WorkOrder:Comments:\",\"toPort\":\"target:Comments:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:CustNo:\",\"to\":\"target:CustNo:\",\"fromPort\":\"source:WorkOrder:CustNo:\",\"toPort\":\"target:CustNo:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:CustomerPO:\",\"to\":\"target:CustomerPO:\",\"fromPort\":\"source:WorkOrder:CustomerPO:\",\"toPort\":\"target:CustomerPO:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:DeviceCreateDat:\",\"to\":\"target:DeviceCreateDate:\",\"fromPort\":\"source:WorkOrder:DeviceCreateDat:\",\"toPort\":\"target:DeviceCreateDate:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:Duration:\",\"to\":\"target:Duration:\",\"fromPort\":\"source:WorkOrder:Duration:\",\"toPort\":\"target:Duration:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:EnrouteStart:\",\"to\":\"target:EnrouteStart:\",\"fromPort\":\"source:WorkOrder:EnrouteStart:\",\"toPort\":\"target:EnrouteStart:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:ETA:\",\"to\":\"target:ETA:\",\"fromPort\":\"source:WorkOrder:ETA:\",\"toPort\":\"target:ETA:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:FlowType:\",\"to\":\"target:FlowType:\",\"fromPort\":\"source:WorkOrder:FlowType:\",\"toPort\":\"target:FlowType:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:Followup:\",\"to\":\"target:Followup:\",\"fromPort\":\"source:WorkOrder:Followup:\",\"toPort\":\"target:Followup:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:KonyDeleteFlag:\",\"to\":\"target:KonyDeleteFlag:\",\"fromPort\":\"source:WorkOrder:KonyDeleteFlag:\",\"toPort\":\"target:KonyDeleteFlag:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:LastModified:\",\"to\":\"target:LastModified:\",\"fromPort\":\"source:WorkOrder:LastModified:\",\"toPort\":\"target:LastModified:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:LunchTaken:\",\"to\":\"target:LunchTaken:\",\"fromPort\":\"source:WorkOrder:LunchTaken:\",\"toPort\":\"target:LunchTaken:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:LunchTime:\",\"to\":\"target:LunchTime:\",\"fromPort\":\"source:WorkOrder:LunchTime:\",\"toPort\":\"target:LunchTime:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:MobileVersion:\",\"to\":\"target:MobileVersion:\",\"fromPort\":\"source:WorkOrder:MobileVersion:\",\"toPort\":\"target:MobileVersion:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:NTEIncreaseBy:\",\"to\":\"target:NTEIncreaseBy:\",\"fromPort\":\"source:WorkOrder:NTEIncreaseBy:\",\"toPort\":\"target:NTEIncreaseBy:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:NTEIncreaseTo:\",\"to\":\"target:NTEIncreaseTo:\",\"fromPort\":\"source:WorkOrder:NTEIncreaseTo:\",\"toPort\":\"target:NTEIncreaseTo:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:Onsite:\",\"to\":\"target:Onsite:\",\"fromPort\":\"source:WorkOrder:Onsite:\",\"toPort\":\"target:Onsite:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:OnSiteStart:\",\"to\":\"target:OnSiteStart:\",\"fromPort\":\"source:WorkOrder:OnSiteStart:\",\"toPort\":\"target:OnSiteStart:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:OnSiteStop:\",\"to\":\"target:OnSiteStop:\",\"fromPort\":\"source:WorkOrder:OnSiteStop:\",\"toPort\":\"target:OnSiteStop:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:OrderWorked:\",\"to\":\"target:OrderWorked:\",\"fromPort\":\"source:WorkOrder:OrderWorked:\",\"toPort\":\"target:OrderWorked:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:OrigEnrouteStart:\",\"to\":\"target:OrigEnrouteStart:\",\"fromPort\":\"source:WorkOrder:OrigEnrouteStart:\",\"toPort\":\"target:OrigEnrouteStart:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:OrigOnSiteStart:\",\"to\":\"target:OrigOnSiteStart:\",\"fromPort\":\"source:WorkOrder:OrigOnSiteStart:\",\"toPort\":\"target:OrigOnSiteStart:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:OtherBillable:\",\"to\":\"target:OtherBillable:\",\"fromPort\":\"source:WorkOrder:OtherBillable:\",\"toPort\":\"target:OtherBillable:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:OverTime:\",\"to\":\"target:OverTime:\",\"fromPort\":\"source:WorkOrder:OverTime:\",\"toPort\":\"target:OverTime:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:Priority:\",\"to\":\"target:Priority:\",\"fromPort\":\"source:WorkOrder:Priority:\",\"toPort\":\"target:Priority:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:SendVia:\",\"to\":\"target:SendVia:\",\"fromPort\":\"source:WorkOrder:SendVia:\",\"toPort\":\"target:SendVia:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:SendViaText:\",\"to\":\"target:SendViaText:\",\"fromPort\":\"source:WorkOrder:SendViaText:\",\"toPort\":\"target:SendViaText:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:SignedBy:\",\"to\":\"target:SignedBy:\",\"fromPort\":\"source:WorkOrder:SignedBy:\",\"toPort\":\"target:SignedBy:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:SiteBarcode:\",\"to\":\"target:SiteBarcode:\",\"fromPort\":\"source:WorkOrder:SiteBarcode:\",\"toPort\":\"target:SiteBarcode:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:Status:\",\"to\":\"target:Status:\",\"fromPort\":\"source:WorkOrder:Status:\",\"toPort\":\"target:Status:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:TechID:\",\"to\":\"target:TechID:\",\"fromPort\":\"source:WorkOrder:TechID:\",\"toPort\":\"target:TechID:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:TravelFrom:\",\"to\":\"target:TravelFrom:\",\"fromPort\":\"source:WorkOrder:TravelFrom:\",\"toPort\":\"target:TravelFrom:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:TravelTo:\",\"to\":\"target:TravelTo:\",\"fromPort\":\"source:WorkOrder:TravelTo:\",\"toPort\":\"target:TravelTo:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:WODate:\",\"to\":\"target:WODate:\",\"fromPort\":\"source:WorkOrder:WODate:\",\"toPort\":\"target:WODate:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:WorkOrderNo:\",\"to\":\"target:WorkOrderNo:\",\"fromPort\":\"source:WorkOrder:WorkOrderNo:\",\"toPort\":\"target:WorkOrderNo:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:CustomerSignatu:\",\"to\":\"target:CustomerSignature:\",\"fromPort\":\"source:WorkOrder:CustomerSignatu:\",\"toPort\":\"target:CustomerSignature:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"WorkOrder\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOStagingService (1.0).WorkOrder_create\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:AdrsCode:\",\"to\":\"target:WorkOrder:AdrsCode:\",\"fromPort\":\"source:WorkOrder:AdrsCode:\",\"toPort\":\"target:WorkOrder:AdrsCode:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:ApprovedBy:\",\"to\":\"target:WorkOrder:ApprovedBy:\",\"fromPort\":\"source:WorkOrder:ApprovedBy:\",\"toPort\":\"target:WorkOrder:ApprovedBy:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:ApprovedOn:\",\"to\":\"target:WorkOrder:ApprovedOn:\",\"fromPort\":\"source:WorkOrder:ApprovedOn:\",\"toPort\":\"target:WorkOrder:ApprovedOn:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:ApptNotes:\",\"to\":\"target:WorkOrder:ApptNotes:\",\"fromPort\":\"source:WorkOrder:ApptNotes:\",\"toPort\":\"target:WorkOrder:ApptNotes:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:ApptStatus:\",\"to\":\"target:WorkOrder:ApptStatus:\",\"fromPort\":\"source:WorkOrder:ApptStatus:\",\"toPort\":\"target:WorkOrder:ApptStatus:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:Comments:\",\"to\":\"target:WorkOrder:Comments:\",\"fromPort\":\"source:WorkOrder:Comments:\",\"toPort\":\"target:WorkOrder:Comments:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:CustNo:\",\"to\":\"target:WorkOrder:CustNo:\",\"fromPort\":\"source:WorkOrder:CustNo:\",\"toPort\":\"target:WorkOrder:CustNo:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:CustomerPO:\",\"to\":\"target:WorkOrder:CustomerPO:\",\"fromPort\":\"source:WorkOrder:CustomerPO:\",\"toPort\":\"target:WorkOrder:CustomerPO:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:Duration:\",\"to\":\"target:WorkOrder:Duration:\",\"fromPort\":\"source:WorkOrder:Duration:\",\"toPort\":\"target:WorkOrder:Duration:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:EnrouteStart:\",\"to\":\"target:WorkOrder:EnrouteStart:\",\"fromPort\":\"source:WorkOrder:EnrouteStart:\",\"toPort\":\"target:WorkOrder:EnrouteStart:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:ETA:\",\"to\":\"target:WorkOrder:ETA:\",\"fromPort\":\"source:WorkOrder:ETA:\",\"toPort\":\"target:WorkOrder:ETA:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:FlowType:\",\"to\":\"target:WorkOrder:FlowType:\",\"fromPort\":\"source:WorkOrder:FlowType:\",\"toPort\":\"target:WorkOrder:FlowType:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:Followup:\",\"to\":\"target:WorkOrder:Followup:\",\"fromPort\":\"source:WorkOrder:Followup:\",\"toPort\":\"target:WorkOrder:Followup:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:ID:\",\"to\":\"target:WorkOrder:ID:\",\"fromPort\":\"source:WorkOrder:ID:\",\"toPort\":\"target:WorkOrder:ID:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:KonyDeleteFlag:\",\"to\":\"target:WorkOrder:KonyDeleteFlag:\",\"fromPort\":\"source:WorkOrder:KonyDeleteFlag:\",\"toPort\":\"target:WorkOrder:KonyDeleteFlag:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:LastModified:\",\"to\":\"target:WorkOrder:LastModified:\",\"fromPort\":\"source:WorkOrder:LastModified:\",\"toPort\":\"target:WorkOrder:LastModified:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:LunchTaken:\",\"to\":\"target:WorkOrder:LunchTaken:\",\"fromPort\":\"source:WorkOrder:LunchTaken:\",\"toPort\":\"target:WorkOrder:LunchTaken:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:LunchTime:\",\"to\":\"target:WorkOrder:LunchTime:\",\"fromPort\":\"source:WorkOrder:LunchTime:\",\"toPort\":\"target:WorkOrder:LunchTime:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:MobileVersion:\",\"to\":\"target:WorkOrder:MobileVersion:\",\"fromPort\":\"source:WorkOrder:MobileVersion:\",\"toPort\":\"target:WorkOrder:MobileVersion:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:NTEIncreaseBy:\",\"to\":\"target:WorkOrder:NTEIncreaseBy:\",\"fromPort\":\"source:WorkOrder:NTEIncreaseBy:\",\"toPort\":\"target:WorkOrder:NTEIncreaseBy:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:NTEIncreaseTo:\",\"to\":\"target:WorkOrder:NTEIncreaseTo:\",\"fromPort\":\"source:WorkOrder:NTEIncreaseTo:\",\"toPort\":\"target:WorkOrder:NTEIncreaseTo:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:Onsite:\",\"to\":\"target:WorkOrder:Onsite:\",\"fromPort\":\"source:WorkOrder:Onsite:\",\"toPort\":\"target:WorkOrder:Onsite:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:OnSiteStart:\",\"to\":\"target:WorkOrder:OnSiteStart:\",\"fromPort\":\"source:WorkOrder:OnSiteStart:\",\"toPort\":\"target:WorkOrder:OnSiteStart:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:OnSiteStop:\",\"to\":\"target:WorkOrder:OnSiteStop:\",\"fromPort\":\"source:WorkOrder:OnSiteStop:\",\"toPort\":\"target:WorkOrder:OnSiteStop:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:OrderWorked:\",\"to\":\"target:WorkOrder:OrderWorked:\",\"fromPort\":\"source:WorkOrder:OrderWorked:\",\"toPort\":\"target:WorkOrder:OrderWorked:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:OrigEnrouteStart:\",\"to\":\"target:WorkOrder:OrigEnrouteStart:\",\"fromPort\":\"source:WorkOrder:OrigEnrouteStart:\",\"toPort\":\"target:WorkOrder:OrigEnrouteStart:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:OrigOnSiteStart:\",\"to\":\"target:WorkOrder:OrigOnSiteStart:\",\"fromPort\":\"source:WorkOrder:OrigOnSiteStart:\",\"toPort\":\"target:WorkOrder:OrigOnSiteStart:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:OtherBillable:\",\"to\":\"target:WorkOrder:OtherBillable:\",\"fromPort\":\"source:WorkOrder:OtherBillable:\",\"toPort\":\"target:WorkOrder:OtherBillable:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:OverTime:\",\"to\":\"target:WorkOrder:OverTime:\",\"fromPort\":\"source:WorkOrder:OverTime:\",\"toPort\":\"target:WorkOrder:OverTime:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:Priority:\",\"to\":\"target:WorkOrder:Priority:\",\"fromPort\":\"source:WorkOrder:Priority:\",\"toPort\":\"target:WorkOrder:Priority:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:SendVia:\",\"to\":\"target:WorkOrder:SendVia:\",\"fromPort\":\"source:WorkOrder:SendVia:\",\"toPort\":\"target:WorkOrder:SendVia:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:SendViaText:\",\"to\":\"target:WorkOrder:SendViaText:\",\"fromPort\":\"source:WorkOrder:SendViaText:\",\"toPort\":\"target:WorkOrder:SendViaText:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:SignedBy:\",\"to\":\"target:WorkOrder:SignedBy:\",\"fromPort\":\"source:WorkOrder:SignedBy:\",\"toPort\":\"target:WorkOrder:SignedBy:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:SiteBarcode:\",\"to\":\"target:WorkOrder:SiteBarcode:\",\"fromPort\":\"source:WorkOrder:SiteBarcode:\",\"toPort\":\"target:WorkOrder:SiteBarcode:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:Status:\",\"to\":\"target:WorkOrder:Status:\",\"fromPort\":\"source:WorkOrder:Status:\",\"toPort\":\"target:WorkOrder:Status:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:TechID:\",\"to\":\"target:WorkOrder:TechID:\",\"fromPort\":\"source:WorkOrder:TechID:\",\"toPort\":\"target:WorkOrder:TechID:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:TravelFrom:\",\"to\":\"target:WorkOrder:TravelFrom:\",\"fromPort\":\"source:WorkOrder:TravelFrom:\",\"toPort\":\"target:WorkOrder:TravelFrom:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:TravelTo:\",\"to\":\"target:WorkOrder:TravelTo:\",\"fromPort\":\"source:WorkOrder:TravelTo:\",\"toPort\":\"target:WorkOrder:TravelTo:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:WODate:\",\"to\":\"target:WorkOrder:WODate:\",\"fromPort\":\"source:WorkOrder:WODate:\",\"toPort\":\"target:WorkOrder:WODate:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:WorkOrderNo:\",\"to\":\"target:WorkOrder:WorkOrderNo:\",\"fromPort\":\"source:WorkOrder:WorkOrderNo:\",\"toPort\":\"target:WorkOrder:WorkOrderNo:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:DeviceCreateDate:\",\"to\":\"target:WorkOrder:DeviceCreateDat:\",\"fromPort\":\"source:WorkOrder:DeviceCreateDate:\",\"toPort\":\"target:WorkOrder:DeviceCreateDat:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:CustomerSignature:\",\"to\":\"target:WorkOrder:CustomerSignatu:\",\"fromPort\":\"source:WorkOrder:CustomerSignature:\",\"toPort\":\"target:WorkOrder:CustomerSignatu:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "eSOStagingService",
+      "serviceVersion" : "1.0",
+      "operationName" : "WorkOrder_create"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "actionsAllSelected" : false,
+        "children" : [ {
+          "actionsAllSelected" : false,
+          "children" : [ ],
+          "name" : "EquipLeakEventCode",
+          "actions" : {
+            "create" : false,
+            "update" : false,
+            "partialupdate" : false
+          },
+          "actionsPartiallySelected" : false,
+          "selected" : false
+        } ],
+        "name" : "EquipLeakEvent",
+        "actions" : {
+          "create" : false,
+          "update" : false,
+          "partialupdate" : false
+        },
+        "actionsPartiallySelected" : false,
+        "selected" : false
+      }, {
+        "actionsAllSelected" : false,
+        "children" : [ ],
+        "name" : "EquipLeakEventCode",
+        "actions" : {
+          "create" : false,
+          "update" : false,
+          "partialupdate" : false
+        },
+        "actionsPartiallySelected" : false,
+        "selected" : false
+      }, {
+        "actionsAllSelected" : false,
+        "children" : [ ],
+        "name" : "RefrigerantShutdown",
+        "actions" : {
+          "create" : false,
+          "update" : false,
+          "partialupdate" : false
+        },
+        "actionsPartiallySelected" : false,
+        "selected" : false
+      }, {
+        "actionsAllSelected" : false,
+        "children" : [ ],
+        "name" : "RefrigerantSourceResults",
+        "actions" : {
+          "create" : false,
+          "update" : false,
+          "partialupdate" : false
+        },
+        "actionsPartiallySelected" : false,
+        "selected" : false
+      }, {
+        "actionsAllSelected" : false,
+        "children" : [ ],
+        "name" : "RefrigerantStartup",
+        "actions" : {
+          "create" : false,
+          "update" : false,
+          "partialupdate" : false
+        },
+        "actionsPartiallySelected" : false,
+        "selected" : false
+      }, {
+        "actionsAllSelected" : false,
+        "children" : [ ],
+        "name" : "WOOtherBillable",
+        "actions" : {
+          "create" : false,
+          "update" : false,
+          "partialupdate" : false
+        },
+        "actionsPartiallySelected" : false,
+        "selected" : false
+      }, {
+        "actionsAllSelected" : false,
+        "children" : [ {
+          "actionsAllSelected" : false,
+          "children" : [ {
+            "actionsAllSelected" : false,
+            "children" : [ ],
+            "name" : "EquipLeakEventCode",
+            "actions" : {
+              "create" : false,
+              "update" : false,
+              "partialupdate" : false
+            },
+            "actionsPartiallySelected" : false,
+            "selected" : false
+          } ],
+          "name" : "EquipLeakEvent",
+          "actions" : {
+            "create" : false,
+            "update" : false,
+            "partialupdate" : false
+          },
+          "actionsPartiallySelected" : false,
+          "selected" : false
+        }, {
+          "actionsAllSelected" : false,
+          "children" : [ ],
+          "name" : "POReqLines",
+          "actions" : {
+            "create" : false,
+            "update" : false,
+            "partialupdate" : false
+          },
+          "actionsPartiallySelected" : false,
+          "selected" : false
+        }, {
+          "actionsAllSelected" : false,
+          "children" : [ ],
+          "name" : "RefrigerantSourceResults",
+          "actions" : {
+            "create" : false,
+            "update" : false,
+            "partialupdate" : false
+          },
+          "actionsPartiallySelected" : false,
+          "selected" : false
+        }, {
+          "actionsAllSelected" : false,
+          "children" : [ {
+            "actionsAllSelected" : false,
+            "children" : [ ],
+            "name" : "PORtnDisp",
+            "actions" : {
+              "create" : false,
+              "update" : false,
+              "partialupdate" : false
+            },
+            "actionsPartiallySelected" : false,
+            "selected" : false
+          } ],
+          "name" : "WorkOrderParts",
+          "actions" : {
+            "create" : false,
+            "update" : false,
+            "partialupdate" : false
+          },
+          "actionsPartiallySelected" : false,
+          "selected" : false
+        }, {
+          "actionsAllSelected" : false,
+          "children" : [ ],
+          "name" : "WorkOrderPhoto",
+          "actions" : {
+            "create" : false,
+            "update" : false,
+            "partialupdate" : false
+          },
+          "actionsPartiallySelected" : false,
+          "selected" : false
+        }, {
+          "actionsAllSelected" : false,
+          "children" : [ {
+            "actionsAllSelected" : false,
+            "children" : [ {
+              "actionsAllSelected" : false,
+              "children" : [ ],
+              "name" : "EquipLeakEventCode",
+              "actions" : {
+                "create" : false,
+                "update" : false,
+                "partialupdate" : false
+              },
+              "actionsPartiallySelected" : false,
+              "selected" : false
+            } ],
+            "name" : "EquipLeakEvent",
+            "actions" : {
+              "create" : false,
+              "update" : false,
+              "partialupdate" : false
+            },
+            "actionsPartiallySelected" : false,
+            "selected" : false
+          }, {
+            "actionsAllSelected" : false,
+            "children" : [ ],
+            "name" : "RefrigerantSourceResults",
+            "actions" : {
+              "create" : false,
+              "update" : false,
+              "partialupdate" : false
+            },
+            "actionsPartiallySelected" : false,
+            "selected" : false
+          } ],
+          "name" : "WorkOrderRefrigerant",
+          "actions" : {
+            "create" : false,
+            "update" : false,
+            "partialupdate" : false
+          },
+          "actionsPartiallySelected" : false,
+          "selected" : false
+        }, {
+          "actionsAllSelected" : false,
+          "children" : [ {
+            "actionsAllSelected" : false,
+            "children" : [ ],
+            "name" : "WorkOrderResolutionNotes",
+            "actions" : {
+              "create" : false,
+              "update" : false,
+              "partialupdate" : false
+            },
+            "actionsPartiallySelected" : false,
+            "selected" : false
+          } ],
+          "name" : "WorkOrderResolutions",
+          "actions" : {
+            "create" : false,
+            "update" : false,
+            "partialupdate" : false
+          },
+          "actionsPartiallySelected" : false,
+          "selected" : false
+        }, {
+          "actionsAllSelected" : false,
+          "children" : [ ],
+          "name" : "WorkOrderSystemLabor",
+          "actions" : {
+            "create" : false,
+            "update" : false,
+            "partialupdate" : false
+          },
+          "actionsPartiallySelected" : false,
+          "selected" : false
+        } ],
+        "name" : "WorkOrderAssets22",
+        "actions" : {
+          "create" : false,
+          "update" : false,
+          "partialupdate" : false
+        },
+        "actionsPartiallySelected" : false,
+        "selected" : false
+      }, {
+        "actionsAllSelected" : false,
+        "children" : [ ],
+        "name" : "WorkOrderCheckedRule",
+        "actions" : {
+          "create" : false,
+          "update" : false,
+          "partialupdate" : false
+        },
+        "actionsPartiallySelected" : false,
+        "selected" : false
+      }, {
+        "actionsAllSelected" : false,
+        "children" : [ ],
+        "name" : "WorkOrderNTE",
+        "actions" : {
+          "create" : false,
+          "update" : false,
+          "partialupdate" : false
+        },
+        "actionsPartiallySelected" : false,
+        "selected" : false
+      }, {
+        "actionsAllSelected" : false,
+        "children" : [ {
+          "actionsAllSelected" : false,
+          "children" : [ ],
+          "name" : "PORtnDisp",
+          "actions" : {
+            "create" : false,
+            "update" : false,
+            "partialupdate" : false
+          },
+          "actionsPartiallySelected" : false,
+          "selected" : false
+        } ],
+        "name" : "WorkOrderParts",
+        "actions" : {
+          "create" : false,
+          "update" : false,
+          "partialupdate" : false
+        },
+        "actionsPartiallySelected" : false,
+        "selected" : false
+      }, {
+        "actionsAllSelected" : false,
+        "children" : [ ],
+        "name" : "WorkOrderPhoto",
+        "actions" : {
+          "create" : false,
+          "update" : false,
+          "partialupdate" : false
+        },
+        "actionsPartiallySelected" : false,
+        "selected" : false
+      }, {
+        "actionsAllSelected" : false,
+        "children" : [ {
+          "actionsAllSelected" : false,
+          "children" : [ {
+            "actionsAllSelected" : false,
+            "children" : [ ],
+            "name" : "EquipLeakEventCode",
+            "actions" : {
+              "create" : false,
+              "update" : false,
+              "partialupdate" : false
+            },
+            "actionsPartiallySelected" : false,
+            "selected" : false
+          } ],
+          "name" : "EquipLeakEvent",
+          "actions" : {
+            "create" : false,
+            "update" : false,
+            "partialupdate" : false
+          },
+          "actionsPartiallySelected" : false,
+          "selected" : false
+        }, {
+          "actionsAllSelected" : false,
+          "children" : [ ],
+          "name" : "RefrigerantSourceResults",
+          "actions" : {
+            "create" : false,
+            "update" : false,
+            "partialupdate" : false
+          },
+          "actionsPartiallySelected" : false,
+          "selected" : false
+        } ],
+        "name" : "WorkOrderRefrigerant",
+        "actions" : {
+          "create" : false,
+          "update" : false,
+          "partialupdate" : false
+        },
+        "actionsPartiallySelected" : false,
+        "selected" : false
+      }, {
+        "actionsAllSelected" : false,
+        "children" : [ ],
+        "name" : "WorkOrderResolutionNotes",
+        "actions" : {
+          "create" : false,
+          "update" : false,
+          "partialupdate" : false
+        },
+        "actionsPartiallySelected" : false,
+        "selected" : false
+      }, {
+        "actionsAllSelected" : false,
+        "children" : [ {
+          "actionsAllSelected" : false,
+          "children" : [ ],
+          "name" : "WorkOrderResolutionNotes",
+          "actions" : {
+            "create" : false,
+            "update" : false,
+            "partialupdate" : false
+          },
+          "actionsPartiallySelected" : false,
+          "selected" : false
+        } ],
+        "name" : "WorkOrderResolutions",
+        "actions" : {
+          "create" : false,
+          "update" : false,
+          "partialupdate" : false
+        },
+        "actionsPartiallySelected" : false,
+        "selected" : false
+      }, {
+        "actionsAllSelected" : false,
+        "children" : [ ],
+        "name" : "WorkOrderStatusHistory",
+        "actions" : {
+          "create" : false,
+          "update" : false,
+          "partialupdate" : false
+        },
+        "actionsPartiallySelected" : false,
+        "selected" : false
+      }, {
+        "actionsAllSelected" : false,
+        "children" : [ ],
+        "name" : "WorkOrderSystemLabor",
+        "actions" : {
+          "create" : false,
+          "update" : false,
+          "partialupdate" : false
+        },
+        "actionsPartiallySelected" : false,
+        "selected" : false
+      } ],
+      "name" : "WorkOrder",
+      "actions" : {
+        "create" : true,
+        "update" : true,
+        "partialupdate" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"AdrsCode\" outputpath=\"AdrsCode\"/>\n        <set-param inputpath=\"ApprovedBy\" outputpath=\"ApprovedBy\"/>\n        <set-param inputpath=\"ApprovedOn\" outputpath=\"ApprovedOn\"/>\n        <set-param inputpath=\"ApptNotes\" outputpath=\"ApptNotes\"/>\n        <set-param inputpath=\"ApptStatus\" outputpath=\"ApptStatus\"/>\n        <set-param inputpath=\"Comments\" outputpath=\"Comments\"/>\n        <set-param inputpath=\"CustNo\" outputpath=\"CustNo\"/>\n        <set-param inputpath=\"CustomerPO\" outputpath=\"CustomerPO\"/>\n        <set-param inputpath=\"CustomerSignatu\" outputpath=\"CustomerSignature\"/>\n        <set-param inputpath=\"DeviceCreateDat\" outputpath=\"DeviceCreateDate\"/>\n        <set-param inputpath=\"Duration\" outputpath=\"Duration\"/>\n        <set-param inputpath=\"EnrouteStart\" outputpath=\"EnrouteStart\"/>\n        <set-param inputpath=\"ETA\" outputpath=\"ETA\"/>\n        <set-param inputpath=\"FlowType\" outputpath=\"FlowType\"/>\n        <set-param inputpath=\"Followup\" outputpath=\"Followup\"/>\n        <set-param inputpath=\"KonyDeleteFlag\" outputpath=\"KonyDeleteFlag\"/>\n        <set-param inputpath=\"LastModified\" outputpath=\"LastModified\"/>\n        <set-param inputpath=\"LunchTaken\" outputpath=\"LunchTaken\"/>\n        <set-param inputpath=\"LunchTime\" outputpath=\"LunchTime\"/>\n        <set-param inputpath=\"MobileVersion\" outputpath=\"MobileVersion\"/>\n        <set-param inputpath=\"NTEIncreaseBy\" outputpath=\"NTEIncreaseBy\"/>\n        <set-param inputpath=\"NTEIncreaseTo\" outputpath=\"NTEIncreaseTo\"/>\n        <set-param inputpath=\"Onsite\" outputpath=\"Onsite\"/>\n        <set-param inputpath=\"OnSiteStart\" outputpath=\"OnSiteStart\"/>\n        <set-param inputpath=\"OnSiteStop\" outputpath=\"OnSiteStop\"/>\n        <set-param inputpath=\"OrderWorked\" outputpath=\"OrderWorked\"/>\n        <set-param inputpath=\"OrigEnrouteStart\" outputpath=\"OrigEnrouteStart\"/>\n        <set-param inputpath=\"OrigOnSiteStart\" outputpath=\"OrigOnSiteStart\"/>\n        <set-param inputpath=\"OtherBillable\" outputpath=\"OtherBillable\"/>\n        <set-param inputpath=\"OverTime\" outputpath=\"OverTime\"/>\n        <set-param inputpath=\"Priority\" outputpath=\"Priority\"/>\n        <set-param inputpath=\"SendVia\" outputpath=\"SendVia\"/>\n        <set-param inputpath=\"SendViaText\" outputpath=\"SendViaText\"/>\n        <set-param inputpath=\"SignedBy\" outputpath=\"SignedBy\"/>\n        <set-param inputpath=\"SiteBarcode\" outputpath=\"SiteBarcode\"/>\n        <set-param inputpath=\"Status\" outputpath=\"Status\"/>\n        <set-param inputpath=\"TechID\" outputpath=\"TechID\"/>\n        <set-param inputpath=\"TravelFrom\" outputpath=\"TravelFrom\"/>\n        <set-param inputpath=\"TravelTo\" outputpath=\"TravelTo\"/>\n        <set-param inputpath=\"WODate\" outputpath=\"WODate\"/>\n        <set-param inputpath=\"WorkOrderNo\" outputpath=\"WorkOrderNo\"/>\n    </map>\n</mapper>\n",
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"WorkOrder\" outputpath=\"WorkOrder\">\n            <set-param inputpath=\"AdrsCode\" outputpath=\"AdrsCode\"/>\n            <set-param inputpath=\"ApprovedBy\" outputpath=\"ApprovedBy\"/>\n            <set-param inputpath=\"ApprovedOn\" outputpath=\"ApprovedOn\"/>\n            <set-param inputpath=\"ApptNotes\" outputpath=\"ApptNotes\"/>\n            <set-param inputpath=\"ApptStatus\" outputpath=\"ApptStatus\"/>\n            <set-param inputpath=\"Comments\" outputpath=\"Comments\"/>\n            <set-param inputpath=\"CustNo\" outputpath=\"CustNo\"/>\n            <set-param inputpath=\"CustomerPO\" outputpath=\"CustomerPO\"/>\n            <set-param inputpath=\"CustomerSignature\" outputpath=\"CustomerSignatu\"/>\n            <set-param inputpath=\"DeviceCreateDate\" outputpath=\"DeviceCreateDat\"/>\n            <set-param inputpath=\"Duration\" outputpath=\"Duration\"/>\n            <set-param inputpath=\"EnrouteStart\" outputpath=\"EnrouteStart\"/>\n            <set-param inputpath=\"ETA\" outputpath=\"ETA\"/>\n            <set-param inputpath=\"FlowType\" outputpath=\"FlowType\"/>\n            <set-param inputpath=\"Followup\" outputpath=\"Followup\"/>\n            <set-param inputpath=\"ID\" outputpath=\"ID\"/>\n            <set-param inputpath=\"KonyDeleteFlag\" outputpath=\"KonyDeleteFlag\"/>\n            <set-param inputpath=\"LastModified\" outputpath=\"LastModified\"/>\n            <set-param inputpath=\"LunchTaken\" outputpath=\"LunchTaken\"/>\n            <set-param inputpath=\"LunchTime\" outputpath=\"LunchTime\"/>\n            <set-param inputpath=\"MobileVersion\" outputpath=\"MobileVersion\"/>\n            <set-param inputpath=\"NTEIncreaseBy\" outputpath=\"NTEIncreaseBy\"/>\n            <set-param inputpath=\"NTEIncreaseTo\" outputpath=\"NTEIncreaseTo\"/>\n            <set-param inputpath=\"Onsite\" outputpath=\"Onsite\"/>\n            <set-param inputpath=\"OnSiteStart\" outputpath=\"OnSiteStart\"/>\n            <set-param inputpath=\"OnSiteStop\" outputpath=\"OnSiteStop\"/>\n            <set-param inputpath=\"OrderWorked\" outputpath=\"OrderWorked\"/>\n            <set-param inputpath=\"OrigEnrouteStart\" outputpath=\"OrigEnrouteStart\"/>\n            <set-param inputpath=\"OrigOnSiteStart\" outputpath=\"OrigOnSiteStart\"/>\n            <set-param inputpath=\"OtherBillable\" outputpath=\"OtherBillable\"/>\n            <set-param inputpath=\"OverTime\" outputpath=\"OverTime\"/>\n            <set-param inputpath=\"Priority\" outputpath=\"Priority\"/>\n            <set-param inputpath=\"SendVia\" outputpath=\"SendVia\"/>\n            <set-param inputpath=\"SendViaText\" outputpath=\"SendViaText\"/>\n            <set-param inputpath=\"SignedBy\" outputpath=\"SignedBy\"/>\n            <set-param inputpath=\"SiteBarcode\" outputpath=\"SiteBarcode\"/>\n            <set-param inputpath=\"Status\" outputpath=\"Status\"/>\n            <set-param inputpath=\"TechID\" outputpath=\"TechID\"/>\n            <set-param inputpath=\"TravelFrom\" outputpath=\"TravelFrom\"/>\n            <set-param inputpath=\"TravelTo\" outputpath=\"TravelTo\"/>\n            <set-param inputpath=\"WODate\" outputpath=\"WODate\"/>\n            <set-param inputpath=\"WorkOrderNo\" outputpath=\"WorkOrderNo\"/>\n        </map>\n    </map>\n</mapper>\n",
+      "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"WorkOrder\",\"xy\":\"507 97\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"eSOStagingService (1.0).WorkOrder_create\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:AdrsCode:\",\"to\":\"target:AdrsCode:\",\"fromPort\":\"source:WorkOrder:AdrsCode:\",\"toPort\":\"target:AdrsCode:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:ApprovedBy:\",\"to\":\"target:ApprovedBy:\",\"fromPort\":\"source:WorkOrder:ApprovedBy:\",\"toPort\":\"target:ApprovedBy:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:ApprovedOn:\",\"to\":\"target:ApprovedOn:\",\"fromPort\":\"source:WorkOrder:ApprovedOn:\",\"toPort\":\"target:ApprovedOn:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:ApptNotes:\",\"to\":\"target:ApptNotes:\",\"fromPort\":\"source:WorkOrder:ApptNotes:\",\"toPort\":\"target:ApptNotes:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:ApptStatus:\",\"to\":\"target:ApptStatus:\",\"fromPort\":\"source:WorkOrder:ApptStatus:\",\"toPort\":\"target:ApptStatus:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:Comments:\",\"to\":\"target:Comments:\",\"fromPort\":\"source:WorkOrder:Comments:\",\"toPort\":\"target:Comments:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:CustNo:\",\"to\":\"target:CustNo:\",\"fromPort\":\"source:WorkOrder:CustNo:\",\"toPort\":\"target:CustNo:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:CustomerPO:\",\"to\":\"target:CustomerPO:\",\"fromPort\":\"source:WorkOrder:CustomerPO:\",\"toPort\":\"target:CustomerPO:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:DeviceCreateDat:\",\"to\":\"target:DeviceCreateDate:\",\"fromPort\":\"source:WorkOrder:DeviceCreateDat:\",\"toPort\":\"target:DeviceCreateDate:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:Duration:\",\"to\":\"target:Duration:\",\"fromPort\":\"source:WorkOrder:Duration:\",\"toPort\":\"target:Duration:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:EnrouteStart:\",\"to\":\"target:EnrouteStart:\",\"fromPort\":\"source:WorkOrder:EnrouteStart:\",\"toPort\":\"target:EnrouteStart:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:ETA:\",\"to\":\"target:ETA:\",\"fromPort\":\"source:WorkOrder:ETA:\",\"toPort\":\"target:ETA:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:FlowType:\",\"to\":\"target:FlowType:\",\"fromPort\":\"source:WorkOrder:FlowType:\",\"toPort\":\"target:FlowType:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:Followup:\",\"to\":\"target:Followup:\",\"fromPort\":\"source:WorkOrder:Followup:\",\"toPort\":\"target:Followup:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:KonyDeleteFlag:\",\"to\":\"target:KonyDeleteFlag:\",\"fromPort\":\"source:WorkOrder:KonyDeleteFlag:\",\"toPort\":\"target:KonyDeleteFlag:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:LastModified:\",\"to\":\"target:LastModified:\",\"fromPort\":\"source:WorkOrder:LastModified:\",\"toPort\":\"target:LastModified:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:LunchTaken:\",\"to\":\"target:LunchTaken:\",\"fromPort\":\"source:WorkOrder:LunchTaken:\",\"toPort\":\"target:LunchTaken:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:LunchTime:\",\"to\":\"target:LunchTime:\",\"fromPort\":\"source:WorkOrder:LunchTime:\",\"toPort\":\"target:LunchTime:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:MobileVersion:\",\"to\":\"target:MobileVersion:\",\"fromPort\":\"source:WorkOrder:MobileVersion:\",\"toPort\":\"target:MobileVersion:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:NTEIncreaseBy:\",\"to\":\"target:NTEIncreaseBy:\",\"fromPort\":\"source:WorkOrder:NTEIncreaseBy:\",\"toPort\":\"target:NTEIncreaseBy:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:NTEIncreaseTo:\",\"to\":\"target:NTEIncreaseTo:\",\"fromPort\":\"source:WorkOrder:NTEIncreaseTo:\",\"toPort\":\"target:NTEIncreaseTo:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:Onsite:\",\"to\":\"target:Onsite:\",\"fromPort\":\"source:WorkOrder:Onsite:\",\"toPort\":\"target:Onsite:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:OnSiteStart:\",\"to\":\"target:OnSiteStart:\",\"fromPort\":\"source:WorkOrder:OnSiteStart:\",\"toPort\":\"target:OnSiteStart:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:OnSiteStop:\",\"to\":\"target:OnSiteStop:\",\"fromPort\":\"source:WorkOrder:OnSiteStop:\",\"toPort\":\"target:OnSiteStop:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:OrderWorked:\",\"to\":\"target:OrderWorked:\",\"fromPort\":\"source:WorkOrder:OrderWorked:\",\"toPort\":\"target:OrderWorked:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:OrigEnrouteStart:\",\"to\":\"target:OrigEnrouteStart:\",\"fromPort\":\"source:WorkOrder:OrigEnrouteStart:\",\"toPort\":\"target:OrigEnrouteStart:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:OrigOnSiteStart:\",\"to\":\"target:OrigOnSiteStart:\",\"fromPort\":\"source:WorkOrder:OrigOnSiteStart:\",\"toPort\":\"target:OrigOnSiteStart:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:OtherBillable:\",\"to\":\"target:OtherBillable:\",\"fromPort\":\"source:WorkOrder:OtherBillable:\",\"toPort\":\"target:OtherBillable:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:OverTime:\",\"to\":\"target:OverTime:\",\"fromPort\":\"source:WorkOrder:OverTime:\",\"toPort\":\"target:OverTime:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:Priority:\",\"to\":\"target:Priority:\",\"fromPort\":\"source:WorkOrder:Priority:\",\"toPort\":\"target:Priority:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:SendVia:\",\"to\":\"target:SendVia:\",\"fromPort\":\"source:WorkOrder:SendVia:\",\"toPort\":\"target:SendVia:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:SendViaText:\",\"to\":\"target:SendViaText:\",\"fromPort\":\"source:WorkOrder:SendViaText:\",\"toPort\":\"target:SendViaText:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:SignedBy:\",\"to\":\"target:SignedBy:\",\"fromPort\":\"source:WorkOrder:SignedBy:\",\"toPort\":\"target:SignedBy:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:SiteBarcode:\",\"to\":\"target:SiteBarcode:\",\"fromPort\":\"source:WorkOrder:SiteBarcode:\",\"toPort\":\"target:SiteBarcode:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:Status:\",\"to\":\"target:Status:\",\"fromPort\":\"source:WorkOrder:Status:\",\"toPort\":\"target:Status:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:TechID:\",\"to\":\"target:TechID:\",\"fromPort\":\"source:WorkOrder:TechID:\",\"toPort\":\"target:TechID:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:TravelFrom:\",\"to\":\"target:TravelFrom:\",\"fromPort\":\"source:WorkOrder:TravelFrom:\",\"toPort\":\"target:TravelFrom:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:TravelTo:\",\"to\":\"target:TravelTo:\",\"fromPort\":\"source:WorkOrder:TravelTo:\",\"toPort\":\"target:TravelTo:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:WODate:\",\"to\":\"target:WODate:\",\"fromPort\":\"source:WorkOrder:WODate:\",\"toPort\":\"target:WODate:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:WorkOrderNo:\",\"to\":\"target:WorkOrderNo:\",\"fromPort\":\"source:WorkOrder:WorkOrderNo:\",\"toPort\":\"target:WorkOrderNo:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:CustomerSignatu:\",\"to\":\"target:CustomerSignature:\",\"fromPort\":\"source:WorkOrder:CustomerSignatu:\",\"toPort\":\"target:CustomerSignature:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"WorkOrder\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOStagingService (1.0).WorkOrder_create\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:AdrsCode:\",\"to\":\"target:WorkOrder:AdrsCode:\",\"fromPort\":\"source:WorkOrder:AdrsCode:\",\"toPort\":\"target:WorkOrder:AdrsCode:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:ApprovedBy:\",\"to\":\"target:WorkOrder:ApprovedBy:\",\"fromPort\":\"source:WorkOrder:ApprovedBy:\",\"toPort\":\"target:WorkOrder:ApprovedBy:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:ApprovedOn:\",\"to\":\"target:WorkOrder:ApprovedOn:\",\"fromPort\":\"source:WorkOrder:ApprovedOn:\",\"toPort\":\"target:WorkOrder:ApprovedOn:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:ApptNotes:\",\"to\":\"target:WorkOrder:ApptNotes:\",\"fromPort\":\"source:WorkOrder:ApptNotes:\",\"toPort\":\"target:WorkOrder:ApptNotes:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:ApptStatus:\",\"to\":\"target:WorkOrder:ApptStatus:\",\"fromPort\":\"source:WorkOrder:ApptStatus:\",\"toPort\":\"target:WorkOrder:ApptStatus:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:Comments:\",\"to\":\"target:WorkOrder:Comments:\",\"fromPort\":\"source:WorkOrder:Comments:\",\"toPort\":\"target:WorkOrder:Comments:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:CustNo:\",\"to\":\"target:WorkOrder:CustNo:\",\"fromPort\":\"source:WorkOrder:CustNo:\",\"toPort\":\"target:WorkOrder:CustNo:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:CustomerPO:\",\"to\":\"target:WorkOrder:CustomerPO:\",\"fromPort\":\"source:WorkOrder:CustomerPO:\",\"toPort\":\"target:WorkOrder:CustomerPO:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:Duration:\",\"to\":\"target:WorkOrder:Duration:\",\"fromPort\":\"source:WorkOrder:Duration:\",\"toPort\":\"target:WorkOrder:Duration:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:EnrouteStart:\",\"to\":\"target:WorkOrder:EnrouteStart:\",\"fromPort\":\"source:WorkOrder:EnrouteStart:\",\"toPort\":\"target:WorkOrder:EnrouteStart:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:ETA:\",\"to\":\"target:WorkOrder:ETA:\",\"fromPort\":\"source:WorkOrder:ETA:\",\"toPort\":\"target:WorkOrder:ETA:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:FlowType:\",\"to\":\"target:WorkOrder:FlowType:\",\"fromPort\":\"source:WorkOrder:FlowType:\",\"toPort\":\"target:WorkOrder:FlowType:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:Followup:\",\"to\":\"target:WorkOrder:Followup:\",\"fromPort\":\"source:WorkOrder:Followup:\",\"toPort\":\"target:WorkOrder:Followup:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:ID:\",\"to\":\"target:WorkOrder:ID:\",\"fromPort\":\"source:WorkOrder:ID:\",\"toPort\":\"target:WorkOrder:ID:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:KonyDeleteFlag:\",\"to\":\"target:WorkOrder:KonyDeleteFlag:\",\"fromPort\":\"source:WorkOrder:KonyDeleteFlag:\",\"toPort\":\"target:WorkOrder:KonyDeleteFlag:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:LastModified:\",\"to\":\"target:WorkOrder:LastModified:\",\"fromPort\":\"source:WorkOrder:LastModified:\",\"toPort\":\"target:WorkOrder:LastModified:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:LunchTaken:\",\"to\":\"target:WorkOrder:LunchTaken:\",\"fromPort\":\"source:WorkOrder:LunchTaken:\",\"toPort\":\"target:WorkOrder:LunchTaken:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:LunchTime:\",\"to\":\"target:WorkOrder:LunchTime:\",\"fromPort\":\"source:WorkOrder:LunchTime:\",\"toPort\":\"target:WorkOrder:LunchTime:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:MobileVersion:\",\"to\":\"target:WorkOrder:MobileVersion:\",\"fromPort\":\"source:WorkOrder:MobileVersion:\",\"toPort\":\"target:WorkOrder:MobileVersion:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:NTEIncreaseBy:\",\"to\":\"target:WorkOrder:NTEIncreaseBy:\",\"fromPort\":\"source:WorkOrder:NTEIncreaseBy:\",\"toPort\":\"target:WorkOrder:NTEIncreaseBy:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:NTEIncreaseTo:\",\"to\":\"target:WorkOrder:NTEIncreaseTo:\",\"fromPort\":\"source:WorkOrder:NTEIncreaseTo:\",\"toPort\":\"target:WorkOrder:NTEIncreaseTo:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:Onsite:\",\"to\":\"target:WorkOrder:Onsite:\",\"fromPort\":\"source:WorkOrder:Onsite:\",\"toPort\":\"target:WorkOrder:Onsite:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:OnSiteStart:\",\"to\":\"target:WorkOrder:OnSiteStart:\",\"fromPort\":\"source:WorkOrder:OnSiteStart:\",\"toPort\":\"target:WorkOrder:OnSiteStart:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:OnSiteStop:\",\"to\":\"target:WorkOrder:OnSiteStop:\",\"fromPort\":\"source:WorkOrder:OnSiteStop:\",\"toPort\":\"target:WorkOrder:OnSiteStop:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:OrderWorked:\",\"to\":\"target:WorkOrder:OrderWorked:\",\"fromPort\":\"source:WorkOrder:OrderWorked:\",\"toPort\":\"target:WorkOrder:OrderWorked:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:OrigEnrouteStart:\",\"to\":\"target:WorkOrder:OrigEnrouteStart:\",\"fromPort\":\"source:WorkOrder:OrigEnrouteStart:\",\"toPort\":\"target:WorkOrder:OrigEnrouteStart:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:OrigOnSiteStart:\",\"to\":\"target:WorkOrder:OrigOnSiteStart:\",\"fromPort\":\"source:WorkOrder:OrigOnSiteStart:\",\"toPort\":\"target:WorkOrder:OrigOnSiteStart:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:OtherBillable:\",\"to\":\"target:WorkOrder:OtherBillable:\",\"fromPort\":\"source:WorkOrder:OtherBillable:\",\"toPort\":\"target:WorkOrder:OtherBillable:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:OverTime:\",\"to\":\"target:WorkOrder:OverTime:\",\"fromPort\":\"source:WorkOrder:OverTime:\",\"toPort\":\"target:WorkOrder:OverTime:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:Priority:\",\"to\":\"target:WorkOrder:Priority:\",\"fromPort\":\"source:WorkOrder:Priority:\",\"toPort\":\"target:WorkOrder:Priority:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:SendVia:\",\"to\":\"target:WorkOrder:SendVia:\",\"fromPort\":\"source:WorkOrder:SendVia:\",\"toPort\":\"target:WorkOrder:SendVia:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:SendViaText:\",\"to\":\"target:WorkOrder:SendViaText:\",\"fromPort\":\"source:WorkOrder:SendViaText:\",\"toPort\":\"target:WorkOrder:SendViaText:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:SignedBy:\",\"to\":\"target:WorkOrder:SignedBy:\",\"fromPort\":\"source:WorkOrder:SignedBy:\",\"toPort\":\"target:WorkOrder:SignedBy:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:SiteBarcode:\",\"to\":\"target:WorkOrder:SiteBarcode:\",\"fromPort\":\"source:WorkOrder:SiteBarcode:\",\"toPort\":\"target:WorkOrder:SiteBarcode:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:Status:\",\"to\":\"target:WorkOrder:Status:\",\"fromPort\":\"source:WorkOrder:Status:\",\"toPort\":\"target:WorkOrder:Status:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:TechID:\",\"to\":\"target:WorkOrder:TechID:\",\"fromPort\":\"source:WorkOrder:TechID:\",\"toPort\":\"target:WorkOrder:TechID:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:TravelFrom:\",\"to\":\"target:WorkOrder:TravelFrom:\",\"fromPort\":\"source:WorkOrder:TravelFrom:\",\"toPort\":\"target:WorkOrder:TravelFrom:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:TravelTo:\",\"to\":\"target:WorkOrder:TravelTo:\",\"fromPort\":\"source:WorkOrder:TravelTo:\",\"toPort\":\"target:WorkOrder:TravelTo:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:WODate:\",\"to\":\"target:WorkOrder:WODate:\",\"fromPort\":\"source:WorkOrder:WODate:\",\"toPort\":\"target:WorkOrder:WODate:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:WorkOrder:WorkOrderNo:\",\"to\":\"target:WorkOrder:WorkOrderNo:\",\"fromPort\":\"source:WorkOrder:WorkOrderNo:\",\"toPort\":\"target:WorkOrder:WorkOrderNo:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:DeviceCreateDate:\",\"to\":\"target:WorkOrder:DeviceCreateDat:\",\"fromPort\":\"source:WorkOrder:DeviceCreateDate:\",\"toPort\":\"target:WorkOrder:DeviceCreateDat:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:WorkOrder:CustomerSignature:\",\"to\":\"target:WorkOrder:CustomerSignatu:\",\"fromPort\":\"source:WorkOrder:CustomerSignature:\",\"toPort\":\"target:WorkOrder:CustomerSignatu:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : false,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

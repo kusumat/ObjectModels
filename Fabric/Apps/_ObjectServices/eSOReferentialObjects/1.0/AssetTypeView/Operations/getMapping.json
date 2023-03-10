@@ -1,0 +1,95 @@
+{
+  "operationConfig" : {
+    "name" : "eso_AssetTypeView_get3809",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"AssetTypeView\" outputpath=\"AssetTypeView\">\n            <set-param inputpath=\"AssetDesc\" outputpath=\"AssetDesc\"/>\n            <set-param inputpath=\"AssetOption\" outputpath=\"AssetOption\"/>\n            <set-param inputpath=\"AssetType_ID\" outputpath=\"AssetTypeID\"/>\n            <set-param inputpath=\"HasChildren\" outputpath=\"HasChildren\"/>\n            <set-param inputpath=\"HasParent\" outputpath=\"HasParent\"/>\n            <set-param inputpath=\"HasSystem\" outputpath=\"HasSystem\"/>\n            <set-param inputpath=\"Inactive\" outputpath=\"Inactive\"/>\n            <set-param inputpath=\"Manufacturer\" outputpath=\"Manufacturer\"/>\n            <set-param inputpath=\"Model\" outputpath=\"Model\"/>\n            <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>\n            <set-param inputpath=\"Refrigerant\" outputpath=\"Refrigerant\"/>\n            <set-param inputpath=\"RelatedAsset\" outputpath=\"RelatedAsset\"/>\n            <set-param inputpath=\"SerialNo\" outputpath=\"SerialNo\"/>\n            <set-param inputpath=\"SST\" outputpath=\"SST\"/>\n            <set-param inputpath=\"TempType\" outputpath=\"TempType\"/>\n            <set-param inputpath=\"UnitName\" outputpath=\"UnitName\"/>\n            <set-param inputpath=\"UnitName_Label\" outputpath=\"UnitNameLabel\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"AssetTypeView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOReferentialService (1.0).AssetTypeView_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:AssetDesc:\",\"to\":\"target:AssetTypeView:AssetDesc:\",\"fromPort\":\"source:AssetTypeView:AssetDesc:\",\"toPort\":\"target:AssetTypeView:AssetDesc:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:AssetOption:\",\"to\":\"target:AssetTypeView:AssetOption:\",\"fromPort\":\"source:AssetTypeView:AssetOption:\",\"toPort\":\"target:AssetTypeView:AssetOption:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:HasChildren:\",\"to\":\"target:AssetTypeView:HasChildren:\",\"fromPort\":\"source:AssetTypeView:HasChildren:\",\"toPort\":\"target:AssetTypeView:HasChildren:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:HasParent:\",\"to\":\"target:AssetTypeView:HasParent:\",\"fromPort\":\"source:AssetTypeView:HasParent:\",\"toPort\":\"target:AssetTypeView:HasParent:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:HasSystem:\",\"to\":\"target:AssetTypeView:HasSystem:\",\"fromPort\":\"source:AssetTypeView:HasSystem:\",\"toPort\":\"target:AssetTypeView:HasSystem:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:Inactive:\",\"to\":\"target:AssetTypeView:Inactive:\",\"fromPort\":\"source:AssetTypeView:Inactive:\",\"toPort\":\"target:AssetTypeView:Inactive:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:Manufacturer:\",\"to\":\"target:AssetTypeView:Manufacturer:\",\"fromPort\":\"source:AssetTypeView:Manufacturer:\",\"toPort\":\"target:AssetTypeView:Manufacturer:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:Model:\",\"to\":\"target:AssetTypeView:Model:\",\"fromPort\":\"source:AssetTypeView:Model:\",\"toPort\":\"target:AssetTypeView:Model:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:ModifiedDate:\",\"to\":\"target:AssetTypeView:ModifiedDate:\",\"fromPort\":\"source:AssetTypeView:ModifiedDate:\",\"toPort\":\"target:AssetTypeView:ModifiedDate:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:Refrigerant:\",\"to\":\"target:AssetTypeView:Refrigerant:\",\"fromPort\":\"source:AssetTypeView:Refrigerant:\",\"toPort\":\"target:AssetTypeView:Refrigerant:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:RelatedAsset:\",\"to\":\"target:AssetTypeView:RelatedAsset:\",\"fromPort\":\"source:AssetTypeView:RelatedAsset:\",\"toPort\":\"target:AssetTypeView:RelatedAsset:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:SerialNo:\",\"to\":\"target:AssetTypeView:SerialNo:\",\"fromPort\":\"source:AssetTypeView:SerialNo:\",\"toPort\":\"target:AssetTypeView:SerialNo:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:SST:\",\"to\":\"target:AssetTypeView:SST:\",\"fromPort\":\"source:AssetTypeView:SST:\",\"toPort\":\"target:AssetTypeView:SST:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:TempType:\",\"to\":\"target:AssetTypeView:TempType:\",\"fromPort\":\"source:AssetTypeView:TempType:\",\"toPort\":\"target:AssetTypeView:TempType:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:UnitName:\",\"to\":\"target:AssetTypeView:UnitName:\",\"fromPort\":\"source:AssetTypeView:UnitName:\",\"toPort\":\"target:AssetTypeView:UnitName:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:AssetTypeView:AssetType_ID:\",\"to\":\"target:AssetTypeView:AssetTypeID:\",\"fromPort\":\"source:AssetTypeView:AssetType_ID:\",\"toPort\":\"target:AssetTypeView:AssetTypeID:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:AssetTypeView:UnitName_Label:\",\"to\":\"target:AssetTypeView:UnitNameLabel:\",\"fromPort\":\"source:AssetTypeView:UnitName_Label:\",\"toPort\":\"target:AssetTypeView:UnitNameLabel:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "eSOReferentialService",
+      "serviceVersion" : "1.0",
+      "operationName" : "AssetTypeView_get"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "AssetTypeView",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"AssetTypeView\" outputpath=\"AssetTypeView\">\n            <set-param inputpath=\"AssetDesc\" outputpath=\"AssetDesc\"/>\n            <set-param inputpath=\"AssetOption\" outputpath=\"AssetOption\"/>\n            <set-param inputpath=\"AssetType_ID\" outputpath=\"AssetTypeID\"/>\n            <set-param inputpath=\"HasChildren\" outputpath=\"HasChildren\"/>\n            <set-param inputpath=\"HasParent\" outputpath=\"HasParent\"/>\n            <set-param inputpath=\"HasSystem\" outputpath=\"HasSystem\"/>\n            <set-param inputpath=\"Inactive\" outputpath=\"Inactive\"/>\n            <set-param inputpath=\"Manufacturer\" outputpath=\"Manufacturer\"/>\n            <set-param inputpath=\"Model\" outputpath=\"Model\"/>\n            <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>\n            <set-param inputpath=\"Refrigerant\" outputpath=\"Refrigerant\"/>\n            <set-param inputpath=\"RelatedAsset\" outputpath=\"RelatedAsset\"/>\n            <set-param inputpath=\"SerialNo\" outputpath=\"SerialNo\"/>\n            <set-param inputpath=\"SST\" outputpath=\"SST\"/>\n            <set-param inputpath=\"TempType\" outputpath=\"TempType\"/>\n            <set-param inputpath=\"UnitName\" outputpath=\"UnitName\"/>\n            <set-param inputpath=\"UnitName_Label\" outputpath=\"UnitNameLabel\"/>\n        </map>\n    </map>\n</mapper>\n",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"AssetTypeView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOReferentialService (1.0).AssetTypeView_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:AssetDesc:\",\"to\":\"target:AssetTypeView:AssetDesc:\",\"fromPort\":\"source:AssetTypeView:AssetDesc:\",\"toPort\":\"target:AssetTypeView:AssetDesc:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:AssetOption:\",\"to\":\"target:AssetTypeView:AssetOption:\",\"fromPort\":\"source:AssetTypeView:AssetOption:\",\"toPort\":\"target:AssetTypeView:AssetOption:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:HasChildren:\",\"to\":\"target:AssetTypeView:HasChildren:\",\"fromPort\":\"source:AssetTypeView:HasChildren:\",\"toPort\":\"target:AssetTypeView:HasChildren:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:HasParent:\",\"to\":\"target:AssetTypeView:HasParent:\",\"fromPort\":\"source:AssetTypeView:HasParent:\",\"toPort\":\"target:AssetTypeView:HasParent:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:HasSystem:\",\"to\":\"target:AssetTypeView:HasSystem:\",\"fromPort\":\"source:AssetTypeView:HasSystem:\",\"toPort\":\"target:AssetTypeView:HasSystem:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:Inactive:\",\"to\":\"target:AssetTypeView:Inactive:\",\"fromPort\":\"source:AssetTypeView:Inactive:\",\"toPort\":\"target:AssetTypeView:Inactive:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:Manufacturer:\",\"to\":\"target:AssetTypeView:Manufacturer:\",\"fromPort\":\"source:AssetTypeView:Manufacturer:\",\"toPort\":\"target:AssetTypeView:Manufacturer:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:Model:\",\"to\":\"target:AssetTypeView:Model:\",\"fromPort\":\"source:AssetTypeView:Model:\",\"toPort\":\"target:AssetTypeView:Model:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:ModifiedDate:\",\"to\":\"target:AssetTypeView:ModifiedDate:\",\"fromPort\":\"source:AssetTypeView:ModifiedDate:\",\"toPort\":\"target:AssetTypeView:ModifiedDate:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:Refrigerant:\",\"to\":\"target:AssetTypeView:Refrigerant:\",\"fromPort\":\"source:AssetTypeView:Refrigerant:\",\"toPort\":\"target:AssetTypeView:Refrigerant:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:RelatedAsset:\",\"to\":\"target:AssetTypeView:RelatedAsset:\",\"fromPort\":\"source:AssetTypeView:RelatedAsset:\",\"toPort\":\"target:AssetTypeView:RelatedAsset:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:SerialNo:\",\"to\":\"target:AssetTypeView:SerialNo:\",\"fromPort\":\"source:AssetTypeView:SerialNo:\",\"toPort\":\"target:AssetTypeView:SerialNo:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:SST:\",\"to\":\"target:AssetTypeView:SST:\",\"fromPort\":\"source:AssetTypeView:SST:\",\"toPort\":\"target:AssetTypeView:SST:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:TempType:\",\"to\":\"target:AssetTypeView:TempType:\",\"fromPort\":\"source:AssetTypeView:TempType:\",\"toPort\":\"target:AssetTypeView:TempType:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTypeView:UnitName:\",\"to\":\"target:AssetTypeView:UnitName:\",\"fromPort\":\"source:AssetTypeView:UnitName:\",\"toPort\":\"target:AssetTypeView:UnitName:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:AssetTypeView:AssetType_ID:\",\"to\":\"target:AssetTypeView:AssetTypeID:\",\"fromPort\":\"source:AssetTypeView:AssetType_ID:\",\"toPort\":\"target:AssetTypeView:AssetTypeID:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:AssetTypeView:UnitName_Label:\",\"to\":\"target:AssetTypeView:UnitNameLabel:\",\"fromPort\":\"source:AssetTypeView:UnitName_Label:\",\"toPort\":\"target:AssetTypeView:UnitNameLabel:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

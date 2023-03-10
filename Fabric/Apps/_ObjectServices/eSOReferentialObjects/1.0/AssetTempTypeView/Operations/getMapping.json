@@ -1,0 +1,95 @@
+{
+  "operationConfig" : {
+    "name" : "eso_AssetTempTypeView_get3652",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"AssetTempTypeView\" outputpath=\"AssetTempTypeView\">\n            <set-param inputpath=\"AssetTempDesc\" outputpath=\"AssetTempDesc\"/>\n            <set-param inputpath=\"Inactive\" outputpath=\"Inactive\"/>\n            <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>\n            <set-param inputpath=\"TempType_ID\" outputpath=\"TempTypeID\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"AssetTempTypeView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOReferentialService (1.0).AssetTempTypeView_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:AssetTempTypeView:AssetTempDesc:\",\"to\":\"target:AssetTempTypeView:AssetTempDesc:\",\"fromPort\":\"source:AssetTempTypeView:AssetTempDesc:\",\"toPort\":\"target:AssetTempTypeView:AssetTempDesc:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTempTypeView:Inactive:\",\"to\":\"target:AssetTempTypeView:Inactive:\",\"fromPort\":\"source:AssetTempTypeView:Inactive:\",\"toPort\":\"target:AssetTempTypeView:Inactive:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTempTypeView:ModifiedDate:\",\"to\":\"target:AssetTempTypeView:ModifiedDate:\",\"fromPort\":\"source:AssetTempTypeView:ModifiedDate:\",\"toPort\":\"target:AssetTempTypeView:ModifiedDate:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:AssetTempTypeView:TempType_ID:\",\"to\":\"target:AssetTempTypeView:TempTypeID:\",\"fromPort\":\"source:AssetTempTypeView:TempType_ID:\",\"toPort\":\"target:AssetTempTypeView:TempTypeID:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "eSOReferentialService",
+      "serviceVersion" : "1.0",
+      "operationName" : "AssetTempTypeView_get"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "AssetTempTypeView",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"AssetTempTypeView\" outputpath=\"AssetTempTypeView\">\n            <set-param inputpath=\"AssetTempDesc\" outputpath=\"AssetTempDesc\"/>\n            <set-param inputpath=\"Inactive\" outputpath=\"Inactive\"/>\n            <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>\n            <set-param inputpath=\"TempType_ID\" outputpath=\"TempTypeID\"/>\n        </map>\n    </map>\n</mapper>\n",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"AssetTempTypeView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOReferentialService (1.0).AssetTempTypeView_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:AssetTempTypeView:AssetTempDesc:\",\"to\":\"target:AssetTempTypeView:AssetTempDesc:\",\"fromPort\":\"source:AssetTempTypeView:AssetTempDesc:\",\"toPort\":\"target:AssetTempTypeView:AssetTempDesc:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTempTypeView:Inactive:\",\"to\":\"target:AssetTempTypeView:Inactive:\",\"fromPort\":\"source:AssetTempTypeView:Inactive:\",\"toPort\":\"target:AssetTempTypeView:Inactive:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:AssetTempTypeView:ModifiedDate:\",\"to\":\"target:AssetTempTypeView:ModifiedDate:\",\"fromPort\":\"source:AssetTempTypeView:ModifiedDate:\",\"toPort\":\"target:AssetTempTypeView:ModifiedDate:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:AssetTempTypeView:TempType_ID:\",\"to\":\"target:AssetTempTypeView:TempTypeID:\",\"fromPort\":\"source:AssetTempTypeView:TempType_ID:\",\"toPort\":\"target:AssetTempTypeView:TempTypeID:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

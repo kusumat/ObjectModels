@@ -1,0 +1,25 @@
+[ {
+  "sourceObject" : "WorkOrderRefrigerant",
+  "targetObject" : "EquipLeakEvent",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "RefrigerantID",
+    "etag" : "d2c4f95c-a94a-407c-acc5-657bb2283022"
+  } ],
+  "name" : "WorkOrderRefrigerant_EquipLeakEvent",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrderRefrigerant",
+  "targetObject" : "RefrigerantSourceResults",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "RefrigerantID",
+    "etag" : "018b4e96-48e2-4329-b64a-027cfc396cbc"
+  } ],
+  "name" : "WorkOrderRefrigerant_RefrigerantSourceResults",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

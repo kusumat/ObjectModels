@@ -1,0 +1,193 @@
+[ {
+  "sourceObject" : "WorkOrder",
+  "targetObject" : "EquipLeakEvent",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WOID",
+    "etag" : "ca74b252-a895-4b1a-b792-5eda42bb722e"
+  } ],
+  "name" : "WorkOrder_EquipLeakEvent",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrder",
+  "targetObject" : "EquipLeakEventCode",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WOID",
+    "etag" : "b40bf149-d0d0-4029-a31b-2a6f1ecff957"
+  } ],
+  "name" : "WorkOrder_EquipLeakEventCode",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrder",
+  "targetObject" : "RefrigerantShutdown",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WOID",
+    "etag" : "1eeb0e17-6b8d-489c-ac9d-c9742a4a8c8b"
+  } ],
+  "name" : "WorkOrder_RefrigerantShutdown",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrder",
+  "targetObject" : "RefrigerantSourceResults",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WOID",
+    "etag" : "29b3c670-73c2-4c8c-894a-2dfb823bbe48"
+  } ],
+  "name" : "WorkOrder_RefrigerantSourceResults",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrder",
+  "targetObject" : "RefrigerantStartup",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WOID",
+    "etag" : "cbde8a78-be91-47fb-9cb9-3b3a7766934b"
+  } ],
+  "name" : "WorkOrder_RefrigerantStartup",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrder",
+  "targetObject" : "WOOtherBillable",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WOID",
+    "etag" : "e7d07a8f-5ce8-40bc-be23-beb975c29777"
+  } ],
+  "name" : "WorkOrder_WOOtherBillable",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrder",
+  "targetObject" : "WorkOrderAssets22",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WOID",
+    "etag" : "28f4ee34-e7ba-4abe-a1fa-b90c065599f7"
+  } ],
+  "name" : "WorkOrder_WorkOrderAssets22",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrder",
+  "targetObject" : "WorkOrderCheckedRule",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WOID",
+    "etag" : "fc5eae3a-09ac-482c-8a51-4fddfd306f18"
+  } ],
+  "name" : "WorkOrder_WorkOrderCheckedRule",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrder",
+  "targetObject" : "WorkOrderNTE",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WOID",
+    "etag" : "4e6d4c65-262c-4d28-955e-d5d23f5bddfa"
+  } ],
+  "name" : "WorkOrder_WorkOrderNTE",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrder",
+  "targetObject" : "WorkOrderParts",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WOID",
+    "etag" : "06378bd2-8831-461c-acd5-71e309d5beab"
+  } ],
+  "name" : "WorkOrder_WorkOrderParts",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrder",
+  "targetObject" : "WorkOrderPhoto",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WOID",
+    "etag" : "3c18276c-c3b7-46f3-808c-b274cc5e8002"
+  } ],
+  "name" : "WorkOrder_WorkOrderPhoto",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrder",
+  "targetObject" : "WorkOrderRefrigerant",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WOID",
+    "etag" : "16e352c3-0a70-4f11-9a7d-72bd4997d37c"
+  } ],
+  "name" : "WorkOrder_WorkOrderRefrigerant",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrder",
+  "targetObject" : "WorkOrderResolutionNotes",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WOID",
+    "etag" : "32bfe958-ca2d-448c-81a1-5bde334804a0"
+  } ],
+  "name" : "WorkOrder_WorkOrderResolutionNotes",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrder",
+  "targetObject" : "WorkOrderResolutions",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WOID",
+    "etag" : "f2dd53e2-2beb-401d-a4d5-f3867ad33189"
+  } ],
+  "name" : "WorkOrder_WorkOrderResolutions",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrder",
+  "targetObject" : "WorkOrderStatusHistory",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WOID",
+    "etag" : "83821864-9f5e-47b1-8776-3ab9ec61b065"
+  } ],
+  "name" : "WorkOrder_WorkOrderStatusHistory",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "WorkOrder",
+  "targetObject" : "WorkOrderSystemLabor",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WOID",
+    "etag" : "2bafe072-e34f-4db2-8636-f17ebeead757"
+  } ],
+  "name" : "WorkOrder_WorkOrderSystemLabor",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

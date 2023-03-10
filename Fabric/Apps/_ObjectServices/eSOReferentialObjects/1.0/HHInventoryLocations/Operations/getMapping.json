@@ -1,0 +1,95 @@
+{
+  "operationConfig" : {
+    "name" : "eso_HH_InventoryLocationsView_get6962",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"HH_InventoryLocationsView\" outputpath=\"HHInventoryLocations\">\n            <set-param inputpath=\"Inactive\" outputpath=\"Inactive\"/>\n            <set-param inputpath=\"LOCNCODE\" outputpath=\"LOCNCODE\"/>\n            <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"HHInventoryLocations\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOReferentialService (1.0).InventoryLocationsView_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HH_InventoryLocationsView:Inactive:\",\"to\":\"target:HHInventoryLocations:Inactive:\",\"fromPort\":\"source:HH_InventoryLocationsView:Inactive:\",\"toPort\":\"target:HHInventoryLocations:Inactive:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HH_InventoryLocationsView:LOCNCODE:\",\"to\":\"target:HHInventoryLocations:LOCNCODE:\",\"fromPort\":\"source:HH_InventoryLocationsView:LOCNCODE:\",\"toPort\":\"target:HHInventoryLocations:LOCNCODE:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HH_InventoryLocationsView:ModifiedDate:\",\"to\":\"target:HHInventoryLocations:ModifiedDate:\",\"fromPort\":\"source:HH_InventoryLocationsView:ModifiedDate:\",\"toPort\":\"target:HHInventoryLocations:ModifiedDate:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "eSOReferentialService",
+      "serviceVersion" : "1.0",
+      "operationName" : "InventoryLocationsView_get"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "HHInventoryLocations",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">  <map inputpath=\"response_in\" outputpath=\"response_out\">    <map inputpath=\"HH_InventoryLocationsView\" outputpath=\"HHInventoryLocations\">      <set-param inputpath=\"Inactive\" outputpath=\"Inactive\"/>      <set-param inputpath=\"LOCNCODE\" outputpath=\"LOCNCODE\"/>      <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>    </map>  </map></mapper>",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"HHInventoryLocations\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOReferentialService (1.0).InventoryLocationsView_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"from\":\"target\",\"to\":\"target:HHInventoryLocations\",\"fromPort\":\"target\",\"toPort\":\"target:HHInventoryLocations\",\"visible\":true,\"common\":false},{\"from\":\"target:HHInventoryLocations\",\"to\":\"target:HHInventoryLocations:t_p_fields\",\"fromPort\":\"target:HHInventoryLocations\",\"toPort\":\"target:HHInventoryLocations:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:HHInventoryLocations:t_p_fields\",\"to\":\"target:HHInventoryLocations:Inactive:\",\"fromPort\":\"target:HHInventoryLocations:t_p_fields\",\"toPort\":\"target:HHInventoryLocations:Inactive:\",\"visible\":true,\"common\":false},{\"from\":\"target:HHInventoryLocations:t_p_fields\",\"to\":\"target:HHInventoryLocations:LOCNCODE:\",\"fromPort\":\"target:HHInventoryLocations:t_p_fields\",\"toPort\":\"target:HHInventoryLocations:LOCNCODE:\",\"visible\":true,\"common\":false},{\"from\":\"target:HHInventoryLocations:t_p_fields\",\"to\":\"target:HHInventoryLocations:ModifiedDate:\",\"fromPort\":\"target:HHInventoryLocations:t_p_fields\",\"toPort\":\"target:HHInventoryLocations:ModifiedDate:\",\"visible\":true,\"common\":false},{\"from\":\"source\",\"to\":\"source:HH_InventoryLocationsView\",\"fromPort\":\"source\",\"toPort\":\"source:HH_InventoryLocationsView\",\"visible\":true,\"common\":false},{\"from\":\"source:HH_InventoryLocationsView\",\"to\":\"source:HH_InventoryLocationsView:t_p_parameters\",\"fromPort\":\"source:HH_InventoryLocationsView\",\"toPort\":\"source:HH_InventoryLocationsView:t_p_parameters\",\"visible\":true,\"common\":false},{\"from\":\"source:HH_InventoryLocationsView:t_p_parameters\",\"to\":\"source:HH_InventoryLocationsView:Inactive:\",\"fromPort\":\"source:HH_InventoryLocationsView:t_p_parameters\",\"toPort\":\"source:HH_InventoryLocationsView:Inactive:\",\"visible\":true,\"common\":false},{\"from\":\"source:HH_InventoryLocationsView:t_p_parameters\",\"to\":\"source:HH_InventoryLocationsView:LOCNCODE:\",\"fromPort\":\"source:HH_InventoryLocationsView:t_p_parameters\",\"toPort\":\"source:HH_InventoryLocationsView:LOCNCODE:\",\"visible\":true,\"common\":false},{\"from\":\"source:HH_InventoryLocationsView:t_p_parameters\",\"to\":\"source:HH_InventoryLocationsView:ModifiedDate:\",\"fromPort\":\"source:HH_InventoryLocationsView:t_p_parameters\",\"toPort\":\"source:HH_InventoryLocationsView:ModifiedDate:\",\"visible\":true,\"common\":false},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HH_InventoryLocationsView:Inactive:\",\"to\":\"target:HHInventoryLocations:Inactive:\",\"fromPort\":\"source:HH_InventoryLocationsView:Inactive:\",\"toPort\":\"target:HHInventoryLocations:Inactive:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HH_InventoryLocationsView:LOCNCODE:\",\"to\":\"target:HHInventoryLocations:LOCNCODE:\",\"fromPort\":\"source:HH_InventoryLocationsView:LOCNCODE:\",\"toPort\":\"target:HHInventoryLocations:LOCNCODE:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HH_InventoryLocationsView:ModifiedDate:\",\"to\":\"target:HHInventoryLocations:ModifiedDate:\",\"fromPort\":\"source:HH_InventoryLocationsView:ModifiedDate:\",\"toPort\":\"target:HHInventoryLocations:ModifiedDate:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

@@ -1,0 +1,95 @@
+{
+  "operationConfig" : {
+    "name" : "eso_HH_PODetailTypeView_get3821",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"HH_PODetailTypeView\" outputpath=\"HHPODetailTypeView\">\n            <set-param inputpath=\"Inactive\" outputpath=\"Inactive\"/>\n            <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>\n            <set-param inputpath=\"POType_Desc\" outputpath=\"POTypeDesc\"/>\n            <set-param inputpath=\"POType_ID\" outputpath=\"POTypeID\"/>\n            <set-param inputpath=\"Sort_Order\" outputpath=\"SortOrder\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"HHPODetailTypeView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOReferentialService (1.0).PODetailTypeView_get\",\"xy\":\"297 107\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HH_PODetailTypeView:Inactive:\",\"to\":\"target:HHPODetailTypeView:Inactive:\",\"fromPort\":\"source:HH_PODetailTypeView:Inactive:\",\"toPort\":\"target:HHPODetailTypeView:Inactive:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HH_PODetailTypeView:ModifiedDate:\",\"to\":\"target:HHPODetailTypeView:ModifiedDate:\",\"fromPort\":\"source:HH_PODetailTypeView:ModifiedDate:\",\"toPort\":\"target:HHPODetailTypeView:ModifiedDate:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HH_PODetailTypeView:POType_Desc:\",\"to\":\"target:HHPODetailTypeView:POTypeDesc:\",\"fromPort\":\"source:HH_PODetailTypeView:POType_Desc:\",\"toPort\":\"target:HHPODetailTypeView:POTypeDesc:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HH_PODetailTypeView:POType_ID:\",\"to\":\"target:HHPODetailTypeView:POTypeID:\",\"fromPort\":\"source:HH_PODetailTypeView:POType_ID:\",\"toPort\":\"target:HHPODetailTypeView:POTypeID:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HH_PODetailTypeView:Sort_Order:\",\"to\":\"target:HHPODetailTypeView:SortOrder:\",\"fromPort\":\"source:HH_PODetailTypeView:Sort_Order:\",\"toPort\":\"target:HHPODetailTypeView:SortOrder:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "eSOReferentialService",
+      "serviceVersion" : "1.0",
+      "operationName" : "PODetailTypeView_get"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "HHPODetailTypeView",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"HH_PODetailTypeView\" outputpath=\"HHPODetailTypeView\">\n            <set-param inputpath=\"Inactive\" outputpath=\"Inactive\"/>\n            <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>\n            <set-param inputpath=\"POType_Desc\" outputpath=\"POTypeDesc\"/>\n            <set-param inputpath=\"POType_ID\" outputpath=\"POTypeID\"/>\n            <set-param inputpath=\"Sort_Order\" outputpath=\"SortOrder\"/>\n        </map>\n    </map>\n</mapper>\n",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"HHPODetailTypeView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOReferentialService (1.0).PODetailTypeView_get\",\"xy\":\"297 107\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HH_PODetailTypeView:Inactive:\",\"to\":\"target:HHPODetailTypeView:Inactive:\",\"fromPort\":\"source:HH_PODetailTypeView:Inactive:\",\"toPort\":\"target:HHPODetailTypeView:Inactive:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HH_PODetailTypeView:ModifiedDate:\",\"to\":\"target:HHPODetailTypeView:ModifiedDate:\",\"fromPort\":\"source:HH_PODetailTypeView:ModifiedDate:\",\"toPort\":\"target:HHPODetailTypeView:ModifiedDate:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HH_PODetailTypeView:POType_Desc:\",\"to\":\"target:HHPODetailTypeView:POTypeDesc:\",\"fromPort\":\"source:HH_PODetailTypeView:POType_Desc:\",\"toPort\":\"target:HHPODetailTypeView:POTypeDesc:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HH_PODetailTypeView:POType_ID:\",\"to\":\"target:HHPODetailTypeView:POTypeID:\",\"fromPort\":\"source:HH_PODetailTypeView:POType_ID:\",\"toPort\":\"target:HHPODetailTypeView:POTypeID:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:HH_PODetailTypeView:Sort_Order:\",\"to\":\"target:HHPODetailTypeView:SortOrder:\",\"fromPort\":\"source:HH_PODetailTypeView:Sort_Order:\",\"toPort\":\"target:HHPODetailTypeView:SortOrder:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "PORtnQueue",
+  "targetObject" : "PORtnDisp",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "PORtnQueueID",
+    "etag" : "bcc87231-42e6-47df-bdcf-53e98d876689"
+  } ],
+  "name" : "PORtnQueue_PORtnDisp",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

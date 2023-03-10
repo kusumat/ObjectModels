@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "POLines",
+  "targetObject" : "WorkOrderParts",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "POLineID",
+    "etag" : "30499460-330d-49bb-a2cd-eedd729a2541"
+  } ],
+  "name" : "POLines_WorkOrderParts",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

@@ -1,0 +1,95 @@
+{
+  "operationConfig" : {
+    "name" : "eso_ActionCodeView_get1053",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">    <map inputpath=\"response_in\" outputpath=\"response_out\">        <map inputpath=\"ActionCodeView\" outputpath=\"ActionCodeView\">            <set-param inputpath=\"ActionCodeDesc\" outputpath=\"ActionCodeDesc\"/>            <set-param inputpath=\"ActionCodeID\" outputpath=\"ActionCodeID\"/>            <set-param inputpath=\"CUSTNMBR\" outputpath=\"CUSTNMBR\"/>            <set-param inputpath=\"Inactive\" outputpath=\"Inactive\"/>            <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>        </map>    </map></mapper>",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"ActionCodeView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOReferentialService (1.0).ActionCodeView_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:ActionCodeView:ActionCodeDesc:\",\"to\":\"target:ActionCodeView:ActionCodeDesc:\",\"fromPort\":\"source:ActionCodeView:ActionCodeDesc:\",\"toPort\":\"target:ActionCodeView:ActionCodeDesc:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:ActionCodeView:ActionCodeID:\",\"to\":\"target:ActionCodeView:ActionCodeID:\",\"fromPort\":\"source:ActionCodeView:ActionCodeID:\",\"toPort\":\"target:ActionCodeView:ActionCodeID:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:ActionCodeView:CUSTNMBR:\",\"to\":\"target:ActionCodeView:CUSTNMBR:\",\"fromPort\":\"source:ActionCodeView:CUSTNMBR:\",\"toPort\":\"target:ActionCodeView:CUSTNMBR:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:ActionCodeView:Inactive:\",\"to\":\"target:ActionCodeView:Inactive:\",\"fromPort\":\"source:ActionCodeView:Inactive:\",\"toPort\":\"target:ActionCodeView:Inactive:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:ActionCodeView:ModifiedDate:\",\"to\":\"target:ActionCodeView:ModifiedDate:\",\"fromPort\":\"source:ActionCodeView:ModifiedDate:\",\"toPort\":\"target:ActionCodeView:ModifiedDate:\",\"visible\":true,\"common\":true},{\"from\":\"target\",\"to\":\"target:ActionCodeView\",\"fromPort\":\"target\",\"toPort\":\"target:ActionCodeView\",\"visible\":true,\"common\":false},{\"from\":\"target:ActionCodeView\",\"to\":\"target:ActionCodeView:t_p_fields\",\"fromPort\":\"target:ActionCodeView\",\"toPort\":\"target:ActionCodeView:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:ActionCodeView:t_p_fields\",\"to\":\"target:ActionCodeView:ActionCodeDesc:\",\"fromPort\":\"target:ActionCodeView:t_p_fields\",\"toPort\":\"target:ActionCodeView:ActionCodeDesc:\",\"visible\":true,\"common\":false},{\"from\":\"target:ActionCodeView:t_p_fields\",\"to\":\"target:ActionCodeView:ActionCodeID:\",\"fromPort\":\"target:ActionCodeView:t_p_fields\",\"toPort\":\"target:ActionCodeView:ActionCodeID:\",\"visible\":true,\"common\":false},{\"from\":\"target:ActionCodeView:t_p_fields\",\"to\":\"target:ActionCodeView:CUSTNMBR:\",\"fromPort\":\"target:ActionCodeView:t_p_fields\",\"toPort\":\"target:ActionCodeView:CUSTNMBR:\",\"visible\":true,\"common\":false},{\"from\":\"target:ActionCodeView:t_p_fields\",\"to\":\"target:ActionCodeView:Inactive:\",\"fromPort\":\"target:ActionCodeView:t_p_fields\",\"toPort\":\"target:ActionCodeView:Inactive:\",\"visible\":true,\"common\":false},{\"from\":\"target:ActionCodeView:t_p_fields\",\"to\":\"target:ActionCodeView:ModifiedDate:\",\"fromPort\":\"target:ActionCodeView:t_p_fields\",\"toPort\":\"target:ActionCodeView:ModifiedDate:\",\"visible\":true,\"common\":false},{\"from\":\"source\",\"to\":\"source:ActionCodeView\",\"fromPort\":\"source\",\"toPort\":\"source:ActionCodeView\",\"visible\":true,\"common\":false},{\"from\":\"source:ActionCodeView\",\"to\":\"source:ActionCodeView:t_p_parameters\",\"fromPort\":\"source:ActionCodeView\",\"toPort\":\"source:ActionCodeView:t_p_parameters\",\"visible\":true,\"common\":false},{\"from\":\"source:ActionCodeView:t_p_parameters\",\"to\":\"source:ActionCodeView:ActionCodeDesc:\",\"fromPort\":\"source:ActionCodeView:t_p_parameters\",\"toPort\":\"source:ActionCodeView:ActionCodeDesc:\",\"visible\":true,\"common\":false},{\"from\":\"source:ActionCodeView:t_p_parameters\",\"to\":\"source:ActionCodeView:ActionCodeID:\",\"fromPort\":\"source:ActionCodeView:t_p_parameters\",\"toPort\":\"source:ActionCodeView:ActionCodeID:\",\"visible\":true,\"common\":false},{\"from\":\"source:ActionCodeView:t_p_parameters\",\"to\":\"source:ActionCodeView:CUSTNMBR:\",\"fromPort\":\"source:ActionCodeView:t_p_parameters\",\"toPort\":\"source:ActionCodeView:CUSTNMBR:\",\"visible\":true,\"common\":false},{\"from\":\"source:ActionCodeView:t_p_parameters\",\"to\":\"source:ActionCodeView:Inactive:\",\"fromPort\":\"source:ActionCodeView:t_p_parameters\",\"toPort\":\"source:ActionCodeView:Inactive:\",\"visible\":true,\"common\":false},{\"from\":\"source:ActionCodeView:t_p_parameters\",\"to\":\"source:ActionCodeView:ModifiedDate:\",\"fromPort\":\"source:ActionCodeView:t_p_parameters\",\"toPort\":\"source:ActionCodeView:ModifiedDate:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "eSOReferentialService",
+      "serviceVersion" : "1.0",
+      "operationName" : "ActionCodeView_get"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "ActionCodeView",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : true,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">    <map inputpath=\"response_in\" outputpath=\"response_out\">        <map inputpath=\"ActionCodeView\" outputpath=\"ActionCodeView\">            <set-param inputpath=\"ActionCodeDesc\" outputpath=\"ActionCodeDesc\"/>            <set-param inputpath=\"ActionCodeID\" outputpath=\"ActionCodeID\"/>            <set-param inputpath=\"CUSTNMBR\" outputpath=\"CUSTNMBR\"/>            <set-param inputpath=\"Inactive\" outputpath=\"Inactive\"/>            <set-param inputpath=\"ModifiedDate\" outputpath=\"ModifiedDate\"/>        </map>    </map></mapper>",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"ActionCodeView\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"eSOReferentialService (1.0).ActionCodeView_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:ActionCodeView:ActionCodeDesc:\",\"to\":\"target:ActionCodeView:ActionCodeDesc:\",\"fromPort\":\"source:ActionCodeView:ActionCodeDesc:\",\"toPort\":\"target:ActionCodeView:ActionCodeDesc:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:ActionCodeView:ActionCodeID:\",\"to\":\"target:ActionCodeView:ActionCodeID:\",\"fromPort\":\"source:ActionCodeView:ActionCodeID:\",\"toPort\":\"target:ActionCodeView:ActionCodeID:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:ActionCodeView:CUSTNMBR:\",\"to\":\"target:ActionCodeView:CUSTNMBR:\",\"fromPort\":\"source:ActionCodeView:CUSTNMBR:\",\"toPort\":\"target:ActionCodeView:CUSTNMBR:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:ActionCodeView:Inactive:\",\"to\":\"target:ActionCodeView:Inactive:\",\"fromPort\":\"source:ActionCodeView:Inactive:\",\"toPort\":\"target:ActionCodeView:Inactive:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:ActionCodeView:ModifiedDate:\",\"to\":\"target:ActionCodeView:ModifiedDate:\",\"fromPort\":\"source:ActionCodeView:ModifiedDate:\",\"toPort\":\"target:ActionCodeView:ModifiedDate:\",\"visible\":true,\"common\":true},{\"from\":\"target\",\"to\":\"target:ActionCodeView\",\"fromPort\":\"target\",\"toPort\":\"target:ActionCodeView\",\"visible\":true,\"common\":false},{\"from\":\"target:ActionCodeView\",\"to\":\"target:ActionCodeView:t_p_fields\",\"fromPort\":\"target:ActionCodeView\",\"toPort\":\"target:ActionCodeView:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:ActionCodeView:t_p_fields\",\"to\":\"target:ActionCodeView:ActionCodeDesc:\",\"fromPort\":\"target:ActionCodeView:t_p_fields\",\"toPort\":\"target:ActionCodeView:ActionCodeDesc:\",\"visible\":true,\"common\":false},{\"from\":\"target:ActionCodeView:t_p_fields\",\"to\":\"target:ActionCodeView:ActionCodeID:\",\"fromPort\":\"target:ActionCodeView:t_p_fields\",\"toPort\":\"target:ActionCodeView:ActionCodeID:\",\"visible\":true,\"common\":false},{\"from\":\"target:ActionCodeView:t_p_fields\",\"to\":\"target:ActionCodeView:CUSTNMBR:\",\"fromPort\":\"target:ActionCodeView:t_p_fields\",\"toPort\":\"target:ActionCodeView:CUSTNMBR:\",\"visible\":true,\"common\":false},{\"from\":\"target:ActionCodeView:t_p_fields\",\"to\":\"target:ActionCodeView:Inactive:\",\"fromPort\":\"target:ActionCodeView:t_p_fields\",\"toPort\":\"target:ActionCodeView:Inactive:\",\"visible\":true,\"common\":false},{\"from\":\"target:ActionCodeView:t_p_fields\",\"to\":\"target:ActionCodeView:ModifiedDate:\",\"fromPort\":\"target:ActionCodeView:t_p_fields\",\"toPort\":\"target:ActionCodeView:ModifiedDate:\",\"visible\":true,\"common\":false},{\"from\":\"source\",\"to\":\"source:ActionCodeView\",\"fromPort\":\"source\",\"toPort\":\"source:ActionCodeView\",\"visible\":true,\"common\":false},{\"from\":\"source:ActionCodeView\",\"to\":\"source:ActionCodeView:t_p_parameters\",\"fromPort\":\"source:ActionCodeView\",\"toPort\":\"source:ActionCodeView:t_p_parameters\",\"visible\":true,\"common\":false},{\"from\":\"source:ActionCodeView:t_p_parameters\",\"to\":\"source:ActionCodeView:ActionCodeDesc:\",\"fromPort\":\"source:ActionCodeView:t_p_parameters\",\"toPort\":\"source:ActionCodeView:ActionCodeDesc:\",\"visible\":true,\"common\":false},{\"from\":\"source:ActionCodeView:t_p_parameters\",\"to\":\"source:ActionCodeView:ActionCodeID:\",\"fromPort\":\"source:ActionCodeView:t_p_parameters\",\"toPort\":\"source:ActionCodeView:ActionCodeID:\",\"visible\":true,\"common\":false},{\"from\":\"source:ActionCodeView:t_p_parameters\",\"to\":\"source:ActionCodeView:CUSTNMBR:\",\"fromPort\":\"source:ActionCodeView:t_p_parameters\",\"toPort\":\"source:ActionCodeView:CUSTNMBR:\",\"visible\":true,\"common\":false},{\"from\":\"source:ActionCodeView:t_p_parameters\",\"to\":\"source:ActionCodeView:Inactive:\",\"fromPort\":\"source:ActionCodeView:t_p_parameters\",\"toPort\":\"source:ActionCodeView:Inactive:\",\"visible\":true,\"common\":false},{\"from\":\"source:ActionCodeView:t_p_parameters\",\"to\":\"source:ActionCodeView:ModifiedDate:\",\"fromPort\":\"source:ActionCodeView:t_p_parameters\",\"toPort\":\"source:ActionCodeView:ModifiedDate:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : true,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

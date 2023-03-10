@@ -1,0 +1,49 @@
+{
+  "subType" : "customapp",
+  "description" : "eSO",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "eSOAssetHistoryService",
+    "version" : "1.0",
+    "etag" : "23fc47e9-275a-4db1-b543-b774a83a6837"
+  }, {
+    "name" : "eSOBackendService",
+    "version" : "1.0",
+    "etag" : "3f98598a-b2bb-4961-b38d-f9b4a3c12ee6"
+  }, {
+    "name" : "eSOPartsService",
+    "version" : "1.0",
+    "etag" : "4079c89e-0231-46a8-b348-2a4149ff2bfd"
+  }, {
+    "name" : "eSOReferentialService",
+    "version" : "1.0",
+    "etag" : "caa8c0a3-d1a8-4e78-8177-dbc51fdb875a"
+  }, {
+    "name" : "eSOStagingService",
+    "version" : "1.0",
+    "etag" : "06d0e75c-4794-4c9c-a45c-3e8906a5e5bd"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "eSOAssetHistoryObjects",
+    "version" : "1.0",
+    "etag" : "112d21df-9d0d-4a46-bd07-ff172f337281"
+  }, {
+    "name" : "eSOBackendObjects",
+    "version" : "1.0",
+    "etag" : "447038f6-f24e-4c32-9c02-81ddc88f7137"
+  }, {
+    "name" : "eSOPartsObjects",
+    "version" : "1.0",
+    "etag" : "5a7a4b07-81d9-4dd7-9164-6e060aa84da3"
+  }, {
+    "name" : "eSOReferentialObjects",
+    "version" : "1.0",
+    "etag" : "ff7969d8-2567-411a-80be-85d85a31297b"
+  }, {
+    "name" : "eSOStagingObjects",
+    "version" : "1.0",
+    "etag" : "ed62a6c0-8103-4f33-a866-0a9a2e631d69"
+  } ],
+  "identity" : [ "COOLSYSAD" ],
+  "identitySvcConf" : "{\"session_idle_timeout_mins\":2880,\"session_max_duration_mins\":5760,\"show_security_attributes\":false,\"is_integrity_enabled\":false,\"auto_extend\":true,\"integrity_key_type\":\"\",\"integrity_key\":\"\"}"
+}

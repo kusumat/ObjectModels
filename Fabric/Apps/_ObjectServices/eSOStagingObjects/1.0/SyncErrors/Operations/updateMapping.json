@@ -1,0 +1,51 @@
+{
+  "operationConfig" : {
+    "name" : "SyncErrors_update3123",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"DeviceCreateDate\" outputpath=\"DeviceCreateDate\"/>\n        <set-param inputpath=\"ErrorCode\" outputpath=\"ErrorCode\"/>\n        <set-param inputpath=\"ErrorMessage\" outputpath=\"ErrorMessage\"/>\n        <set-param inputpath=\"ID\" outputpath=\"ID\"/>\n        <set-param inputpath=\"KonyDeleteFlag\" outputpath=\"KonyDeleteFlag\"/>\n        <set-param inputpath=\"LastModified\" outputpath=\"LastModified\"/>\n        <set-param inputpath=\"SyncScope\" outputpath=\"SyncScope\"/>\n        <set-param inputpath=\"SyncType\" outputpath=\"SyncType\"/>\n        <set-param inputpath=\"TechID\" outputpath=\"TechID\"/>\n    </map>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"response_in\" outputpath=\"response_out\"><map inputpath=\"SyncErrors\" outputpath=\"SyncErrors\"><set-param inputpath=\"LastModified\" outputpath=\"LastModified\"/><set-param inputpath=\"SyncScope\" outputpath=\"SyncScope\"/><set-param inputpath=\"TechID\" outputpath=\"TechID\"/><set-param inputpath=\"KonyDeleteFlag\" outputpath=\"KonyDeleteFlag\"/><set-param inputpath=\"SyncType\" outputpath=\"SyncType\"/><set-param inputpath=\"ID\" outputpath=\"ID\"/><set-param inputpath=\"ErrorCode\" outputpath=\"ErrorCode\"/><set-param inputpath=\"ErrorMessage\" outputpath=\"ErrorMessage\"/><set-param inputpath=\"DeviceCreateDate\" outputpath=\"DeviceCreateDate\"/></map></map></mapper>",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"SyncErrors\",\"xy\":\"481 102\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"eSOStagingService (1.0).SyncErrors_update\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SyncErrors:DeviceCreateDate:\",\"to\":\"target:DeviceCreateDate:\",\"fromPort\":\"source:SyncErrors:DeviceCreateDate:\",\"toPort\":\"target:DeviceCreateDate:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SyncErrors:ErrorCode:\",\"to\":\"target:ErrorCode:\",\"fromPort\":\"source:SyncErrors:ErrorCode:\",\"toPort\":\"target:ErrorCode:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SyncErrors:ErrorMessage:\",\"to\":\"target:ErrorMessage:\",\"fromPort\":\"source:SyncErrors:ErrorMessage:\",\"toPort\":\"target:ErrorMessage:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SyncErrors:ID:\",\"to\":\"target:ID:\",\"fromPort\":\"source:SyncErrors:ID:\",\"toPort\":\"target:ID:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SyncErrors:KonyDeleteFlag:\",\"to\":\"target:KonyDeleteFlag:\",\"fromPort\":\"source:SyncErrors:KonyDeleteFlag:\",\"toPort\":\"target:KonyDeleteFlag:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SyncErrors:LastModified:\",\"to\":\"target:LastModified:\",\"fromPort\":\"source:SyncErrors:LastModified:\",\"toPort\":\"target:LastModified:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SyncErrors:SyncScope:\",\"to\":\"target:SyncScope:\",\"fromPort\":\"source:SyncErrors:SyncScope:\",\"toPort\":\"target:SyncScope:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SyncErrors:SyncType:\",\"to\":\"target:SyncType:\",\"fromPort\":\"source:SyncErrors:SyncType:\",\"toPort\":\"target:SyncType:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SyncErrors:TechID:\",\"to\":\"target:TechID:\",\"fromPort\":\"source:SyncErrors:TechID:\",\"toPort\":\"target:TechID:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : true,
+    "backendMeta" : {
+      "serviceName" : "eSOStagingService",
+      "serviceVersion" : "1.0",
+      "operationName" : "SyncErrors_update"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "SyncErrors",
+      "actions" : {
+        "create" : true,
+        "update" : true,
+        "partialupdate" : true,
+        "delete" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"DeviceCreateDate\" outputpath=\"DeviceCreateDate\"/>\n        <set-param inputpath=\"ErrorCode\" outputpath=\"ErrorCode\"/>\n        <set-param inputpath=\"ErrorMessage\" outputpath=\"ErrorMessage\"/>\n        <set-param inputpath=\"ID\" outputpath=\"ID\"/>\n        <set-param inputpath=\"KonyDeleteFlag\" outputpath=\"KonyDeleteFlag\"/>\n        <set-param inputpath=\"LastModified\" outputpath=\"LastModified\"/>\n        <set-param inputpath=\"SyncScope\" outputpath=\"SyncScope\"/>\n        <set-param inputpath=\"SyncType\" outputpath=\"SyncType\"/>\n        <set-param inputpath=\"TechID\" outputpath=\"TechID\"/>\n    </map>\n</mapper>\n",
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"response_in\" outputpath=\"response_out\"><map inputpath=\"SyncErrors\" outputpath=\"SyncErrors\"><set-param inputpath=\"LastModified\" outputpath=\"LastModified\"/><set-param inputpath=\"SyncScope\" outputpath=\"SyncScope\"/><set-param inputpath=\"TechID\" outputpath=\"TechID\"/><set-param inputpath=\"KonyDeleteFlag\" outputpath=\"KonyDeleteFlag\"/><set-param inputpath=\"SyncType\" outputpath=\"SyncType\"/><set-param inputpath=\"ID\" outputpath=\"ID\"/><set-param inputpath=\"ErrorCode\" outputpath=\"ErrorCode\"/><set-param inputpath=\"ErrorMessage\" outputpath=\"ErrorMessage\"/><set-param inputpath=\"DeviceCreateDate\" outputpath=\"DeviceCreateDate\"/></map></map></mapper>",
+      "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"SyncErrors\",\"xy\":\"481 102\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"eSOStagingService (1.0).SyncErrors_update\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SyncErrors:DeviceCreateDate:\",\"to\":\"target:DeviceCreateDate:\",\"fromPort\":\"source:SyncErrors:DeviceCreateDate:\",\"toPort\":\"target:DeviceCreateDate:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SyncErrors:ErrorCode:\",\"to\":\"target:ErrorCode:\",\"fromPort\":\"source:SyncErrors:ErrorCode:\",\"toPort\":\"target:ErrorCode:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SyncErrors:ErrorMessage:\",\"to\":\"target:ErrorMessage:\",\"fromPort\":\"source:SyncErrors:ErrorMessage:\",\"toPort\":\"target:ErrorMessage:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SyncErrors:ID:\",\"to\":\"target:ID:\",\"fromPort\":\"source:SyncErrors:ID:\",\"toPort\":\"target:ID:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SyncErrors:KonyDeleteFlag:\",\"to\":\"target:KonyDeleteFlag:\",\"fromPort\":\"source:SyncErrors:KonyDeleteFlag:\",\"toPort\":\"target:KonyDeleteFlag:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SyncErrors:LastModified:\",\"to\":\"target:LastModified:\",\"fromPort\":\"source:SyncErrors:LastModified:\",\"toPort\":\"target:LastModified:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SyncErrors:SyncScope:\",\"to\":\"target:SyncScope:\",\"fromPort\":\"source:SyncErrors:SyncScope:\",\"toPort\":\"target:SyncScope:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SyncErrors:SyncType:\",\"to\":\"target:SyncType:\",\"fromPort\":\"source:SyncErrors:SyncType:\",\"toPort\":\"target:SyncType:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SyncErrors:TechID:\",\"to\":\"target:TechID:\",\"fromPort\":\"source:SyncErrors:TechID:\",\"toPort\":\"target:TechID:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : false,
+      "applyResponseCommonMapping" : true
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

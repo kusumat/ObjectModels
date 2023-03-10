@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "WorkOrderParts",
+  "targetObject" : "PORtnDisp",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "WorkOrderPartsID",
+    "etag" : "6100b762-eee5-4c3b-80a7-f72f0843cfa8"
+  } ],
+  "name" : "WorkOrderParts_PORtnDisp",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "TimekeepingHeader",
+  "targetObject" : "TimekeepingLines",
+  "relationshipKeys" : [ {
+    "sourceField" : "ID",
+    "targetField" : "TKHdrID",
+    "etag" : "6c488764-1e62-4082-86d7-829cee86e42d"
+  } ],
+  "name" : "TimekeepingHeader_TimekeepingLines",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]
